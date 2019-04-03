@@ -3,6 +3,8 @@ package com.example.li.springboot_mybatis_demo.entity;
 
 import com.example.li.springboot_mybatis_demo.entity.base.Entity;
 
+import java.io.Serializable;
+
 public class User extends Entity {
     private String user_id;
 

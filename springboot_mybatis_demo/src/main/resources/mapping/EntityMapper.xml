@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.example.li.springboot_mybatis_demo.dao.base.EntityDao">
+    <cache type="com.example.li.springboot_mybatis_demo.redis.MybatisRedisCache" />
     <!--为dao接口方法提供sql语句配置-->
     <insert id="save">
         insert into ${entity.tableName} (

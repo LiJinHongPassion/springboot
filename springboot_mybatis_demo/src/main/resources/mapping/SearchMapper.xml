@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.example.li.springboot_mybatis_demo.dao.base.SearchDao">
-
+    <cache type="com.example.li.springboot_mybatis_demo.redis.MybatisRedisCache" />
     <select id="searchForeign" resultType="map">
         SELECT
         <foreach collection="properties" item="value" separator=",">

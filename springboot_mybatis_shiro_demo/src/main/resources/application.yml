@@ -1,0 +1,55 @@
+server:
+  port: 8080
+  #指定访问项目路径的项目名
+  #SpringBoot版本	配置
+  #1.x	server.context-path=/demo
+  #2.x	server.servlet.context-path=/demo
+  servlet.context-path: /springboot_mybatis_shiro_demo
+
+spring:
+    datasource:
+#        name: young
+        url: jdbc:mysql://127.0.0.1:3306/young?useUnicode=true&characterEncoding=utf8 #不需要\作为转移字符
+        username: root
+        password: root
+        # 使用druid数据源
+        type: com.alibaba.druid.pool.DruidDataSource
+        driver-class-name: com.mysql.cj.jdbc.Driver #com.mysql.jdbc.Driver更换驱动
+        druid.filters: stat
+        druid.maxActive: 20
+        druid.initialSize: 1
+        druid.maxWait: 60000
+        druid.minIdle: 1
+        druid.timeBetweenEvictionRunsMillis: 60000
+        druid.minEvictableIdleTimeMillis: 300000
+        druid.validationQuery: select 'x'
+        druid.testWhileIdle: true
+        druid.testOnBorrow: false
+        druid.testOnReturn: false
+        druid.poolPreparedStatements: true
+        druid.maxOpenPreparedStatements: 20
+    redis:
+      host: "127.0.0.1"
+      port: 6379
+      password:
+      timeout: 100ms
+      lettuce:
+        shutdown-timeout: 100ms
+
+
+## 该配置节点为独立的节点，有很多同学容易将这个配置放在spring的节点下，导致配置无法被识别
+mybatis:
+  mapper-locations: classpath:mapping/*.xml  #注意：一定要对应mapper映射xml文件的所在路径
+  type-aliases-package: com.example.li.springboot_mybatis_shiro_demo.entity  # 注意：对应实体类的路径
+  configuration:
+    #这个配置使全局的映射器启用或禁用缓存
+    cache-enabled: true
+    #对于未知的SQL查询，允许返回不同的结果集以达到通用的效果
+    multiple-result-sets-enabled: true
+    #配置默认的执行器。SIMPLE 执行器没有什么特别之处。REUSE 执行器重用预处理语句。BATCH 执行器重用语句和批量更新
+    default-executor-type: REUSE
+    #全局启用或禁用延迟加载。当禁用时，所有关联对象都会即时加载。
+    lazy-loading-enabled: false
+    aggressive-lazy-loading: true
+    #设置超时时间，它决定驱动等待一个数据库响应的时间
+    default-statement-timeout: 25000

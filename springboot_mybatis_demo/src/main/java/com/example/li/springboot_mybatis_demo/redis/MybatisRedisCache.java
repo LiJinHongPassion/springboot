@@ -27,17 +27,17 @@ public class MybatisRedisCache implements Cache {
 
 	@Override
 	public void putObject(Object key, Object value) {
-		redisTemplate.boundHashOps(getId()).put(key, value);
+		redisTemplate.boundHashOps(getId()).put(key.toString(), value.toString());
 	}
 
 	@Override
 	public Object getObject(Object key) {
-		return redisTemplate.boundHashOps(getId()).get(key);
+		return redisTemplate.boundHashOps(getId()).get(key.toString());
 	}
 
 	@Override
 	public Object removeObject(Object key) {
-		return redisTemplate.boundHashOps(getId()).delete(key);
+		return redisTemplate.boundHashOps(getId()).delete(key.toString());
 	}
 
 	@Override

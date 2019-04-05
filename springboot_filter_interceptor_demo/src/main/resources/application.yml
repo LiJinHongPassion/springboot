@@ -1,0 +1,4 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /springboot_filter_interceptor_demo

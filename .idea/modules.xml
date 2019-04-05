@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/springboot_mybatis_demo/springboot_mybatis_demo.iml" filepath="$PROJECT_DIR$/springboot_mybatis_demo/springboot_mybatis_demo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/springboot_mybatis_shiro_demo/springboot_mybatis_shiro_demo.iml" filepath="$PROJECT_DIR$/springboot_mybatis_shiro_demo/springboot_mybatis_shiro_demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot_filter_interceptor_demo/springboot_filter_interceptor_demo.iml" filepath="$PROJECT_DIR$/springboot_filter_interceptor_demo/springboot_filter_interceptor_demo.iml" />
     </modules>
   </component>
 </project>

@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.data.redis.connection.jedis.JedisConnectionFactory;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.StringRedisTemplate;
-import org.springframework.data.redis.serializer.StringRedisSerializer;
+import org.springframework.data.redis.serializer.JdkSerializationRedisSerializer;
 import redis.clients.jedis.JedisPoolConfig;
 
 /**
@@ -14,7 +14,7 @@ import redis.clients.jedis.JedisPoolConfig;
  * @date 2019/4/3-13:13
  */
 @Configuration
-public class RedisConfig {
+public class MybatisRedisConfig {
 
     @Autowired
     private JedisConnectionFactory jedisConnectionFactory;
@@ -38,16 +38,20 @@ public class RedisConfig {
         factory.setHostName("127.0.0.1");
         factory.setPassword("");
         factory.setPort(6379);
+        //存储在redis-2号库
+        factory.setDatabase(2);
         return factory;
     }
 
     @Bean(name = "redisTemplate")
     public RedisTemplate<?, ?> getRedisTemplate(){
         RedisTemplate<?,?> template = new StringRedisTemplate(getConnectionFactory());
-        template.setKeySerializer(new StringRedisSerializer());
-        template.setValueSerializer(new StringRedisSerializer());
-        template.setHashValueSerializer(new StringRedisSerializer());
-        template.setHashKeySerializer(new StringRedisSerializer());
+        //针对于MyBatisRedisCache中的类型转化报错可能是序列化的问题
+        template.setKeySerializer(new JdkSerializationRedisSerializer());
+        template.setValueSerializer(new JdkSerializationRedisSerializer());
+        template.setHashValueSerializer(new JdkSerializationRedisSerializer());
+        template.setHashKeySerializer(new JdkSerializationRedisSerializer());
         return template;
     }
+
 }

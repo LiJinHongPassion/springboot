@@ -1,5 +1,6 @@
 package com.example.li.springboot_mybatis_shiro_demo.entity;
 
+
 import com.example.li.springboot_mybatis_shiro_demo.entity.base.Entity;
 
 public class User extends Entity {

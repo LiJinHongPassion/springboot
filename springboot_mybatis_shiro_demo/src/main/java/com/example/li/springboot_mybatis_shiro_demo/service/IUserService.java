@@ -1,17 +1,19 @@
 package com.example.li.springboot_mybatis_shiro_demo.service;
 
-
-import java.util.List;
 import java.util.Map;
 
+/**
+ * @author Li
+ * @date 2018/10/23-11:59
+ */
 public interface IUserService {
 
-    public List<Map<String, Object>> login(String user_id, String user_password);
+    Map<String, Object> add(Map<String, Object> properties);
 
-    public Map<String, Object> register(String user_id, String user_password);
+    Map<String, Object> delete(String user_id);
 
-    public Map<String, Object> updateUser(Map<String, Object> properties);
+    Map<String, Object> update(Map<String, Object> properties);
 
-    public Map<String, Object> getUserById(String user_id);
+    Map<String, Object> getById(String user_id);
 
 }

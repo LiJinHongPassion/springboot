@@ -3,8 +3,8 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/springboot_mybatis_demo/pom.xml" />
         <option value="$PROJECT_DIR$/springboot_mybatis_shiro_demo/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_mybatis_demo/pom.xml" />
       </list>
     </option>
   </component>

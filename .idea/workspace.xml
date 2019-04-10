@@ -1,0 +1,960 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="da71bd22-238e-4e18-8ef8-8590acab7bf5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_boot_dubbo_spring_boot_autoconfigure_0_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_boot_dubbo_spring_boot_starter_0_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_dubbo_2_6_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_16_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_3_10_5_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jline_jline_0_9_94.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_curator_curator_client_2_12_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_curator_curator_framework_2_12_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_zookeeper_zookeeper_3_4_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_20_0_GA.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_netty_netty_3_2_5_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_hystrix_unknown.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot_dubbo_0_interface_demo/src/main/java/com/example/li/springboot_dubbo_0_interface_demo/bean/UserAddress.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot_dubbo_0_interface_demo/src/main/java/com/example/li/springboot_dubbo_0_interface_demo/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot_dubbo_0_interface_demo/src/main/java/com/example/li/springboot_dubbo_0_interface_demo/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_attoparser_attoparser_2_0_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_2_1_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_thymeleaf_2_1_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_extras_thymeleaf_extras_java8time_3_0_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_3_0_11_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring5_3_0_11_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_unbescape_unbescape_1_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/springboot_mybatis_shiro_demo/target/" />
+    <ignored path="$PROJECT_DIR$/springboot_mybatis_demo/target/" />
+    <ignored path="$PROJECT_DIR$/springboot_filter_interceptor_demo/target/" />
+    <ignored path="$PROJECT_DIR$/springboot_dubbo_Demo/target/" />
+    <ignored path="$PROJECT_DIR$/springboot_dobbo_1_user_service_demo/target/" />
+    <ignored path="$PROJECT_DIR$/springboot_dubbo_2_order_service_demo/target/" />
+    <ignored path="$PROJECT_DIR$/springboot_dubbo_1_user_service_demo/target/" />
+    <ignored path="$PROJECT_DIR$/springboot_dubbo_0_interface_demo/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/springboot_dubbo_0_interface_demo/src/main/java/com/example/li/springboot_dubbo_0_interface_demo/bean/UserAddress.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/springboot_dubbo_0_interface_demo/src/main/java/com/example/li/springboot_dubbo_0_interface_demo/service/OrderService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/springboot_dubbo_0_interface_demo/src/main/java/com/example/li/springboot_dubbo_0_interface_demo/service/UserService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/springboot_dubbo_0_interface_demo/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../java实验室/c1 分布式/dubbo/课件、资料/课件/code/boot-order-service-consumer/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="608">
+              <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="55" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>cqut</find>
+      <find>JedisConnectionFactory</find>
+      <find>this</find>
+      <find>JedisConnectionConfiguration</find>
+      <find>RedisTemplate</find>
+      <find>JedisConnection</find>
+      <find>jcf</find>
+      <find>redisConnectionFactory</find>
+      <find>host</find>
+      <find>MysqlRealm</find>
+      <find>AuthorizationAttributeSourceAdvisor</find>
+      <find>getById</find>
+      <find>value.toString()</find>
+      <find>.toString()</find>
+      <find>realmName</find>
+      <find>redisSessionDao</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>example</replace>
+      <replace>jc</replace>
+      <replace>s</replace>
+      <replace>factory</replace>
+      <replace>secondRealm</replace>
+      <replace>value</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/springboot_mybatis_shiro_demo/src/main/java/com/example/li/springboot_mybatis_shiro_demo/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/springboot_mybatis_shiro_demo/src/main/java/com/example/li/springboot_mybatis_shiro_demo/entity/User.java" />
+        <option value="$PROJECT_DIR$/springboot_mybatis_shiro_demo/src/main/java/com/example/li/springboot_mybatis_shiro_demo/shiro/MysqlRealm.java" />
+        <option value="$PROJECT_DIR$/springboot_mybatis_shiro_demo/src/main/java/com/example/li/springboot_mybatis_shiro_demo/shiro/RedisSessionDao.java" />
+        <option value="$PROJECT_DIR$/springboot_mybatis_shiro_demo/src/main/java/com/example/li/springboot_mybatis_shiro_demo/redis/config/RedisConfig.java" />
+        <option value="$PROJECT_DIR$/springboot_mybatis_shiro_demo/src/main/java/com/example/li/springboot_mybatis_shiro_demo/redis/config/MybatisRedisConfig.java" />
+        <option value="$PROJECT_DIR$/springboot_mybatis_shiro_demo/src/main/java/com/example/li/springboot_mybatis_shiro_demo/shiro/ShiroConfig.java" />
+        <option value="$PROJECT_DIR$/springboot_filter_interceptor_demo/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/springboot_filter_interceptor_demo/src/main/java/com/example/li/springboot_filter_interceptor_demo/interceptor/MyFilterConfig.java" />
+        <option value="$PROJECT_DIR$/springboot_filter_interceptor_demo/src/main/java/com/example/li/springboot_filter_interceptor_demo/interceptor/MyInterceptorConfig.java" />
+        <option value="$PROJECT_DIR$/springboot_filter_interceptor_demo/src/main/java/com/example/li/springboot_filter_interceptor_demo/entity/BlackList.java" />
+        <option value="$PROJECT_DIR$/springboot_filter_interceptor_demo/src/main/java/com/example/li/springboot_filter_interceptor_demo/dao/IpDao.java" />
+        <option value="$PROJECT_DIR$/springboot_filter_interceptor_demo/src/main/java/com/example/li/springboot_filter_interceptor_demo/util/IPAddressUtil.java" />
+        <option value="$PROJECT_DIR$/springboot_filter_interceptor_demo/src/main/java/com/example/li/springboot_filter_interceptor_demo/dao/BlackListDao.java" />
+        <option value="$PROJECT_DIR$/springboot_filter_interceptor_demo/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_filter_interceptor_demo/src/main/resources/templates/index.html" />
+        <option value="$PROJECT_DIR$/springboot_filter_interceptor_demo/src/main/java/com/example/li/springboot_filter_interceptor_demo/exception/RequestLimitException.java" />
+        <option value="$PROJECT_DIR$/springboot_filter_interceptor_demo/src/main/java/com/example/li/springboot_filter_interceptor_demo/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/springboot_filter_interceptor_demo/src/main/java/com/example/li/springboot_filter_interceptor_demo/interceptor/IPInterceptor.java" />
+        <option value="$PROJECT_DIR$/springboot_filter_interceptor_demo/src/main/java/com/example/li/springboot_filter_interceptor_demo/interceptor/conf/MyInterceptorConfig.java" />
+        <option value="$PROJECT_DIR$/springboot_filter_interceptor_demo/src/main/java/com/example/li/springboot_filter_interceptor_demo/filter/MyFilterConfig.java" />
+        <option value="$PROJECT_DIR$/springboot_filter_interceptor_demo/src/main/java/com/example/li/springboot_filter_interceptor_demo/filter/MyFilterTansfer.java" />
+        <option value="$PROJECT_DIR$/springboot_filter_interceptor_demo/src/main/java/com/example/li/springboot_filter_interceptor_demo/filter/MyFilter.java" />
+        <option value="$PROJECT_DIR$/springboot_filter_interceptor_demo/src/main/java/com/example/li/springboot_filter_interceptor_demo/filter/conf/MyFilterConfig.java" />
+        <option value="$PROJECT_DIR$/springboot_filter_interceptor_demo/src/main/java/com/example/li/springboot_filter_interceptor_demo/filter/method1/MyFilter.java" />
+        <option value="$PROJECT_DIR$/springboot_filter_interceptor_demo/src/main/java/com/example/li/springboot_filter_interceptor_demo/filter/method2/MyFilter.java" />
+        <option value="$PROJECT_DIR$/springboot_filter_interceptor_demo/src/main/java/com/example/li/springboot_filter_interceptor_demo/filter/method1/MyFilter1.java" />
+        <option value="$PROJECT_DIR$/springboot_filter_interceptor_demo/src/main/java/com/example/li/springboot_filter_interceptor_demo/filter/method1/MyFilter3.java" />
+        <option value="$PROJECT_DIR$/springboot_filter_interceptor_demo/src/main/java/com/example/li/springboot_filter_interceptor_demo/filter/method2/MyFilter4.java" />
+        <option value="$PROJECT_DIR$/springboot_filter_interceptor_demo/src/main/java/com/example/li/springboot_filter_interceptor_demo/filter/method1/conf/MyFilterConfig.java" />
+        <option value="$PROJECT_DIR$/springboot_filter_interceptor_demo/src/main/java/com/example/li/springboot_filter_interceptor_demo/filter/method1/conf/MyServerConfig.java" />
+        <option value="$PROJECT_DIR$/springboot_filter_interceptor_demo/src/main/java/com/example/li/springboot_filter_interceptor_demo/filter/method2/MyFilter2.java" />
+        <option value="$PROJECT_DIR$/springboot_dubbo_demo/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_dubbo_1_user_service_demo/src/main/java/com/example/li/springboot_dobbo_1_user_service_demo/service/impl/OrderServiceImpl.java" />
+        <option value="$PROJECT_DIR$/springboot_dubbo_2_order_service_demo/src/main/java/com/example/li/springboot_dubbo_2_order_service_demo/impl/OrderServiceImpl.java" />
+        <option value="$PROJECT_DIR$/springboot_dubbo_1_user_service_demo/src/main/java/com/example/li/springboot_dobbo_1_user_service_demo/bean/UserAddress.java" />
+        <option value="$PROJECT_DIR$/springboot_dubbo_1_user_service_demo/src/main/java/com/example/li/springboot_dobbo_1_user_service_demo/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/springboot_dubbo_1_user_service_demo/src/main/java/com/example/li/springboot_dobbo_1_user_service_demo/config/MyDubboConfig.java" />
+        <option value="$PROJECT_DIR$/springboot_dubbo_0_interface_demo/src/main/java/com/example/li/springboot_dubbo_0_interface_demo/service/UserService.java" />
+        <option value="$PROJECT_DIR$/springboot_dubbo_0_interface_demo/src/main/java/com/example/li/springboot_dubbo_0_interface_demo/service/OrderService.java" />
+        <option value="$PROJECT_DIR$/springboot_dubbo_2_order_service_demo/src/main/java/com/example/li/springboot_dubbo_2_order_service_demo/controller/OrderController.java" />
+        <option value="$PROJECT_DIR$/springboot_dubbo_1_user_service_demo/src/main/java/com/example/li/springboot_dubbo_1_user_service_demo/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/springboot_dubbo_1_user_service_demo/src/main/java/com/example/li/springboot_dubbo_1_user_service_demo/service/impl/UserServiceStub.java" />
+        <option value="$PROJECT_DIR$/springboot_dubbo_1_user_service_demo/src/main/java/com/example/li/springboot_dubbo_1_user_service_demo/service/impl/UserServiceImpl2.java" />
+        <option value="$PROJECT_DIR$/springboot_dubbo_2_order_service_demo/src/main/java/com/example/li/springboot_dubbo_2_order_service_demo/config/MyDubboConfig.java" />
+        <option value="$PROJECT_DIR$/springboot_dubbo_1_user_service_demo/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_dubbo_1_user_service_demo/src/main/java/com/example/li/springboot_dubbo_1_user_service_demo/config/MyDubboConfig.java" />
+        <option value="$PROJECT_DIR$/springboot_dubbo_1_user_service_demo/src/main/resources/provider.xml" />
+        <option value="$PROJECT_DIR$/springboot_dubbo_2_order_service_demo/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/springboot_dubbo_2_order_service_demo/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_dubbo_2_order_service_demo/src/main/java/com/example/li/springboot_dubbo_2_order_service_demo/service/impl/OrderServiceImpl.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="F:\MyEclipse\mavenHome\repository" />
+        <option name="mavenHome" value="F:/MyEclipse/maven/apache-maven-3.5.3" />
+        <option name="userSettingsFile" value="F:\MyEclipse\maven\apache-maven-3.5.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="Profiles" type="6783ec58:MavenProjectsStructure$ProfilesNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-13" />
+    <option name="y" value="102" />
+    <option name="width" value="1075" />
+    <option name="height" value="865" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../java实验室/c1 分布式/dubbo/课件、资料/课件/code/gmall-interface" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.example.li.springboot_dubbo_1_user_service_demo" />
+      <recent name="com.example.li.springboot_dubbo_2_order_service_demo" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Li\Desktop\springboot\springboot_dubbo_1_user_service_demo\src\main\resources" />
+      <recent name="C:\Users\Li\Desktop\springboot\springboot_dubbo_2_order_service_demo\src\main\resources" />
+      <recent name="C:\Users\Li\Desktop\springboot\springboot_dubbo_2_order_service_demo\src\main\java\com\example\li\springboot_dubbo_2_order_service_demo" />
+      <recent name="C:\Users\Li\Desktop\springboot\springboot_dubbo_1_user_service_demo\src\main\java\com\example\li\springboot_dubbo_1_user_service_demo" />
+      <recent name="C:\Users\Li\Desktop\springboot\springboot_dubbo_0_interface_demo\src\main\java\com\example\li\springboot_dubbo_0_interface_demo" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.li.springboot_filter_interceptor_demo.filter.method2" />
+      <recent name="com.example.li.springboot_filter_interceptor_demo.filter.method1" />
+      <recent name="com.example.li.springboot_mybatis_shiro_demo.shiro" />
+      <recent name="com.example.li.springboot_mybatis_shiro_demo.dao" />
+      <recent name="com.example.li.springboot_mybatis_shiro_demo.entity" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.li.springboot_mybatis_shiro_demo.shiro" />
+      <recent name="com.example.li.springboot_mybatis_shiro_demo.shiro.config" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.SpringbootDobbo1UserServiceDemoApplication">
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="springboot_mybatis_demo" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <module name="springboot_mybatis_demo" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbootDobbo1UserServiceDemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springboot_dubbo_1_user_service_demo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.li.springboot_dobbo_1_user_service_demo.SpringbootDobbo1UserServiceDemoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbootDubbo0InterfaceDemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springboot_dubbo_0_interface_demo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.li.springboot_dubbo_0_interface_demo.SpringbootDubbo0InterfaceDemoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbootDubbo1UserServiceDemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springboot_dubbo_1_user_service_demo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.li.springboot_dubbo_1_user_service_demo.SpringbootDubbo1UserServiceDemoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbootDubbo2OrderServiceDemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springboot_dubbo_2_order_service_demo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.li.springboot_dubbo_2_order_service_demo.SpringbootDubbo2OrderServiceDemoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbootFilterInterceptorDemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springboot_filter_interceptor_demo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.li.springboot_filter_interceptor_demo.SpringbootFilterInterceptorDemoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbootMybatisDemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springboot_mybatis_demo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.li.springboot_mybatis_demo.SpringbootMybatisDemoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbootMybatisShiroDemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springboot_mybatis_shiro_demo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.li.springboot_mybatis_shiro_demo.SpringbootMybatisShiroDemoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceDemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="user_service_demo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.li.user_service_demo.UserServiceDemoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="da71bd22-238e-4e18-8ef8-8590acab7bf5" name="Default Changelist" comment="" />
+      <created>1554265921526</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1554265921526</updated>
+      <workItem from="1554265927905" duration="1551000" />
+      <workItem from="1554267503531" duration="146000" />
+      <workItem from="1554267725789" duration="4000" />
+      <workItem from="1554267789031" duration="83000" />
+      <workItem from="1554267905154" duration="17117000" />
+      <workItem from="1554299074507" duration="9638000" />
+      <workItem from="1554341252943" duration="628000" />
+      <workItem from="1554346281663" duration="3425000" />
+      <workItem from="1554352694090" duration="3088000" />
+      <workItem from="1554426348526" duration="5009000" />
+      <workItem from="1554453149335" duration="17065000" />
+      <workItem from="1554516383595" duration="739000" />
+      <workItem from="1554547049420" duration="87000" />
+      <workItem from="1554806733451" duration="1226000" />
+      <workItem from="1554866999735" duration="3100000" />
+      <workItem from="1554892421129" duration="9000" />
+    </task>
+    <task id="LOCAL-00001" summary="init">
+      <created>1554268005999</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1554268005999</updated>
+    </task>
+    <task id="LOCAL-00002" summary="springboot整合mybatis">
+      <created>1554268074113</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1554268074113</updated>
+    </task>
+    <task id="LOCAL-00003" summary="mybatis配置二级缓存redis">
+      <created>1554297341802</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1554297341802</updated>
+    </task>
+    <task id="LOCAL-00004" summary="mybatis配置二级缓存redis之jedis修改redis&#10;上次修改为RedisTemplate修改redis">
+      <created>1554298440298</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1554298440298</updated>
+    </task>
+    <task id="LOCAL-00005" summary="step1 copy springboot_mybatis_demo代码，在此基础上后续整合shiro框架">
+      <created>1554299692491</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1554299692491</updated>
+    </task>
+    <task id="LOCAL-00006" summary="更改了缓存的方式，解决了序列化报错的问题">
+      <created>1554307182186</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1554307182187</updated>
+    </task>
+    <task id="LOCAL-00007" summary="ok">
+      <created>1554430812437</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1554430812438</updated>
+    </task>
+    <task id="LOCAL-00008" summary="实现拦截器">
+      <created>1554471950985</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1554471950985</updated>
+    </task>
+    <task id="LOCAL-00009" summary="实现注册Servlet三大组件【Servlet、Filter、Listener】，以Filter为例">
+      <created>1554472008908</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1554472008908</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="62915000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-10" y="82" width="860" height="692" extended-state="0" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7036011" visible="true" weight="0.57107234" />
+      <window_info id="Structure" order="1" sideWeight="0.29639888" side_tool="true" weight="0.2989276" />
+      <window_info id="Web" order="2" side_tool="true" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.36426592" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.28080228" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.19113573" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Spring" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.3434903" />
+      <window_info anchor="bottom" id="Java Enterprise" order="14" weight="0.328125" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Maven" order="5" visible="true" weight="0.29301745" />
+      <window_info anchor="right" id="Bean Validation" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init" />
+    <MESSAGE value="springboot整合mybatis" />
+    <MESSAGE value="mybatis配置二级缓存redis" />
+    <MESSAGE value="mybatis配置二级缓存redis之jedis修改redis&#10;上次修改为RedisTemplate修改redis" />
+    <MESSAGE value="step1 copy springboot_mybatis_demo代码，在此基础上后续整合shiro框架" />
+    <MESSAGE value="更改了缓存的方式，解决了序列化报错的问题" />
+    <MESSAGE value="ok" />
+    <MESSAGE value="实现拦截器" />
+    <MESSAGE value="实现注册Servlet三大组件【Servlet、Filter、Listener】，以Filter为例" />
+    <option name="LAST_COMMIT_MESSAGE" value="实现注册Servlet三大组件【Servlet、Filter、Listener】，以Filter为例" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.6.RELEASE/spring-webmvc-5.1.6.RELEASE.jar!/org/springframework/web/servlet/config/annotation/WebMvcConfigurerAdapter.class</url>
+          <line>68</line>
+          <properties class="org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter" method="extendHandlerExceptionResolvers">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/springboot_filter_interceptor_demo/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot_filter_interceptor_demo/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="53" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot_filter_interceptor_demo/src/main/java/com/example/li/springboot_filter_interceptor_demo/exception/RequestLimitException.java" />
+    <entry file="file://$PROJECT_DIR$/springboot_filter_interceptor_demo/src/main/java/com/example/li/springboot_filter_interceptor_demo/util/IPAddressUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot_filter_interceptor_demo/src/main/java/com/example/li/springboot_filter_interceptor_demo/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="501">
+          <caret line="28" column="39" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.26/slf4j-api-1.7.26.jar!/org/slf4j/Logger.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="86" column="12" selection-start-line="86" selection-start-column="12" selection-end-line="86" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.1.4.RELEASE/spring-boot-2.1.4.RELEASE.jar!/org/springframework/boot/web/servlet/ServletRegistrationBean.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.1.4.RELEASE/spring-boot-2.1.4.RELEASE.jar!/org/springframework/boot/web/servlet/AbstractFilterRegistrationBean.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="66" column="36" selection-start-line="66" selection-start-column="36" selection-end-line="66" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/IDEA/JDK/com.sun.java.jdk8.win32.x86_64_1.8.0.u66/src.zip!/java/util/Arrays.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="3798" column="30" selection-start-line="3798" selection-start-column="30" selection-end-line="3798" selection-end-column="30" />
+          <folding>
+            <element signature="e#177013#177014#0" expanded="true" />
+            <element signature="e#177054#177055#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot_filter_interceptor_demo/src/main/java/com/example/li/springboot_filter_interceptor_demo/interceptor/IPInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="26" column="86" lean-forward="true" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="86" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot_filter_interceptor_demo/src/main/java/com/example/li/springboot_filter_interceptor_demo/SpringbootFilterInterceptorDemoApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot_filter_interceptor_demo/src/main/java/com/example/li/springboot_filter_interceptor_demo/filter/MyFilterTansfer.java" />
+    <entry file="file://$PROJECT_DIR$/springboot_filter_interceptor_demo/src/main/java/com/example/li/springboot_filter_interceptor_demo/interceptor/conf/MyInterceptorConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="60" selection-start-line="3" selection-start-column="60" selection-end-line="3" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.1.4.RELEASE/spring-boot-2.1.4.RELEASE.jar!/org/springframework/boot/web/servlet/FilterRegistrationBean.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="22" column="22" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/IDEA/JDK/com.sun.java.jdk8.win32.x86_64_1.8.0.u66/src.zip!/java/lang/reflect/Method.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="496" selection-start-line="496" selection-end-line="496" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.1.6.RELEASE/spring-core-5.1.6.RELEASE.jar!/org/springframework/cglib/proxy/MethodProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="118" selection-start-line="118" selection-end-line="118" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot_filter_interceptor_demo/src/main/java/com/example/li/springboot_filter_interceptor_demo/filter/method1/MyFilter3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="26" column="40" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot_filter_interceptor_demo/src/main/java/com/example/li/springboot_filter_interceptor_demo/filter/method2/MyFilter4.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot_filter_interceptor_demo/src/main/java/com/example/li/springboot_filter_interceptor_demo/filter/method1/MyFilter1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="30" column="40" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/9.0.17/tomcat-embed-core-9.0.17.jar!/javax/servlet/Filter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+          <folding>
+            <element signature="e#0#422#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot_filter_interceptor_demo/src/main/java/com/example/li/springboot_filter_interceptor_demo/filter/method1/conf/MyServerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="16" selection-start-line="12" selection-start-column="73" selection-end-line="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#364#365#0" expanded="true" />
+            <element signature="e#401#402#0" expanded="true" />
+            <element signature="e#632#633#0" expanded="true" />
+            <element signature="e#670#671#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot_filter_interceptor_demo/src/main/java/com/example/li/springboot_filter_interceptor_demo/filter/method2/MyFilter2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot_dubbo_demo/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/springboot_dubbo_1_user_service_demo/mvnw.cmd" />
+    <entry file="file://$PROJECT_DIR$/springboot_dubbo_1_user_service_demo/mvnw" />
+    <entry file="file://$PROJECT_DIR$/springboot_dubbo_1_user_service_demo/.gitignore" />
+    <entry file="file://$PROJECT_DIR$/springboot_dubbo_2_order_service_demo/src/main/java/com/example/li/springboot_dubbo_2_order_service_demo/SpringbootDubbo2OrderServiceDemoApplication.java" />
+    <entry file="file://$PROJECT_DIR$/springboot_dubbo_1_user_service_demo/src/main/java/com/example/li/springboot_dobbo_1_user_service_demo/bean/UserAddress.java" />
+    <entry file="file://$PROJECT_DIR$/springboot_dubbo_1_user_service_demo/src/main/java/com/example/li/springboot_dobbo_1_user_service_demo/service/impl/UserServiceImpl.java" />
+    <entry file="file://$PROJECT_DIR$/springboot_dubbo_1_user_service_demo/src/main/java/com/example/li/springboot_dobbo_1_user_service_demo/config/MyDubboConfig.java" />
+    <entry file="file://$PROJECT_DIR$/springboot_dubbo_1_user_service_demo/src/main/java/com/example/li/springboot_dubbo_1_user_service_demo/service/impl/UserServiceImpl.java" />
+    <entry file="file://$PROJECT_DIR$/springboot_dubbo_1_user_service_demo/src/main/java/com/example/li/springboot_dubbo_1_user_service_demo/service/impl/UserServiceStub.java" />
+    <entry file="file://$PROJECT_DIR$/springboot_dubbo_1_user_service_demo/src/main/java/com/example/li/springboot_dubbo_1_user_service_demo/service/impl/UserServiceImpl2.java" />
+    <entry file="file://$PROJECT_DIR$/springboot_dubbo_2_order_service_demo/src/main/resources/provider.xml" />
+    <entry file="file://$PROJECT_DIR$/springboot_dubbo_2_order_service_demo/src/main/java/com/example/li/springboot_dubbo_2_order_service_demo/controller/OrderController.java" />
+    <entry file="file://$PROJECT_DIR$/../java实验室/c1 分布式/dubbo/课件、资料/课件/code/boot-user-service-provider/src/main/java/com/atguigu/gmall/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="10" column="45" lean-forward="true" selection-start-line="10" selection-start-column="45" selection-end-line="11" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot_dubbo_2_order_service_demo/src/main/resources/dubbo.properties" />
+    <entry file="file://$PROJECT_DIR$/../java实验室/c1 分布式/dubbo/课件、资料/课件/code/boot-user-service-provider/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="717">
+          <caret line="55" column="21" selection-start-line="37" selection-start-column="8" selection-end-line="55" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot_dubbo_1_user_service_demo/src/main/resources/provider.xml" />
+    <entry file="file://$PROJECT_DIR$/springboot_dubbo_1_user_service_demo/src/main/resources/application.properties" />
+    <entry file="file://$PROJECT_DIR$/springboot_dubbo_1_user_service_demo/src/main/resources/dubbo.properties" />
+    <entry file="file://$PROJECT_DIR$/springboot_dubbo_1_user_service_demo/src/main/java/com/example/li/springboot_dubbo_1_user_service_demo/config/MyDubboConfig.java" />
+    <entry file="file://$PROJECT_DIR$/springboot_dubbo_1_user_service_demo/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/springboot_dubbo_2_order_service_demo/src/main/java/com/example/li/springboot_dubbo_2_order_service_demo/service/impl/OrderServiceImpl.java" />
+    <entry file="file://$PROJECT_DIR$/springboot_dubbo_2_order_service_demo/src/main/resources/application.properties" />
+    <entry file="file://$PROJECT_DIR$/springboot_dubbo_2_order_service_demo/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/springboot_dubbo_0_interface_demo/src/main/java/com/example/li/springboot_dubbo_0_interface_demo/bean/UserAddress.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot_dubbo_0_interface_demo/src/main/java/com/example/li/springboot_dubbo_0_interface_demo/service/OrderService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot_dubbo_0_interface_demo/src/main/java/com/example/li/springboot_dubbo_0_interface_demo/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot_dubbo_0_interface_demo/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../java实验室/c1 分布式/dubbo/课件、资料/课件/code/boot-order-service-consumer/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="55" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>springboot_dubbo_0_interface_demo</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

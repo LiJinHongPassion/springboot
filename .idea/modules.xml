@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/springboot_filter_interceptor_demo/springboot_filter_interceptor_demo.iml" filepath="$PROJECT_DIR$/springboot_filter_interceptor_demo/springboot_filter_interceptor_demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot_dubbo_0_interface_demo/springboot_dubbo_0_interface_demo.iml" filepath="$PROJECT_DIR$/springboot_dubbo_0_interface_demo/springboot_dubbo_0_interface_demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot_dubbo_1_user_service_demo/springboot_dubbo_1_user_service_demo.iml" filepath="$PROJECT_DIR$/springboot_dubbo_1_user_service_demo/springboot_dubbo_1_user_service_demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot_dubbo_2_order_service_demo/springboot_dubbo_2_order_service_demo.iml" filepath="$PROJECT_DIR$/springboot_dubbo_2_order_service_demo/springboot_dubbo_2_order_service_demo.iml" />
     </modules>
   </component>
 </project>

@@ -1,0 +1,11 @@
+dubbo:
+  application.name: user-service-provider
+  registry.address: 127.0.0.1:2181
+  registry.protocol: zookeeper
+
+  protocol.name: dubbo
+  protocol.port: 20883
+
+  monitor.protocol: registry
+  scan.base-packages: com.example.li.springboot_dubbo_1_userservice_provider_demo
+#具体参数信息配置查看：http://dubbo.apache.org/zh-cn/docs/user/references/xml/introduction.html

@@ -34,5 +34,22 @@ public class SerializableUtils {
 			throw new RuntimeException("deserialize session error", e);
 		}
 	}
+
+	/**
+	 26      * 对象序列化为字符串
+	 27      * @param object
+	 28      * @return
+	 29      */
+	public static String serializeObject(Object object){
+		try {
+			ByteArrayOutputStream bos = new ByteArrayOutputStream();
+			ObjectOutputStream oos = new ObjectOutputStream(bos);
+			oos.writeObject(object);
+			return Base64.encodeToString(bos.toByteArray());
+		} catch (Exception e) {
+			throw new RuntimeException("serialize object error", e);
+		}
+
+	}
 	
 }

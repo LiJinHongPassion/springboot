@@ -48,10 +48,15 @@ public class RedisSessionDao extends EnterpriseCacheSessionDAO {
 //		String sql = "insert into sessions(id, session) values(?,?)";
 //		jdbcTemplate.update(sql, sessionId,
 //				SerializableUtils.serialize(session));
-		redisClient.select(db_num);
-		redisClient.set(sessionId.toString(), SerializableUtils.serialize(session));
-		logger.info("key:" + sessionId.toString() + "value:" + SerializableUtils.serialize(session));
-		return session.getId();
+		try {
+			redisClient.select(db_num);
+			redisClient.set(SerializableUtils.serializeObject(sessionId), SerializableUtils.serialize(session));
+			logger.info("key:" + SerializableUtils.serializeObject(sessionId) + "value:" + SerializableUtils.serialize(session));
+			return session.getId();
+		}catch (Exception e){
+			logger.error("jedisPool线程混乱,创建session失败，返回null：" + e);
+			return null;
+		}
 	}
 
 	@Override
@@ -59,12 +64,19 @@ public class RedisSessionDao extends EnterpriseCacheSessionDAO {
 //		String sql = "select session from sessions where id=?";
 //		List<String> sessionStrList = jdbcTemplate.queryForList(sql,
 //				String.class, sessionId);
-		redisClient.select(db_num);
-		List<String> sessionStrList = redisClient.mget(sessionId.toString());
+		List<String> sessionStrList = null;
+		try {
+			redisClient.select(db_num);
+			sessionStrList = redisClient.mget(SerializableUtils.serializeObject(sessionId));
 
-		if (sessionStrList.get(0) == null)
+			if (sessionStrList.get(0) == null)
+				return null;
+			return SerializableUtils.deserialize(sessionStrList.get(0));
+		}catch (Exception e){
+			logger.error("jedisPool线程混乱,读取session失败，返回null：" + e);
 			return null;
-		return SerializableUtils.deserialize(sessionStrList.get(0));
+		}
+
 	}
 
 	@Override
@@ -76,15 +88,25 @@ public class RedisSessionDao extends EnterpriseCacheSessionDAO {
 //		String sql = "update sessions set session=? where id=?";
 //		jdbcTemplate.update(sql, SerializableUtils.serialize(session),
 //				session.getId());
-		redisClient.select(db_num);
-		redisClient.set(session.getId().toString(), SerializableUtils.serialize(session));
+		try {
+			redisClient.select(db_num);
+			redisClient.set(SerializableUtils.serializeObject(session.getId()), SerializableUtils.serialize(session));
+
+		}catch (Exception e){
+			logger.error("jedisPool线程混乱，更新session失败: " + e);
+		}
 	}
 
 	@Override
 	protected void doDelete(Session session) {
 //		String sql = "delete from sessions where id=?";
 ////		jdbcTemplate.update(sql, session.getId());
-		redisClient.select(db_num);
-		redisClient.del(session.getId().toString());
+		try {
+			redisClient.select(db_num);
+			redisClient.del(SerializableUtils.serializeObject(session.getId()));
+
+		}catch (Exception e){
+			logger.error("jedisPool线程混乱，删除session失败: " + e);
+		}
 	}
 }

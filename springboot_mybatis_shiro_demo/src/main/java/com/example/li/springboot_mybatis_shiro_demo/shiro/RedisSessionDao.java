@@ -1,9 +1,10 @@
 package com.example.li.springboot_mybatis_shiro_demo.shiro;
 
-import com.example.li.springboot_mybatis_shiro_demo.shiro.SerializableUtils;
 import org.apache.shiro.session.Session;
 import org.apache.shiro.session.mgt.ValidatingSession;
 import org.apache.shiro.session.mgt.eis.EnterpriseCacheSessionDAO;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 import redis.clients.jedis.JedisPoolConfig;
@@ -17,10 +18,12 @@ import java.util.List;
 
 public class RedisSessionDao extends EnterpriseCacheSessionDAO {
 
+	//logger
+	Logger logger = LoggerFactory.getLogger(getClass());
+
 	//@Autowired
 	private Jedis redisClient = createClient();
 
-	//存储在redis-1号库
 	private final int db_num = 1;
 
 	protected static Jedis createClient() {
@@ -35,6 +38,9 @@ public class RedisSessionDao extends EnterpriseCacheSessionDAO {
 		throw new RuntimeException("shiro初始化连接池错误");
 	}
 
+
+
+
 	@Override
 	protected Serializable doCreate(Session session) {
 		Serializable sessionId = generateSessionId(session);
@@ -43,9 +49,8 @@ public class RedisSessionDao extends EnterpriseCacheSessionDAO {
 //		jdbcTemplate.update(sql, sessionId,
 //				SerializableUtils.serialize(session));
 		redisClient.select(db_num);
-		redisClient.set(sessionId.toString(), session.toString());
-        System.out.println("key:" + sessionId.toString());
-        System.out.println("value:" + session.toString());
+		redisClient.set(sessionId.toString(), SerializableUtils.serialize(session));
+		logger.info("key:" + sessionId.toString() + "value:" + SerializableUtils.serialize(session));
 		return session.getId();
 	}
 
@@ -61,18 +66,18 @@ public class RedisSessionDao extends EnterpriseCacheSessionDAO {
 			return null;
 		return SerializableUtils.deserialize(sessionStrList.get(0));
 	}
-	
+
 	@Override
 	protected void doUpdate(Session session) {
 		if (session instanceof ValidatingSession
 				&& !((ValidatingSession) session).isValid()) {
-			return; 
+			return;
 		}
 //		String sql = "update sessions set session=? where id=?";
 //		jdbcTemplate.update(sql, SerializableUtils.serialize(session),
 //				session.getId());
 		redisClient.select(db_num);
-		redisClient.set(session.getId().toString(), session.toString());
+		redisClient.set(session.getId().toString(), SerializableUtils.serialize(session));
 	}
 
 	@Override

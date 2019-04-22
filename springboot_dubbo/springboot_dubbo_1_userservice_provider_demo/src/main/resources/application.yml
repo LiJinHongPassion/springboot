@@ -1,11 +1,18 @@
-dubbo:
-  application.name: user-service-provider
-  registry.address: 127.0.0.1:2181
-  registry.protocol: zookeeper
+#  application.name就是服务名，不能跟别的dubbo提供端重复
+#    registry.protocol 是指定注册中心协议
+#    registry.address 是注册中心的地址加端口号
+#    protocol.name 是分布式固定是dubbo,不要改。
+#    base-package  注解方式要扫描的包
 
-  protocol.name: dubbo
-  protocol.port: 20883
+  dubbo:
+    application.name: user-service-provider
+    registry.address: 127.0.0.1:2181
+    registry.protocol: zookeeper
 
-  monitor.protocol: registry
-  scan.base-packages: com.example.li.springboot_dubbo_1_userservice_provider_demo
+    protocol.name: dubbo
+    protocol.port: 20883
+
+    monitor.protocol: registry
+    scan.base-packages: com.example.li.springboot_dubbo_1_userservice_provider_demo
 #具体参数信息配置查看：http://dubbo.apache.org/zh-cn/docs/user/references/xml/introduction.html
+#消费者提供者配置 http://dubbo.apache.org/zh-cn/docs/user/quick-start.html

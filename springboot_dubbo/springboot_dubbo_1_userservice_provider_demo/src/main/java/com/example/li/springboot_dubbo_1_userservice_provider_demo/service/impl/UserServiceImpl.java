@@ -2,6 +2,8 @@ package com.example.li.springboot_dubbo_1_userservice_provider_demo.service.impl
 
 import com.example.li.springboot_dubbo_0_interface_demo.bean.UserAddress;
 import com.example.li.springboot_dubbo_0_interface_demo.service.UserService;
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixProperty;
 import org.springframework.stereotype.Service;
 
 import java.util.Arrays;
@@ -15,6 +17,9 @@ import java.util.List;
 @Service
 public class UserServiceImpl implements UserService {
 
+    @HystrixCommand(commandProperties = {
+            @HystrixProperty(name = "circuitBreaker.requestVolumeThreshold", value = "10"),
+            @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "2000") })
     @Override
     public List<UserAddress> getUserAddressList(String s) {
         System.out.println("UserServiceImpl..3.....");

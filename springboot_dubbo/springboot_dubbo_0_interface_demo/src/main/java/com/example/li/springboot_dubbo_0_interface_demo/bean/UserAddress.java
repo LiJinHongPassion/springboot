@@ -8,7 +8,7 @@ import java.io.Serializable;
  *
  */
 public class UserAddress implements Serializable {
-	
+
 	private Integer id;
     private String userAddress; //用户地址
     private String userId; //用户id

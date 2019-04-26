@@ -30,5 +30,38 @@
         </SCRIPT>
     </div>
 
+    <div>
+<!--        将js里面变量名为 data 的变量值赋值给下面控件-->
+        <p><span>原始json数据</span><span th:text="${data}"></span></p>
+        <div id="details1"></div>
+
+        <button value="点击" onclick="send1()" >点击</button>
+        <SCRIPT>
+            function send1(){
+                var request = new XMLHttpRequest();
+                var method = "GET";
+                var url = "/hello4.html";
+                request.open(method,url);
+                request.send(null);
+                request.onreadystatechange = function(){
+                    if(request.readyState == 4){
+                        if(request.status == 200 || request.status == 304){
+                            var data = request.responseText;
+                            alert(data);
+                            //将字符串转化为json格式
+                            var format_data = eval('(' + data + ')');
+                            //字符串转json数组
+                            // JSON.parse(data);
+
+                            //显示在此控件上
+                            document.getElementById("details1").innerHTML = "1:" + format_data.hello
+                                + "   2:" + format_data.inner;
+                        }
+                    }
+                }
+                return false;
+            }
+        </SCRIPT>
+    </div>
 </body>
 </html>

@@ -3,8 +3,10 @@
   <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$/springboot_filter_interceptor_demo" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot_logging_demo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot_modle_demo" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot_mybatis_demo" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot_mybatis_shiro_demo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot_websocket_demo" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

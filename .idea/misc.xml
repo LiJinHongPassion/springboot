@@ -10,6 +10,7 @@
         <option value="$PROJECT_DIR$/springboot_dubbo_2_order_service_demo/pom.xml" />
         <option value="$PROJECT_DIR$/springboot_dubbo_1_user_service_demo/pom.xml" />
         <option value="$PROJECT_DIR$/springboot_dubbo_0_interface_demo/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_websocket_demo/pom.xml" />
       </list>
     </option>
   </component>

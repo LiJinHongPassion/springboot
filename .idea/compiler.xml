@@ -6,11 +6,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="springboot_websocket_stomp_demo" />
+        <module name="springboot_mybatis_shiro_demo" />
+        <module name="springboot_modle_demo" />
+        <module name="springboot_websocket_simplechat_demo" />
         <module name="user_service_demo" />
         <module name="springboot_dubbo_2_order_service_demo" />
-        <module name="springboot_dubbo_1_user_service_demo" />
         <module name="springboot_dubbo_0_interface_demo" />
-        <module name="springboot_websocket_stomp_demo" />
+        <module name="springboot_dubbo_1_user_service_demo" />
+        <module name="springboot_mybatis_demo" />
+        <module name="springboot_filter_interceptor_demo" />
+        <module name="springboot_logging_demo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
@@ -23,6 +29,7 @@
       <module name="springboot_modle_demo" target="1.8" />
       <module name="springboot_mybatis_demo" target="1.8" />
       <module name="springboot_mybatis_shiro_demo" target="1.8" />
+      <module name="springboot_websocket_simplechat_demo" target="1.8" />
       <module name="springboot_websocket_stomp_demo" target="1.8" />
       <module name="user_service_demo" target="1.8" />
     </bytecodeTargetLevel>
@@ -37,6 +44,7 @@
       <module name="springboot_modle_demo" options="-parameters" />
       <module name="springboot_mybatis_demo" options="-parameters" />
       <module name="springboot_mybatis_shiro_demo" options="-parameters" />
+      <module name="springboot_websocket_simplechat_demo" options="-parameters" />
       <module name="springboot_websocket_stomp_demo" options="-parameters" />
       <module name="user_service_demo" options="-parameters" />
     </option>

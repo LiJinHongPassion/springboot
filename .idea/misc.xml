@@ -11,6 +11,12 @@
         <option value="$PROJECT_DIR$/springboot_dubbo_1_user_service_demo/pom.xml" />
         <option value="$PROJECT_DIR$/springboot_dubbo_0_interface_demo/pom.xml" />
         <option value="$PROJECT_DIR$/springboot_websocket_demo/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_mybatis_shiro_demo/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_mybatis_demo/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_modle_demo/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_logging_demo/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_filter_interceptor_demo/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_websocket_simplechat_demo/pom.xml" />
       </list>
     </option>
   </component>

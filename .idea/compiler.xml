@@ -6,9 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="springboot_docker_demo" />
         <module name="springboot_websocket_stomp_demo" />
         <module name="springboot_mybatis_shiro_demo" />
-        <module name="springboot_modle_demo" />
+        <module name="springboot_jjwt_demo" />
         <module name="springboot_websocket_simplechat_demo" />
         <module name="user_service_demo" />
         <module name="springboot_dubbo_2_order_service_demo" />
@@ -16,15 +17,18 @@
         <module name="springboot_dubbo_1_user_service_demo" />
         <module name="springboot_mybatis_demo" />
         <module name="springboot_filter_interceptor_demo" />
+        <module name="springboot_modle_demo" />
         <module name="springboot_logging_demo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
+      <module name="springboot_docker_demo" target="1.8" />
       <module name="springboot_dubbo_0_interface_demo" target="1.8" />
       <module name="springboot_dubbo_1_user_service_demo" target="1.8" />
       <module name="springboot_dubbo_2_order_service_demo" target="1.8" />
       <module name="springboot_dubbo_demo" target="1.8" />
       <module name="springboot_filter_interceptor_demo" target="1.8" />
+      <module name="springboot_jjwt_demo" target="1.8" />
       <module name="springboot_logging_demo" target="1.8" />
       <module name="springboot_modle_demo" target="1.8" />
       <module name="springboot_mybatis_demo" target="1.8" />
@@ -36,10 +40,12 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="springboot_docker_demo" options="-parameters" />
       <module name="springboot_dubbo_0_interface_demo" options="-parameters" />
       <module name="springboot_dubbo_1_user_service_demo" options="-parameters" />
       <module name="springboot_dubbo_2_order_service_demo" options="-parameters" />
       <module name="springboot_filter_interceptor_demo" options="-parameters" />
+      <module name="springboot_jjwt_demo" options="-parameters" />
       <module name="springboot_logging_demo" options="-parameters" />
       <module name="springboot_modle_demo" options="-parameters" />
       <module name="springboot_mybatis_demo" options="-parameters" />

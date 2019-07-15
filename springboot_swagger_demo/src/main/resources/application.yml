@@ -1,0 +1,21 @@
+server:
+  port: 8080
+  #指定访问项目路径的项目名
+  #SpringBoot版本	配置
+  #1.x	server.context-path=/demo
+  #2.x	server.servlet.context-path=/demo
+  servlet.context-path: /swagger
+
+swagger:
+  #项目标题
+  title: SpringBoot学习
+  #项目描述
+  description: SpringBoot快速入门
+  #版本
+  version: 1.0.0
+  #开发者名字
+  name: codeAnt
+  #开发者个人主页
+  url: https://lijinhongpassion.github.io/
+  #开发者邮箱
+  email: 1755497577@qq.com

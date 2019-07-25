@@ -10,10 +10,6 @@ public interface IUserService {
 
     Map<String, Object> add(Map<String, Object> properties);
 
-    Map<String, Object> delete(String user_id);
-
-    Map<String, Object> update(Map<String, Object> properties);
-
     Map<String, Object> getById(String user_id);
 
 }

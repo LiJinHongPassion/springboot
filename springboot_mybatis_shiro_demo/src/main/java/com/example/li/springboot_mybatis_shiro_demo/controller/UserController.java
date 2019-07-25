@@ -35,7 +35,7 @@ public class UserController {
 
         Map<String, Object> result = new HashMap<>();
 
-        result = userService.getById(user_id);
+//        result = userService.getById(user_id);
 
         Subject currentUser = SecurityUtils.getSubject();
 
@@ -84,6 +84,5 @@ public class UserController {
 
         return JSON.toJSONString(result);
     }
-
 
 }

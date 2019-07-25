@@ -19,6 +19,10 @@
         <option value="$PROJECT_DIR$/springboot_websocket_simplechat_demo/pom.xml" />
         <option value="$PROJECT_DIR$/springboot_jjwt_demo/pom.xml" />
         <option value="$PROJECT_DIR$/springboot_docker_demo/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_rabbitmq_client_demo/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_swagger_demo/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_shiro_jwt_demo/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_fastdfs_demo/pom.xml" />
       </list>
     </option>
   </component>

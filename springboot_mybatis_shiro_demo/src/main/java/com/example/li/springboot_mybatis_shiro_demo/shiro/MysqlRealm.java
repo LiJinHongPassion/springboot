@@ -22,7 +22,6 @@ public class MysqlRealm extends AuthorizingRealm {
 	@Override
 	protected AuthenticationInfo doGetAuthenticationInfo(
 			AuthenticationToken token) throws AuthenticationException {
-		System.out.println("[FirstRealm] doGetAuthenticationInfo");
 
 		//1. 把 AuthenticationToken 转换为 UsernamePasswordToken
 		UsernamePasswordToken upToken = (UsernamePasswordToken) token;
@@ -46,7 +45,7 @@ public class MysqlRealm extends AuthorizingRealm {
 
 		//6. 根据用户的情况, 来构建 AuthenticationInfo 对象并返回. 通常使用的实现类为: SimpleAuthenticationInfo
 		//--------------以下信息是从数据库中获取的.-----------------
-		//1). principal: 认证的实体信息. 可以是 username, 也可以是数据表对应的用户的实体类对象.
+		//1). principal: 认证的实体信息. 可以是 username, 也可以是数据表对应的用户的实体类对象.角色权限信息
 		Object principal = username;
 		//2). credentials: 密码.
 		Object credentials = mapProperties.get("user_password");
@@ -71,12 +70,13 @@ public class MysqlRealm extends AuthorizingRealm {
 		//1. 从 PrincipalCollection 中来获取登录用户的信息
 		Object principal = principals.getPrimaryPrincipal();
 
+
 		//2. 利用登录的用户的信息来用户当前用户的角色或权限(可能需要查询数据库)
 		Set<String> roles = new HashSet<>();
 		roles.add("user");
-		if("admin".equals(principal)){
-			roles.add("admin");
-		}
+//		if("admin".equals(principal)){
+//			roles.add("admin");
+//		}
 
 		//3. 创建 SimpleAuthorizationInfo, 并设置其 reles 属性.
 		SimpleAuthorizationInfo info = new SimpleAuthorizationInfo(roles);

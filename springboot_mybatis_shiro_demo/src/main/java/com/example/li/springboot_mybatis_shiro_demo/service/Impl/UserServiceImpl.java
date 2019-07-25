@@ -5,6 +5,7 @@ import com.example.li.springboot_mybatis_shiro_demo.dao.base.SearchDao;
 import com.example.li.springboot_mybatis_shiro_demo.entity.User;
 import com.example.li.springboot_mybatis_shiro_demo.entity.base.Entity;
 import com.example.li.springboot_mybatis_shiro_demo.service.IUserService;
+import org.apache.shiro.authz.annotation.RequiresRoles;
 import org.apache.shiro.crypto.hash.SimpleHash;
 import org.apache.shiro.util.ByteSource;
 import org.springframework.stereotype.Service;
@@ -34,7 +35,7 @@ public class UserServiceImpl implements IUserService {
      *
      */
     @Override
-//    @RequiresRoles({"user"})
+    @RequiresRoles("admin")
     public Map<String, Object> getById(String user_id) {
         Map<String, Object> result = new HashMap<>();
         result = entityDao.findByID(new String[]{
@@ -77,28 +78,5 @@ public class UserServiceImpl implements IUserService {
         Object result = new SimpleHash(hashAlgorithmName, credentials, salt, hashIterations);
         return result.toString();
     }
-
-
-    @Override
-    public Map<String, Object> delete(String user_id) {
-        Map<String, Object> result = new HashMap<>();
-        entityDao.deleteByID(user_id, Entity.getTableName(User.class),Entity.getPrimaryKey(User.class));
-        result.put("result","1");
-        return result;
-    }
-
-    @Override
-    public Map<String, Object> update(Map<String, Object> properties) {
-        Map<String, Object> result = new HashMap<>();
-
-        User user = new User();
-        user.setProperties(properties);
-        user.setUser_password(pwdEncryption(user.getUser_password(),user.getUser_name()));
-
-        entityDao.updatePropByID(user,user.getUser_id().toString());
-        result.put("result","1");
-        return result;
-    }
-
 
 }

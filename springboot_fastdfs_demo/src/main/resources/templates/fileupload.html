@@ -1,0 +1,25 @@
+<html>
+<head>
+    <title>文件上传</title>
+</head>
+<body>
+
+
+
+
+<h1>上传文件</h1>
+<form method="post" action="http://localhost:8080/file/upload" enctype="multipart/form-data">
+    <input type="text" name="fileName"/>
+    <input type="file" name="file"/>
+    <input type="submit"/>
+</form>
+
+<h1>删除文件</h1>
+<form method="post" action="http://localhost:8080/file/del">
+    组名：<input type="text" name="groupName" />
+    ID：<input type="text" name="fileId"/>
+    <input type="submit"/>
+</form>
+
+</body>
+</html>

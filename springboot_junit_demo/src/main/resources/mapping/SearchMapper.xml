@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.li.springboot_junit_demo.dao.base.SearchDao">
+    <select id="searchForeign" resultType="map">
+        SELECT
+        <foreach collection="properties" item="value" separator=",">
+            ${value}
+        </foreach>
+        FROM ${baseEntity}
+        <if test="joinEntity != null">
+            ${joinEntity}
+        </if>
+        <if test="foreignEntity != null">
+            <foreach collection="foreignEntity" item="value" separator="," open=",">
+                ${value}
+            </foreach>
+        </if>
+        <where>
+            <choose>
+                <when test="foreingKey !=null and condition != null">
+                    <foreach collection="foreingKey" item="value" separator=" and ">
+                        ${value}
+                    </foreach>
+                    and ${condition}
+                </when>
+                <when test="condition != null">
+                    ${condition}
+                </when>
+                <when test="foreingKey !=null">
+                    <foreach collection="foreingKey" item="value" separator="and">
+                        ${value}
+                    </foreach>
+                </when>
+            </choose>
+        </where>
+    </select>
+
+    <select id="getForeignCount" resultType="int">
+        select count(distinct ${primaryKey}) from ${baseEntity}
+        <if test="joinEntity != null">
+            ${joinEntity}
+        </if>
+        <if test="foreignEntity != null">
+            <foreach collection="foreignEntity" item="item" index="index"
+                     separator="," open=",">
+                ${item}
+            </foreach>
+        </if>
+        <where>
+            <choose>
+                <when test="foreingKey !=null and condition != null">
+                    <foreach collection="foreingKey" item="item" index="index"
+                             separator=" and ">
+                        ${item}
+                    </foreach>
+                    and ${condition}
+                </when>
+                <when test="condition != null">
+                    ${condition}
+                </when>
+                <when test="foreingKey !=null">
+                    <foreach collection="foreingKey" item="item" index="index"
+                             separator=" and ">
+                        ${item}
+                    </foreach>
+                </when>
+            </choose>
+        </where>
+    </select>
+
+    <!--??sql??  -->
+    <select id="sqlWithPageInMysql" resultType="map">
+        ${sql}
+        <if test="groupField != null">
+            group by ${groupField}
+        </if>
+        <if test="orderField != null">
+            order by ${orderField}
+        </if>
+        <if test="sortMode != null">
+            ${sortMode}
+        </if>
+        LIMIT ${startIndex},${pageNum}
+    </select>
+
+
+    <!--??sql???????  -->
+    <select id="sqlCount" resultType="int">
+        select COUNT(*) from (${sql}) S
+    </select>
+
+    <select id="searchWithPageInMysql" resultType="map">
+        SELECT
+        <foreach collection="properties" item="value" separator=",">
+            ${value}
+        </foreach>
+        FROM ${baseEntity}
+        <if test="joinEntity != null">
+            ${joinEntity}
+        </if>
+        <if test="foreignEntity != null">
+            <foreach collection="foreignEntity" item="value" separator="," open=",">
+                ${value}
+            </foreach>
+        </if>
+        <where>
+            <choose>
+                <when test="foreingKey !=null and condition != null">
+                    <foreach collection="foreingKey" item="value" separator=" and ">
+                        ${value}
+                    </foreach>
+                    and ${condition}
+                </when>
+                <when test="condition != null">
+                    ${condition}
+                </when>
+                <when test="foreingKey !=null">
+                    <foreach collection="foreingKey" item="value" separator=" and ">
+                        ${value}
+                    </foreach>
+                </when>
+            </choose>
+        </where>
+        <if test="groupField != null">
+            group by ${groupField}
+        </if>
+        <if test="orderField != null">
+            order by ${orderField}
+        </if>
+        <if test="sortMode != null">
+            ${sortMode}
+        </if>
+        LIMIT ${startIndex},${pageNum}
+    </select>
+
+    <select id="searchWithPageInOracle" resultType="map">
+        select * from (select
+        <foreach collection="properties" item="item" index="index" separator="," close=",">
+            ${item}
+        </foreach>
+        ROW_NUMBER () OVER (
+        <if test="groupField != null">
+            partition by ${groupField}
+        </if>
+        ORDER BY ${orderField}
+        <if test="sortMode != null">
+            ${sortMode}
+        </if>
+        )
+        as ROWNUMBER
+        from ${baseEntity}
+        <if test="joinEntity != null">
+            ${joinEntity}
+        </if>
+        <if test="foreignEntity != null">
+            <foreach collection="foreignEntity" item="item" index="index" separator="," open=",">
+                ${item}
+            </foreach>
+        </if>
+        <where>
+            <choose>
+                <when test="foreingKey !=null and condition != null">
+                    <foreach collection="foreingKey" item="item" index="index" separator=" and ">
+                        ${item}
+                    </foreach>
+                    and ${condition}
+                </when>
+                <when test="condition != null">
+                    ${condition}
+                </when>
+                <when test="foreingKey !=null">
+                    <foreach collection="foreingKey" item="item" index="index" separator=" and ">
+                        ${item}
+                    </foreach>
+                </when>
+            </choose>
+        </where>
+        ) p WHERE p.ROWNUMBER BETWEEN ${startIndex} and ${endIndex}
+    </select>
+
+</mapper>

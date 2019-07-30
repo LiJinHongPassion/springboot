@@ -1,0 +1,49 @@
+server:
+  port: 8080
+  #\u6307\u5B9A\u8BBF\u95EE\u9879\u76EE\u8DEF\u5F84\u7684\u9879\u76EE\u540D
+  #SpringBoot\u7248\u672C	\u914D\u7F6E
+  #1.x	server.context-path=/demo
+  #2.x	server.servlet.context-path=/demo
+  servlet.context-path: /springboot_junit_demo
+
+spring:
+  datasource:
+    #        name: young
+    url: jdbc:mysql://127.0.0.1:3306/young?useUnicode=true&characterEncoding=utf8 #\u4E0D\u9700\u8981\\u4F5C\u4E3A\u8F6C\u79FB\u5B57\u7B26
+    username: root
+    password: root
+    # \u4F7F\u7528druid\u6570\u636E\u6E90
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver #com.mysql.jdbc.Driver\u66F4\u6362\u9A71\u52A8
+    druid.filters: stat
+    druid.maxActive: 20
+    druid.initialSize: 1
+    druid.maxWait: 60000
+    druid.minIdle: 1
+    druid.timeBetweenEvictionRunsMillis: 60000
+    druid.minEvictableIdleTimeMillis: 300000
+    druid.validationQuery: select 'x'
+    druid.testWhileIdle: true
+    druid.testOnBorrow: false
+    druid.testOnReturn: false
+    druid.poolPreparedStatements: true
+    druid.maxOpenPreparedStatements: 20
+
+
+## \u8BE5\u914D\u7F6E\u8282\u70B9\u4E3A\u72EC\u7ACB\u7684\u8282\u70B9\uFF0C\u6709\u5F88\u591A\u540C\u5B66\u5BB9\u6613\u5C06\u8FD9\u4E2A\u914D\u7F6E\u653E\u5728spring\u7684\u8282\u70B9\u4E0B\uFF0C\u5BFC\u81F4\u914D\u7F6E\u65E0\u6CD5\u88AB\u8BC6\u522B
+mybatis:
+  mapper-locations: classpath:mapping/*.xml  #\u6CE8\u610F\uFF1A\u4E00\u5B9A\u8981\u5BF9\u5E94mapper\u6620\u5C04xml\u6587\u4EF6\u7684\u6240\u5728\u8DEF\u5F84
+  type-aliases-package: com.example.li.springboot_mybatis_demo.entity  # \u6CE8\u610F\uFF1A\u5BF9\u5E94\u5B9E\u4F53\u7C7B\u7684\u8DEF\u5F84
+  configuration:
+    #\u8FD9\u4E2A\u914D\u7F6E\u4F7F\u5168\u5C40\u7684\u6620\u5C04\u5668\u542F\u7528\u6216\u7981\u7528\u7F13\u5B58
+    cache-enabled: true
+    #\u5BF9\u4E8E\u672A\u77E5\u7684SQL\u67E5\u8BE2\uFF0C\u5141\u8BB8\u8FD4\u56DE\u4E0D\u540C\u7684\u7ED3\u679C\u96C6\u4EE5\u8FBE\u5230\u901A\u7528\u7684\u6548\u679C
+    multiple-result-sets-enabled: true
+    #\u914D\u7F6E\u9ED8\u8BA4\u7684\u6267\u884C\u5668\u3002SIMPLE \u6267\u884C\u5668\u6CA1\u6709\u4EC0\u4E48\u7279\u522B\u4E4B\u5904\u3002REUSE \u6267\u884C\u5668\u91CD\u7528\u9884\u5904\u7406\u8BED\u53E5\u3002BATCH \u6267\u884C\u5668\u91CD\u7528\u8BED\u53E5\u548C\u6279\u91CF\u66F4\u65B0
+    default-executor-type: REUSE
+    #\u5168\u5C40\u542F\u7528\u6216\u7981\u7528\u5EF6\u8FDF\u52A0\u8F7D\u3002\u5F53\u7981\u7528\u65F6\uFF0C\u6240\u6709\u5173\u8054\u5BF9\u8C61\u90FD\u4F1A\u5373\u65F6\u52A0\u8F7D\u3002
+    lazy-loading-enabled: false
+    aggressive-lazy-loading: true
+    #\u8BBE\u7F6E\u8D85\u65F6\u65F6\u95F4\uFF0C\u5B83\u51B3\u5B9A\u9A71\u52A8\u7B49\u5F85\u4E00\u4E2A\u6570\u636E\u5E93\u54CD\u5E94\u7684\u65F6\u95F4
+    default-statement-timeout: 25000
+

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.li.springboot_junit_demo.dao.base.EntityDao">
+    <!--为dao接口方法提供sql语句配置-->
+    <insert id="save">
+        insert into ${entity.tableName} (
+        <foreach collection="entity.properties" item="value" index="fieldName" separator=",">
+            ${fieldName}
+        </foreach>
+        )
+        VALUES (
+        <foreach collection="entity.properties" item="value" index="FieldName" separator=",">
+            #{value}
+        </foreach>
+        )
+    </insert>
+
+    <insert id="saveEntities">
+        <foreach collection="entities" item="entity">
+            insert into ${entity.tableName} (
+            <foreach collection="entity.properties" item="value" index="fieldName" separator=",">
+                ${fieldName}
+            </foreach>
+            ) values (
+            <foreach collection="entity.properties" item="value" index="fieldName" separator=",">
+                ${value}
+            </foreach>
+            );
+        </foreach>
+    </insert>
+    <update id="updatePropByID">
+        <![CDATA[
+     			update ${entity.tableName} set
+     		]]>
+        <foreach collection="entity.properties" item="value" index="fieldName" separator=",">
+            ${fieldName} = #{value}
+        </foreach>
+        <where>
+            ${entity.primaryKey} = #{id}
+        </where>
+    </update>
+    <update id="updatePropByCondition">
+        <![CDATA[
+     			update ${entity.tableName} set
+     		]]>
+        <foreach collection="entity.properties" item="value" index="fieldName" separator=",">
+            ${fieldName} = #{value}
+        </foreach>
+        <where>
+            <if test="condition!=null">
+                ${condition}
+            </if>
+        </where>
+    </update>
+    <update id="updateEquipmentState">
+        <![CDATA[
+                update equipment set
+            ]]>
+
+        state = 0
+
+        <where>
+            state = 1
+        </where>
+    </update>
+
+    <delete id="deleteByID">
+        <![CDATA[
+			delete from ${table}
+		]]>
+        <where>
+            ${primaryKey} = #{id}
+        </where>
+    </delete>
+    <delete id="deleteByCondition">
+        <![CDATA[
+			delete from ${table}
+		]]>
+        <where>
+            <if test="condition != null">
+                ${condition}
+            </if>
+        </where>
+    </delete>
+
+    <delete id="deleteEntities">
+        <![CDATA[
+			delete from ${table}
+		]]>
+        <where>
+            ${primaryKey} in
+            <foreach collection="ids" item="value" separator="," open="(" close=")">
+                #{value}
+            </foreach>
+        </where>
+    </delete>
+
+    <select id="getByID" resultType="map">
+        <![CDATA[
+			select * from ${table}
+		]]>
+        <where>
+            ${primaryKey} = #{id}
+        </where>
+    </select>
+    <select id="getByUniqueCondition" resultType="map">
+        <![CDATA[
+			select * from ${table}
+		]]>
+        <where>
+            <if test="condition != null">
+                ${condition}
+            </if>
+        </where>
+    </select>
+
+    <select id="getByCondition" resultType="map">
+        <![CDATA[
+			select * from ${table}
+		]]>
+        <where>
+            <if test="condition != null">
+                ${condition}
+            </if>
+        </where>
+    </select>
+
+    <select id="findByID" resultType="map">
+        select
+        <foreach collection="properties" item="value" separator=",">
+            ${value}
+        </foreach>
+        from ${table}
+        <where>
+            ${primaryKey} = #{id}
+        </where>
+    </select>
+
+    <select id="findByCondition" resultType="map">
+        select
+        <foreach collection="properties" item="value" separator=",">
+            ${value}
+        </foreach>
+        from ${table}
+        <where>
+            <if test="condition != null">
+                ${condition}
+            </if>
+        </where>
+    </select>
+
+    <select id="getCountByCondition" resultType="int">
+        select count(distinct ${primaryKey}) from ${table}
+        <where>
+            <if test="condition != null">
+                ${condition}
+            </if>
+        </where>
+    </select>
+
+    <update id="createTable">
+        CREATE TABLE IF NOT EXISTS ${tableName} (
+        <foreach collection="fieldSqls" item="value" separator=",">
+            ${value}
+        </foreach>)
+    </update>
+
+    <!--得到sql运行影响的条数  -->
+    <update id="runSql">
+        ${sql}
+    </update>
+</mapper>

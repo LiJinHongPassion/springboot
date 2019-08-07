@@ -51,6 +51,18 @@
             <version>4.1.0</version>
         </dependency>
         <!-- easypoi-end -->
+        <!--注解bean工具-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>3.1.0</version>
+            <scope>provided</scope>
+        </dependency>
 
 
     </dependencies>

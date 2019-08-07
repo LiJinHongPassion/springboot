@@ -102,5 +102,7 @@
     <orderEntry type="library" name="Maven: javax.validation:validation-api:2.0.1.Final" level="project" />
     <orderEntry type="library" name="Maven: cn.afterturn:easypoi-web:4.1.0" level="project" />
     <orderEntry type="library" name="Maven: cn.afterturn:easypoi-annotation:4.1.0" level="project" />
+    <orderEntry type="library" name="Maven: org.projectlombok:lombok:1.18.8" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: javax.servlet:javax.servlet-api:3.1.0" level="project" />
   </component>
 </module>

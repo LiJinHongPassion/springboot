@@ -1,0 +1,35 @@
+auth-server: http://localhost:8085/uac
+server:
+  port: 8087
+
+security:
+  oauth2:
+    client:
+      client-id: ant2
+      client-secret: 123456
+      user-authorization-uri: ${auth-server}/oauth/authorize
+      access-token-uri: ${auth-server}/oauth/token
+    resource:
+      jwt:
+        key-uri: ${auth-server}/oauth/token_key
+
+
+
+#  OAuth 2.0 客户端
+#  OAuth 2.0 客户端控制着 OAuth 2.0保护的其它服务器的资源的访问权限。 配置包括建立相关受保护资源与有权限访问资源的用户之间的连接。 客户端也需要实现存储用户的授权代码和访问令牌的功能。
+#
+#
+#  受保护资源的配置
+#  受保护的资源（或称为远程资源）可以使用OAuth2ProtectedResourceDetails类型的实体bean定义。 一个受保护的资源有以下属性：
+#
+#  id：资源id。它仅在客户端搜索资源的时候使用；在OAuth协议中它从未被用到。它也被用作bean的id。
+#
+#  clientId：OAuth客户端id。OAuth提供端依赖这个id来识别客户端。
+#
+#  clientSecret：与资源有关的秘密。默认情况下，该值不为空。
+#
+#  accessTokenUri：提供访问口令的OAuth提供者终端的统一资源标识符（URI）。
+#
+#  scope：以逗号分隔的字符串列表，标识可访问资源的范围。默认情况下，该值为空。
+#
+#  clientAuthenticationScheme： 客户端对访问的令牌终端授权时使用的机制。 建议值： "http_basic" 和 "form"。 默认值： "http_basic"。 见OAuth 2 帮助文档2.1节。

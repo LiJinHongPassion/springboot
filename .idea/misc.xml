@@ -23,6 +23,13 @@
         <option value="$PROJECT_DIR$/springboot_swagger_demo/pom.xml" />
         <option value="$PROJECT_DIR$/springboot_shiro_jwt_demo/pom.xml" />
         <option value="$PROJECT_DIR$/springboot_fastdfs_demo/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_junit_demo/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_poi_demo/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_poi_demo_v2/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_poi_demo_v3/pom.xml" />
+        <option value="$PROJECT_DIR$/springbt_sso_jwt/pom.xml" />
+        <option value="$PROJECT_DIR$/springbt_security_jwt/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_justauth_demo/pom.xml" />
       </list>
     </option>
   </component>

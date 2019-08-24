@@ -80,8 +80,8 @@ public class RestAuthController {
                 break;
             case "github":
                 authRequest = new AuthGithubRequest(AuthConfig.builder()
-                        .clientId("df314da554539e1ff482")
-                        .clientSecret("e2282ab0db9e6d13c4a7b5fe2c3fd90bfd93ac01")
+                        .clientId("client id")
+                        .clientSecret("client secret")
                         .redirectUri("http://127.0.0.1:8443/oauth/callback/github")
                         .build());
                 break;

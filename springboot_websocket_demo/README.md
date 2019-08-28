@@ -1,15 +1,5 @@
 ---
 title: Java-Springboot+websocket+stomp实现消息功能
-tags: [java,Springboot,websocket,stomp]
-categories: [Java]
-declare: true
-abstract: 摘要
-message: 通行证
-comments: true
-reward: true
-abbrlink: '9210'
-date: 2019-05-18 16:54:04
-password:
 ---
 
 ------

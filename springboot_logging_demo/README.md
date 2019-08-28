@@ -1,14 +1,5 @@
 ---
 title: Java-日志框架类别&配置&使用
-tags: [java,日志,logging]
-categories: [java]
-declare: true
-abstract: 摘要
-message: 通行证
-comments: true
-reward: true
-date: 2019-04-12 12:41:22
-password:
 ---
 
 ------

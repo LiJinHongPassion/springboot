@@ -1,15 +1,6 @@
 ---
 title: Java-springboot整合security+jwt权限系统设计
-tags: [jwt,java,security,springboot]
-categories: [java]
-declare: true
-abstract: 摘要
-message: 通行证
-comments: true
-reward: true
-abbrlink: dle4
-date: 2019-08-28 09:35:09
-password:
+
 ---
 
 ------

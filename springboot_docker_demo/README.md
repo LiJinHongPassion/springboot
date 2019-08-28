@@ -1,19 +1,5 @@
 ---
 title: Java-实现springbootdemo部署到docker
-tags:
-  - java
-  - docker
-  - springboot
-categories:
-  - java
-declare: true
-abstract: 摘要
-message: 通行证
-comments: true
-reward: true
-abbrlink: daba
-date: 2019-05-21 13:22:07
-password:
 ---
 
 ------

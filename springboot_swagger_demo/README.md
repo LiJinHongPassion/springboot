@@ -1,18 +1,5 @@
 ---
 title: Java-swagger-api框架（springboot整合）
-tags:
-  - java
-  - swagger
-categories:
-  - swagger
-declare: true
-abstract: 摘要
-message: 通行证
-comments: true
-reward: true
-abbrlink: 1a1f
-date: 2019-07-15 15:37:10
-password:
 ---
 
 ------

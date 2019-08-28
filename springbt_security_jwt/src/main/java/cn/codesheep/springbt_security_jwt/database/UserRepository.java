@@ -20,8 +20,10 @@ public class UserRepository {
 
     static {
         roles.add(new Role(Long.valueOf("1"), "ROLE_NORMAL"));
-        roles.add(new Role(Long.valueOf("2"), "ROLE_ADMIN"));
+        //roles.add(new Role(Long.valueOf("2"), "ROLE_ADMIN"));
 
+        //$2a$10$Gw.Cf/uL3o21c6jpSHmdY..pi.K9P0KHummmVadYbnMcB1woMa5t. 是codeAnt123加密后的密码
+        users.add(new User(Long.valueOf("11621"), "codeAnt", "$2a$10$Gw.Cf/uL3o21c6jpSHmdY..pi.K9P0KHummmVadYbnMcB1woMa5t.", roles));
 
     }
 

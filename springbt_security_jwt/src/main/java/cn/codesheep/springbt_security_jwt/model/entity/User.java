@@ -9,8 +9,9 @@ import java.util.Collection;
 import java.util.List;
 
 /**
- * @www.codesheep.cn
- * 20190312
+ * @author LJH
+ * @date 2019/8/23-10:35
+ * @QQ 1755497577
  */
 public class User implements UserDetails {
 

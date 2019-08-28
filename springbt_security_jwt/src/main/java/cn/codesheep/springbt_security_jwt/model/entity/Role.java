@@ -1,8 +1,9 @@
 package cn.codesheep.springbt_security_jwt.model.entity;
 
 /**
- * @www.codesheep.cn
- * 20190312
+ * @author LJH
+ * @date 2019/8/23-10:35
+ * @QQ 1755497577
  */
 public class Role {
 

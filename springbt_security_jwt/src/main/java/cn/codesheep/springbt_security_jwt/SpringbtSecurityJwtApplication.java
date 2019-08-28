@@ -4,8 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
- * @www.codesheep.cn
- * 20190312
+ * @author LJH
+ * @date 2019/8/23-10:35
+ * @QQ 1755497577
  */
 @SpringBootApplication
 public class SpringbtSecurityJwtApplication {

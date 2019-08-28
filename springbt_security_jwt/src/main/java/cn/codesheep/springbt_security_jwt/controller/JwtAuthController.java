@@ -33,8 +33,5 @@ public class JwtAuthController {
         return authService.register(addedUser);
     }
 
-    public static void main(String[] args) {
-        System.out.println(UUID.randomUUID());
-    }
 
 }

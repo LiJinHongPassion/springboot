@@ -15,8 +15,9 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 /**
- * @www.codesheep.cn
- * 20190312
+ * @author LJH
+ * @date 2019/8/23-10:35
+ * @QQ 1755497577
  */
 @Service
 public class AuthServiceImpl implements AuthService {
@@ -64,4 +65,5 @@ public class AuthServiceImpl implements AuthService {
 
         return userRepository.save(userToAdd);
     }
+
 }

@@ -14,9 +14,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * JWT 工具类
- * @www.codesheep.cn
- * 20190312
+ * @author LJH jwt工具类
+ * @date 2019/8/23-10:35
+ * @QQ 1755497577
  */
 @Component
 public class JwtTokenUtil implements Serializable {

@@ -1,4 +1,10 @@
 ## [springboot整合教程系列](https://github.com/LiJinHongPassion/springboot/) 
+- 个人博客：https://lijinhongpassion.github.io
+- QQ：1755497577（备注:github）
+- github：https://github.com/LiJinHongPassion
+
+
+---
 
 [springboot_docker_demo](https://github.com/LiJinHongPassion/springboot/springboot_docker_demo)：整合docker并远程部署
 

@@ -30,7 +30,7 @@ password:
 ------
 ## 简述
 ---
-demo地址：https://github.com/LiJinHongPassion/springboot/springboot_cache_caffeine_demo
+demo地址：https://github.com/LiJinHongPassion/springboot/tree/master/springboot_cache_caffeine_demo
 
 ---
 

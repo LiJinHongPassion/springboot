@@ -15,7 +15,7 @@
 
 前面讲了springboot整合redis作为外部缓存，本文讲解springboot整合guava作为本地缓存，虽然guava已经被新版本的springboot弃用，但是guava还是值得学习的。后面有时间会搭建一个Caffeine缓存的demo
 
-demo地址：https://github.com/LiJinHongPassion/springboot/springboot_cache_guava_demo
+demo地址：https://github.com/LiJinHongPassion/springboot/tree/master/springboot_cache_guava_demo
 
 ---
 

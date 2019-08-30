@@ -23,7 +23,7 @@
 
 在如今高并发的互联网应用中，缓存的地位举足轻重，对提升程序性能帮助不小。而 3.x开始的 Spring也引入了对 Cache的支持，那对于如今发展得如火如荼的 Spring Boot来说自然也是支持缓存特性的。缓存的方式有本地缓存和远程缓存。但本文将讲述如何将reids缓存（远程缓存）应用到 Spring Boot应用中。在以后会讲解本地缓存的搭建。
 
-demo地址：https://github.com/LiJinHongPassion/springboot/springboot_cache_redis_demo
+demo地址：https://github.com/LiJinHongPassion/springboot/tree/master/springboot_cache_redis_demo
 
 ---
 

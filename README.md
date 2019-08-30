@@ -53,4 +53,6 @@
 [springbt_sso_jwt](https://github.com/LiJinHongPassion/springboot/springbt_sso_jwt)：整合spring security + jwt 实现单点登录 + 权限认证
 
 [springboot_cache_redis_demo](https://github.com/LiJinHongPassion/springboot/springboot_cache_redis_demo)：整合redis作为远程缓存
+
+[springboot_cache_guava_demo](https://github.com/LiJinHongPassion/springboot/springboot_cache_guava_demo)：整合guava作为本地缓存
 sql：数据库文件

@@ -313,3 +313,6 @@ public class UserController {
 http://localhost:8080/saveOrUpdate
 http://localhost:8080/get?id=1
 http://localhost:8080/delete?id=1
+
+## 参考文献
+https://zhuanlan.zhihu.com/p/32434005?utm_source=qq&utm_medium=social&utm_oi=1112149834089332736    后端缓存浅谈

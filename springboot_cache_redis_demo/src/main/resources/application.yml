@@ -3,22 +3,22 @@ spring:
     host: 47.103.20.12
     port: 6379
     password:
-    # \u8FDE\u63A5\u8D85\u65F6\u65F6\u95F4\uFF08\u8BB0\u5F97\u6DFB\u52A0\u5355\u4F4D\uFF0CDuration\uFF09
+    # 连接超时时间（记得添加单位，Duration）
     timeout: 10000ms
-    # Redis\u9ED8\u8BA4\u60C5\u51B5\u4E0B\u670916\u4E2A\u5206\u7247\uFF0C\u8FD9\u91CC\u914D\u7F6E\u5177\u4F53\u4F7F\u7528\u7684\u5206\u7247
+    # Redis默认情况下有16个分片，这里配置具体使用的分片
     database: 1
     lettuce:
       pool:
-        # \u8FDE\u63A5\u6C60\u6700\u5927\u8FDE\u63A5\u6570\uFF08\u4F7F\u7528\u8D1F\u503C\u8868\u793A\u6CA1\u6709\u9650\u5236\uFF09 \u9ED8\u8BA4 8
+        # 连接池最大连接数（使用负值表示没有限制） 默认 8
         max-active: 8
-        # \u8FDE\u63A5\u6C60\u6700\u5927\u963B\u585E\u7B49\u5F85\u65F6\u95F4\uFF08\u4F7F\u7528\u8D1F\u503C\u8868\u793A\u6CA1\u6709\u9650\u5236\uFF09 \u9ED8\u8BA4 -1
+        # 连接池最大阻塞等待时间（使用负值表示没有限制） 默认 -1
         max-wait: -1ms
-        # \u8FDE\u63A5\u6C60\u4E2D\u7684\u6700\u5927\u7A7A\u95F2\u8FDE\u63A5 \u9ED8\u8BA4 8
+        # 连接池中的最大空闲连接 默认 8
         max-idle: 8
-        # \u8FDE\u63A5\u6C60\u4E2D\u7684\u6700\u5C0F\u7A7A\u95F2\u8FDE\u63A5 \u9ED8\u8BA4 0
+        # 连接池中的最小空闲连接 默认 0
         min-idle: 0
   cache:
-    # \u4E00\u822C\u6765\u8BF4\u662F\u4E0D\u7528\u914D\u7F6E\u7684\uFF0CSpring Cache \u4F1A\u6839\u636E\u4F9D\u8D56\u7684\u5305\u81EA\u884C\u88C5\u914D
+    # 一般来说是不用配置的，Spring Cache 会根据依赖的包自行装配
     type: redis
 logging:
   level:

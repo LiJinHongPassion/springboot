@@ -1,136 +1,120 @@
 ---
-## Java-springboot整合guava本地缓存
+title: Java-springboot整合caffeine本地缓存
+tags: [java,springboot,caffeine,cache]
+categories: [java]
+declare: true
+abstract: 摘要
+message: 通行证
+comments: true
+reward: true
+date: 2019-08-30 13:46:00
+password:
 ---
 
 ------
 
-![](https://images.unsplash.com/photo-1562102010-a7c462e96db7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1074&q=80)
+![](https://images.unsplash.com/photo-1562184965-071835a7e37a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80)
 
+<!-- more -->
+
+<center>
+
+​	<span id="m_name"></span>
+
+​	<audio id="m_url_id" controls> <source src=""> <source src="horse.ogg" type="audio/ogg"> Your browser does not support this audio format. 
+
+​	</audio> 
+
+</center>  
 
 ------
-
 ## 简述
-
 ---
-
-前面讲了springboot整合redis作为外部缓存，本文讲解springboot整合guava作为本地缓存，虽然guava已经被新版本的springboot弃用，但是guava还是值得学习的。后面有时间会搭建一个Caffeine缓存的demo
-
-demo地址：https://github.com/LiJinHongPassion/springboot/springboot_cache_guava_demo
-
----
-
-## 概念
-
----
-
-#### 为什么要是用内部缓存
-
-在系统中，有些数据量不大、不常变化，但是访问十分频繁，例如省、市、区数据。针对这种场景，可以将数据加载到应用的内存中，以提升系统的访问效率，减少无谓的数据库和网路的访问。
-
-内部缓存的限制就是存放的数据总量不能超出内存容量，毕竟还是在 JVM 里的。
-
-
-
-#### 最简单的内部缓存 - Map
-
-如果只是需要将一些数据缓存起来，避免不必要的数据库查询，那么 Map 就可以满足。
-
-对于字典型的数据，在项目启动的时候加载到 Map 中，程序就可以使用了，也很容易更新。
-
-```java
-// 配置存放的Map
-Map<String, String> configs = new HashMap<String, String>();
-// 初始化或者刷新配置的
-Mappublic void reloadConfigs() {
-    Map<String, String> m = loadConfigFromDB();
-    configs = m;
-}
-// 使用
-configs.getOrDefault("auth.id", "1");
-```
-
-
-
-#### 功能强大的内部缓存 - Guava Cache / Caffeine
-
-如果你需要缓存有强大的性能，或者对缓存有更多的控制，可以使用 Guava 里的 Cache 组件。
-
-它是 Guava 中的缓存工具包，是非常简单易用且功能强大的 JVM 内缓存，支持多种缓存过期策略。
-
-**本地缓存的优点：**
-
-- 直接使用内存，速度快，通常存取的性能可以达到每秒千万级
-- 可以直接使用 Java 对象存取
-
-**本地缓存的缺点：**
-
-- 数据保存在当前实例中，无法共享
-- 重启应用会丢失
-
-
-
-#### Guava Cache 的替代者 Caffeine
-
-Spring 5 使用 Caffeine 来代替 Guava Cache，应该是从性能的角度考虑的。从很多性能测试来看 Caffeine 各方面的性能都要比 Guava 要好。
-
-Caffeine 的 API 的操作功能和 Guava 是基本保持一致的，并且 Caffeine 为了兼容之前 Guava 的用户，做了一个 Guava 的 Adapter， 也是十分的贴心。
-
-如果想了解更多请参考：[是什么让 Spring 5 放弃了使用 Guava Cache](https://blog.csdn.net/qq_38398479/article/details/70578876)？
+demo地址：https://github.com/LiJinHongPassion/springboot/springboot_cache_caffeine_demo
 
 ---
 
 ## 搭建
 
----
+------
 
 #### 依赖
 
 ```xml
-<!--guava-start-->
-<!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
+<!--caffeine-start-->
 <dependency>
-    <groupId>com.google.guava</groupId>
-    <artifactId>guava</artifactId>
-    <version>27.1-jre</version>
-</dependency>
-<!--因为springboot新版本已经弃用guava作为本地缓存，所以需要切换到以前的spring版本-->
-<dependency>
-    <groupId>org.springframework</groupId>
-    <artifactId>spring-context-support</artifactId>
-    <version>4.3.13.RELEASE</version>
+    <groupId>com.github.ben-manes.caffeine</groupId>
+    <artifactId>caffeine</artifactId>
+    <version>2.6.0</version>
 </dependency>
 <dependency>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-cache</artifactId>
 </dependency>
-<!--guava-end-->
+<!--caffeine-end-->
 ```
 
 ------
 
 #### 配置
 
-**GuavaCacheConfig.java**
+**CacheConfig.java**
 
 需要@EnableCaching开启缓存
 
 ```java
 @Configuration
 @EnableCaching
-public class GuavaCacheConfig {
+public class CacheConfig {
 
+    /**
+     * 必须要指定这个Bean，refreshAfterWrite=5s这个配置属性才生效
+     *
+     * @return
+     */
     @Bean
-    public CacheManager cacheManager() {
-        GuavaCacheManager cacheManager = new GuavaCacheManager();
-        cacheManager.setCacheBuilder(
-                CacheBuilder.newBuilder().
-                        //缓存过期时间
-                        expireAfterWrite(10, TimeUnit.SECONDS).
-                        maximumSize(1000));
-        return cacheManager;
+    public CacheLoader<Object, Object> cacheLoader() {
+        CacheLoader<Object, Object> cacheLoader = new CacheLoader<Object, Object>() {
+
+            @Override
+            public Object load(Object key) throws Exception {
+                return null;
+            }
+
+            // 重写这个方法将oldValue值返回回去，进而刷新缓存
+            @Override
+            public Object reload(Object key, Object oldValue) throws Exception {
+                return oldValue;
+            }
+        };
+
+        return cacheLoader;
     }
 }
 ```
+
+**application.yml**
+
+```yaml
+spring:
+  cache:
+    caffeine:
+      spec: initialCapacity=50,maximumSize=500,expireAfterAccess=5s,expireAfterWrite=10s,refreshAfterWrite=5s
+
+
+#  initialCapacity=[integer]: 初始的缓存空间大小
+#  maximumSize=[long]: 缓存的最大条数
+#  maximumWeight=[long]: 缓存的最大权重
+#  expireAfterAccess=[duration]: 最后一次写入或访问后经过固定时间过期
+#  expireAfterWrite=[duration]: 最后一次写入后经过固定时间过期
+#  refreshAfterWrite=[duration]: 创建缓存或者最近一次更新缓存后经过固定的时间间隔，刷新缓存
+#  weakKeys: 打开key的弱引用
+#  weakValues：打开value的弱引用
+#  softValues：打开value的软引用
+#  recordStats：开发统计功能
+```
+
+
 
 ------
 
@@ -302,4 +286,4 @@ public class UserController {
 
 ## 测试
 
-第一次访问http://localhost:8080/get?id=1后，10秒内再次访问的话，是访问的缓存，不是访问的模拟数据库
+第一次访问http://localhost:8080/get?id=1后，5秒内再次访问的话，是访问的缓存，不是访问的模拟数据库

@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.example.li</groupId>
-    <artifactId>springboot_cache_guava_demo</artifactId>
+    <artifactId>springboot_cache_caffeine_demo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>springboot_cache_guava_demo</name>
+    <name>springboot_cache_caffeine_demo</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -30,27 +30,17 @@
             <scope>test</scope>
         </dependency>
 
-        <!--guava-start-->
-
-        <!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
+        <!--caffeine-start-->
         <dependency>
-            <groupId>com.google.guava</groupId>
-            <artifactId>guava</artifactId>
-            <version>27.1-jre</version>
-        </dependency>
-        <!--因为springboot新版本已经弃用guava作为本地缓存，所以需要切换到以前的spring版本-->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-context-support</artifactId>
-            <version>4.3.13.RELEASE</version>
+            <groupId>com.github.ben-manes.caffeine</groupId>
+            <artifactId>caffeine</artifactId>
+            <version>2.6.0</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-cache</artifactId>
         </dependency>
-
-        <!--guava-end-->
-
+        <!--caffeine-end-->
     </dependencies>
 
     <build>

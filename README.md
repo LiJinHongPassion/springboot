@@ -55,4 +55,6 @@
 [springboot_cache_redis_demo](https://github.com/LiJinHongPassion/springboot/springboot_cache_redis_demo)：整合redis作为远程缓存
 
 [springboot_cache_guava_demo](https://github.com/LiJinHongPassion/springboot/springboot_cache_guava_demo)：整合guava作为本地缓存
+
+[springboot_cache_caffeine_demo](https://github.com/LiJinHongPassion/springboot/springboot_cache_caffeine_demo)：整合guava作为本地缓存
 sql：数据库文件

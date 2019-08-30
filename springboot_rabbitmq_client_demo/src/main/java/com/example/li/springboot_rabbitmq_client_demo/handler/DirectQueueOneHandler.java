@@ -19,11 +19,11 @@ import java.io.IOException;
  *
  * @package: com.xkcoding.mq.rabbitmq.handler
  * @description: 直接队列1 处理器
- * @author: yangkai.shen
+ * @author: LJH
  * @date: Created in 2019-01-04 15:42
  * @copyright: Copyright (c) 2019
  * @version: V1.0
- * @modified: yangkai.shen
+ * @modified: LJH
  */
 @Slf4j
 @RabbitListener(queues = RabbitConsts.DIRECT_MODE_QUEUE_ONE)

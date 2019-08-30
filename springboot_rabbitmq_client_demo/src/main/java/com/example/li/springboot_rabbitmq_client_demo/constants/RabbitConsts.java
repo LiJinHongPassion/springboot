@@ -7,11 +7,11 @@ package com.example.li.springboot_rabbitmq_client_demo.constants;
  *
  * @package: com.xkcoding.mq.rabbitmq.constants
  * @description: RabbitMQ常量池
- * @author: yangkai.shen
+ * @author: LJH
  * @date: Created in 2018-12-29 17:08
  * @copyright: Copyright (c) 2018
  * @version: V1.0
- * @modified: yangkai.shen
+ * @modified: LJH
  */
 public interface RabbitConsts {
     /**

@@ -18,11 +18,11 @@ import java.util.Map;
  *
  * @package: com.xkcoding.mq.rabbitmq.config
  * @description: RabbitMQ配置，主要是配置队列，如果提前存在该队列，可以省略本配置类
- * @author: yangkai.shen
+ * @author: LJH
  * @date: Created in 2018-12-29 17:03
  * @copyright: Copyright (c) 2018
  * @version: V1.0
- * @modified: yangkai.shen
+ * @modified: LJH
  */
 @Slf4j
 @Configuration

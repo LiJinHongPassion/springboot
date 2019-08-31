@@ -57,4 +57,6 @@
 [springboot_cache_guava_demo](https://github.com/LiJinHongPassion/springboot/tree/master/springboot_cache_guava_demo)：整合guava作为本地缓存
 
 [springboot_cache_caffeine_demo](https://github.com/LiJinHongPassion/springboot/tree/master/springboot_cache_caffeine_demo)：整合guava作为本地缓存
+
+[spring-boot-demo-task](https://github.com/LiJinHongPassion/springboot/tree/master/spring-boot-demo-task)：利用spring的@Scheduled注解实现定时任务
 sql：数据库文件

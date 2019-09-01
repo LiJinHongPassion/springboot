@@ -3,7 +3,7 @@
 - QQ：1755497577（备注:github）
 - email：1755497577@qq.com
 - github：https://github.com/LiJinHongPassion
-![](./wechat.gif)
+![](./wechat.png)
 
 ---
 

@@ -60,4 +60,6 @@
 [springboot_cache_caffeine_demo](https://github.com/LiJinHongPassion/springboot/tree/master/springboot_cache_caffeine_demo)：整合guava作为本地缓存
 
 [spring-boot-demo-task](https://github.com/LiJinHongPassion/springboot/tree/master/spring-boot-demo-task)：利用spring的@Scheduled注解实现定时任务
+
+[springboot_crawler_demo](https://github.com/LiJinHongPassion/springboot/tree/master/springboot_crawler_demo)：利用http-client和jsoup实现java的小爬虫
 sql：数据库文件

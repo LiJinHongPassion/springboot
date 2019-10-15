@@ -41,6 +41,8 @@
             
 [springboot_rabbitmq_client_demo](https://github.com/LiJinHongPassion/springboot/tree/master/springboot_rabbitmq_client_demo)：rabbitmq消息队列
 
+[springboot_rabbitmq_demo](https://github.com/LiJinHongPassion/springboot/tree/master/springboot_rabbitmq_demo)：codeant - rabbitmq消息队列系列
+
 [springboot_shiro_jwt_demo](https://github.com/LiJinHongPassion/springboot/tree/master/springboot_shiro_jwt_demo)：整合shiro + jwt
       
 [springboot_swagger_demo](https://github.com/LiJinHongPassion/springboot/tree/master/springboot_swagger_demo)：整合swagger

@@ -1,0 +1,12 @@
+#spring.rabbitmq.host=118.24.44.169
+#spring.rabbitmq.username=guest
+#spring.rabbitmq.password=guest
+##spring.rabbitmq.virtual-host=
+
+spring:
+  rabbitmq:
+    host: 116.62.48.220
+    username: admin
+    password: admin
+    virtual-host: /java_mmr # \u659C\u6760\u5FC5\u987B\u5199\u4E0A\uFF0C\u8BE5\u865A\u62DF\u4E3B\u673A\u9700\u8981\u624B\u52A8\u521B\u5EFA\uFF0C\u5728rabbit\u7BA1\u7406\u754C\u9762admin->virtual-host
+    port: 5672

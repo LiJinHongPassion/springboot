@@ -6,6 +6,8 @@
 
 demo地址：
 
+视频教学：尚硅谷springboot整合篇
+
 ## pom.xml
 
 生产者和消费者的依赖都是一样的
@@ -67,6 +69,9 @@ public class MyAMQPConfig {
 ```
 
 **创建exchange、queue，并绑定**
+
+- 方法一：配置文件中配置（推荐）
+- 方法二：AmqpAdmin手动配置（这里为了更好理解用的该方式）
 
 ```java
 /**

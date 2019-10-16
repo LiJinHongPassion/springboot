@@ -41,7 +41,9 @@
             
 [springboot_rabbitmq_client_demo](https://github.com/LiJinHongPassion/springboot/tree/master/springboot_rabbitmq_client_demo)：rabbitmq消息队列
 
-[springboot_rabbitmq_demo](https://github.com/LiJinHongPassion/springboot/tree/master/springboot_rabbitmq_demo)：codeant - rabbitmq消息队列系列
+[springboot_rabbitmq_demo - 广播、单播](https://github.com/LiJinHongPassion/springboot/tree/master/springboot_rabbitmq_demo/rabbitmq-demo%EF%BC%88%E5%8D%95%E6%92%AD%E3%80%81%E5%B9%BF%E6%92%AD%EF%BC%89)：codeant - rabbitmq消息队列系列 -- 广播、单播
+
+[springboot_rabbitmq_demo - 延时队列（延时消费&延时重试）](https://github.com/LiJinHongPassion/springboot/tree/master/springboot_rabbitmq_demo/rabbitmq-demo（延时队列）)：codeant - rabbitmq消息队列系列 -- 延时队列（延时消费&延时重试）
 
 [springboot_shiro_jwt_demo](https://github.com/LiJinHongPassion/springboot/tree/master/springboot_shiro_jwt_demo)：整合shiro + jwt
       

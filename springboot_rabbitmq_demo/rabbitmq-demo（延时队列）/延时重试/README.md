@@ -23,7 +23,7 @@
 
 ## 如何实现？
 
-别急，在下文中，我们将详细介绍如何利用Spring Boot加RabbitMQ来实现**延迟消费**队列。
+别急，在下文中，我们将详细介绍如何利用Spring Boot加RabbitMQ来实现**延迟重试**队列。
 
 ## 实现思路
 
@@ -47,41 +47,37 @@ RabbitMQ允许我们为消息或者队列设置TTL（time to live），也就是
 
 聪明的你肯定已经想到了，如何将RabbitMQ的TTL和DLX特性结合在一起，实现一个延迟队列。
 
-#### **延迟消费**
+#### **延迟重试**
 
 延迟消费是延迟队列最为常用的使用模式。如下图所示，生产者产生的消息首先会进入缓冲队列（图中红色队列）。通过RabbitMQ提供的TTL扩展，这些消息会被设置过期时间，也就是延迟消费的时间。等消息过期之后，这些消息会通过配置好的DLX转发到实际消费队列（图中蓝色队列），以此达到延迟消费的效果。
- ![img](./img/1延时消费.png)
+ ![img](./img/延时重试.png)
 
-![](./img/2延时消费实际流程图.png)
+![](./img/延时重试实际流程图.png)
 
 ## 代码实现流程
 
-- 创建queue、exchange、绑定路由规则 -- QueueConfig.java
-- 设置队列消息的过期时间 -- ExpirationMessagePostProcessor.java
-- 发送消息到exchange -- ApplicationTests.java下的testDelayQueuePerMessageTTL()方法
+- 创建queue、exchange、绑定路由规则、监听器 -- QueueConfig.java
+- 设置队列消息的过期时间（只针对方法二需要该文件） -- ExpirationMessagePostProcessor.java
+- 发送消息到exchange -- ApplicationTests.java下的testFailMessage()方法
 - 从exchange接收消息 -- ProcessReceiver.java
 
-**具体代码请参考：[https://github.com/LiJinHongPassion/springboot/tree/master/springboot_rabbitmq_demo/rabbitmq-demo（延时队列）/延时消费](https://github.com/LiJinHongPassion/springboot/tree/master/springboot_rabbitmq_demo/rabbitmq-demo（延时队列）/延时消费) **
+**具体代码请参考：[https://github.com/LiJinHongPassion/springboot/tree/master/springboot_rabbitmq_demo/rabbitmq-demo（延时队列）/延时重试](https://github.com/LiJinHongPassion/springboot/tree/master/springboot_rabbitmq_demo/rabbitmq-demo（延时队列）/延时重试) **
 
-方法一： [springboot-rabbitmq-delay-message](https://github.com/LiJinHongPassion/springboot/tree/master/springboot_rabbitmq_demo/rabbitmq-demo（延时队列）/延时消费/springboot-rabbitmq-delay-message) 
+方法一： [springboot-rabbitmq-delay-message](https://github.com/LiJinHongPassion/springboot/tree/master/springboot_rabbitmq_demo/rabbitmq-demo（延时队列）/延时重试/springboot-rabbitmq-delay-message) 
 
-方法二： [springboot-rabbitmq-delay-queue](https://github.com/LiJinHongPassion/springboot/tree/master/springboot_rabbitmq_demo/rabbitmq-demo（延时队列）/延时消费/springboot-rabbitmq-delay-queue) 
+方法二： [springboot-rabbitmq-delay-queue](https://github.com/LiJinHongPassion/springboot/tree/master/springboot_rabbitmq_demo/rabbitmq-demo（延时队列）/延时重试/springboot-rabbitmq-delay-queue) 
+
+
 
 ## **查看测试结果**
 
-**延迟消费场景**
+**延迟重试场景**
 
-延迟消费的场景测试我们分为了TTL设置在消息上和TTL设置在队列上两种。首先，我们先看一下TTL设置在消息上的测试结果：
+接下来，我们再来看一下延迟重试的测试结果：
 
-[![动图点击查看](https://files.jb51.net/file_images/article/201711/2017112111255062.gif)](https://files.jb51.net/file_images/article/201711/2017112111255062.gif)
+[![动图点击查看](https://files.jb51.net/file_images/article/201711/2017112111255064.gif)](https://files.jb51.net/file_images/article/201711/2017112111255064.gif) 
 
-从上图中我们可以看到，ProcessReceiver分别经过1秒、2秒、3秒收到消息。测试结果表明消息不仅被延迟消费了，而且每条消息的延迟时间是可以被个性化设置的。TTL设置在消息上的延迟消费场景测试成功。
-
-然后，TTL设置在队列上的测试结果如下图：
-
-[![动图点击查看](https://files.jb51.net/file_images/article/201711/2017112111255063.gif)](https://files.jb51.net/file_images/article/201711/2017112111255063.gif) 
-
-从上图中我们可以看到，ProcessReceiver经过了4秒的延迟之后，同时收到了3条消息。测试结果表明消息不仅被延迟消费了，同时也证明了当TTL设置在队列上的时候，消息的过期时间是固定的。TTL设置在队列上的延迟消费场景测试成功。
+ProcessReceiver首先收到了3条会触发FAIL的消息，然后将其移动到缓冲队列之后，过了4秒，又收到了刚才的那3条消息。延迟重试场景测试成功。
 
 ## 参考
 

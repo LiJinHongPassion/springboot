@@ -194,3 +194,7 @@ Elements rows = doc.select("div[class=job-list]").get(0).select("ul");
  * httpclient参考：https://blog.csdn.net/u011910290/article/details/75364917
  * jsoup使用：https://blog.csdn.net/zhanglei500038/article/details/74858395    
  * 乱码问题：https://blog.csdn.net/mycar001/article/details/78391028
+
+## 补充
+
+后续写了图片爬虫，用正则表达式比对获取链接，然后下载

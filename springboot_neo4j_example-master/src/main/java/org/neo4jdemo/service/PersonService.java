@@ -1,5 +1,6 @@
 package org.neo4jdemo.service;
 
+import org.neo4jdemo.model.node.Person;
 import org.neo4jdemo.model.result.PersonMovie;
 import org.neo4jdemo.repository.PersonRepository;
 import org.springframework.stereotype.Service;
@@ -28,12 +29,31 @@ public class PersonService {
      * @param
      * @return void
      */
-    @Transactional
+    @Transactional(rollbackFor = Exception.class)
     public void createDefalutData(){
         personRepository.createDefalutData();
     }
 
+    /**
+     * 描述: 通过名字获取电影
+     *
+     * @author LJH-1755497577 2019/11/15 17:17
+     * @param name
+     * @return java.util.List<org.neo4jdemo.model.result.PersonMovie>
+     */
     public List<PersonMovie> getPersonMoviesbyName(String name) {
         return personRepository.getPersonMoviesbyName(name);
+    }
+
+    /**
+     * 描述: 添加一位人员
+     *
+     * @author LJH-1755497577 2019/11/15 17:16
+     * @param person
+     * @return org.neo4jdemo.model.node.Person
+     */
+    @Transactional(rollbackFor = Exception.class)
+    public Person savePerson(Person person) {
+        return personRepository.save(person);
     }
 }

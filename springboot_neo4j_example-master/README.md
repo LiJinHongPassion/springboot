@@ -2,8 +2,8 @@
 
 ## 1. 简述
 
-**SDN官方文档：**https://docs.spring.io/spring-data/neo4j/docs/5.2.1.RELEASE/reference/html/#reference
-**demo：**
+**SDN官方文档：** https://docs.spring.io/spring-data/neo4j/docs/5.2.1.RELEASE/reference/html/#reference
+**demo：** https://github.com/LiJinHongPassion/springboot/tree/master/springboot_neo4j_example-master
 
 #### 1.1 概述
 

@@ -1,10 +1,8 @@
 package org.neo4jdemo.controller;
 
+import org.neo4jdemo.model.node.Person;
 import org.neo4jdemo.model.result.PersonMovie;
-import org.neo4jdemo.repository.MovieRepository;
-import org.neo4jdemo.repository.PersonRepository;
 import org.neo4jdemo.service.PersonService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
@@ -15,50 +13,34 @@ public class PersonController {
     @Resource
     private PersonService personService;
 
-
-    /*http://localhost:8080/rest/v1/person?name=Demi%20Moore*/
+    /**
+     * 描述:通过人物名查看他演过的电影
+     *      http://localhost:8080/rest/v1/person?name=Keanu
+     *
+     * @author LJH-1755497577 2019/11/15 17:06
+     * @param name
+     * @return java.util.List<org.neo4jdemo.model.result.PersonMovie>
+     */
     @GetMapping(path = "/rest/v1/person")
     public List<PersonMovie> getMoviesByPersonName(@RequestParam String name) {
         return personService.getPersonMoviesbyName(name);
     }
 
-//    @GetMapping(path = "/rest/v2/person")
-//    public List<Person> getPersonRels(@RequestParam String name) {
-//        List<Person> people = personRepository.getPersonByName(name);
-//        // you can process the people object in java
-//        return people;
-//    }
 
-    /*初始化数据*/
-    @RequestMapping("/create")
-    public String createDefalutData(){
-        personService.createDefalutData();
-        return "suc";
-    }
-
-    @Resource
-    private PersonRepository personRepository;
-    @Resource
-    private MovieRepository movieRepository;
-    /*删除所有数据*/
-    @RequestMapping("/delete")
-    public String delete(){
-        personRepository.deleteAll();
-        movieRepository.deleteAll();
-        return "suc";
+    /**
+     * 描述: 保存人员
+     *
+     * @author LJH-1755497577 2019/11/15 17:17
+     * @param person
+     * @return org.neo4jdemo.model.node.Person
+     */
+    @PostMapping("/savePerson")
+    public Person savePerson(@RequestBody Person person){
+        return personService.savePerson(person);
     }
 
-    /*删除人物所有数据*/
-    @RequestMapping("/deleteP")
-    public String deleteP(){
-        personRepository.deleteAll();
-        return "suc";
-    }
-    /*删除电影所有数据*/
-    @RequestMapping("/deleteM")
-    public String deleteM(){
-        movieRepository.deleteAll();
-        return "suc";
-    }
+
+
+
 
 }

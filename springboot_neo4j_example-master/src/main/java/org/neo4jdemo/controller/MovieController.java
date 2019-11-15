@@ -2,7 +2,6 @@ package org.neo4jdemo.controller;
 
 import org.neo4jdemo.model.node.Movie;
 import org.neo4jdemo.repository.MovieRepository;
-import org.neo4jdemo.service.MovieService;
 import org.springframework.web.bind.annotation.GetMapping;
 
 import javax.annotation.Resource;
@@ -18,10 +17,17 @@ import java.util.List;
 public class MovieController {
 
     @Resource
-    private MovieService movieService;
+    private MovieRepository movieRepository;
 
+    /**
+     * 描述: 获取所有的电影
+     *
+     * @author LJH-1755497577 2019/11/15 17:22
+     * @param
+     * @return java.util.List<org.neo4jdemo.model.node.Movie>
+     */
     @GetMapping("/getAllMovies")
     public List<Movie> getAddMovies(){
-      return movieService.findAll();
+      return (List<Movie>) movieRepository.findAll();
     }
 }

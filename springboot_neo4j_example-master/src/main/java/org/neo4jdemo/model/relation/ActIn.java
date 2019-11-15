@@ -14,7 +14,8 @@ import org.neo4jdemo.model.node.Person;
 @ToString//toString方法,使用注解后就不用重写toString方法
 @RelationshipEntity(type = "ACTED_IN")
 public class ActIn {
-    @GraphId
+    @Id
+    @GeneratedValue
     private Long id;
 
     @Property

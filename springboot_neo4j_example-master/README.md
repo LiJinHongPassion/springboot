@@ -39,6 +39,8 @@ docker run -it -d -p 7474:7474 -p 7687:7687 neo4j:latest
 
 学习笔记：
 
+学习书籍：https://gitee.com/LiJinHongPassion/utils-studyDoc/blob/master/%E5%AD%A6%E4%B9%A0%E6%96%87%E6%A1%A3/neo4j/Neo4j%E5%AE%9E%E6%88%98%20(%E6%95%B0%E6%8D%AE%E5%BA%93%E6%8A%80%E6%9C%AF%E4%B8%9B%E4%B9%A6)_201604.pdf
+
 ## 2. Java开发入门
 
 采用SDN来操作neo4j，但是处理数量级10000以上，需要使用neo4j原生api

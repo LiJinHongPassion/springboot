@@ -2,30 +2,24 @@ package img;
 
 import img.fileMsg.ReadLine;
 import jdk.incubator.http.HttpClient;
+import jdk.incubator.http.HttpHeaders;
 import jdk.incubator.http.HttpRequest;
 import jdk.incubator.http.HttpResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
-import java.io.InputStream;
-import java.net.MalformedURLException;
 import java.net.URI;
 import java.net.URISyntaxException;
-import java.net.URL;
-import java.nio.file.OpenOption;
-import java.nio.file.Paths;
-import java.nio.file.StandardOpenOption;
-import java.security.KeyException;
 import java.util.*;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 import static img.fileMsg.FileUtil.getFile;
-import static img.fileMsg.FileUtil.input2byte;
 import static img.fileMsg.TypeDict.getFileType;
 
 
@@ -39,12 +33,11 @@ import static img.fileMsg.TypeDict.getFileType;
 public class CrawlerImageUtil {
 
     private static Logger logger = LoggerFactory.getLogger(CrawlerImageUtil.class);
+    private static List<String> cookies = new ArrayList<>();
     static ReadLine rl = new ReadLine();
     static {
-        rl.initList("C:\\Users\\Administrator\\Desktop\\crawlerbyhttp2\\src\\main\\java\\img\\fileMsg\\user_agents.txt");
+        rl.initList("C:\\Users\\Li\\Desktop\\crawlerbyhttp2\\src\\main\\java\\img\\fileMsg\\user_agents.txt");
     }
-
-
 
     /**
      * 描述: 爬虫 -- 获取页面中所有图片链接
@@ -83,6 +76,47 @@ public class CrawlerImageUtil {
                 }
             }
             return re;
+    }
+
+
+    /**
+     * 描述: 获取随机cookie
+     *
+     * @author LJH-1755497577 2019/12/1 15:29
+     * @param url
+     * @param size 指定获取cookie池的大小
+     * @return java.lang.String
+     */
+    public static String getRandomCookie(String url, int size){
+        if(size <= 0){
+            size = 1;
+        }
+        for (int i = cookies.size(); i < size; i++) {
+            cookies.add(getCookie(url));
+        }
+        return cookies.get((int) (Math.random()*cookies.size()));
+    }
+
+    /**
+     * 描述: 获取cookie -- 单个cookie
+     *
+     * @author LJH-1755497577 2019/12/1 15:14
+     * @param url
+     * @return java.lang.String
+     */
+    public static String getCookie(String url){
+        final String[] cookie = new String[1];
+        Map<String, String> headers = new HashMap<>();
+        headers.put("accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3");
+        //解决乱码
+        //headers.put("accept-encoding", "gzip, deflate, br");
+//        headers.put("user-agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36");
+        headers.put("user-agent", rl.getStringOfFile());
+        getResponseByGET(url, headers).headers().map().entrySet().stream()
+                .filter(temp -> temp.getKey().endsWith("ookie"))
+                .limit(1)
+                .forEach(c -> cookie[0] = String.valueOf(c.getValue()));
+        return cookie[0];
     }
 
 

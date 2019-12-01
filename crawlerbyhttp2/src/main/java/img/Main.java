@@ -21,14 +21,17 @@ public class Main {
     private static Logger logger = LoggerFactory.getLogger(Main.class);
     public static void main(String[] args) {
 
+//        String cookies = "__cfduid=d924c47c295d97149583a1435dffad06f1574994445; __utma=43775666.410682732.1574994447.1574994447.1574994447.1; __utmc=43775666; __utmz=43775666.1574994447.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __utmt=1; __utmb=43775666.2.10.1574994447; PHPSESSID=11vddiur1cmrpog0mpquc7ikg3";
 
-
-
-        String cookies = "__cfduid=d924c47c295d97149583a1435dffad06f1574994445; __utma=43775666.410682732.1574994447.1574994447.1574994447.1; __utmc=43775666; __utmz=43775666.1574994447.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __utmt=1; __utmb=43775666.2.10.1574994447; PHPSESSID=11vddiur1cmrpog0mpquc7ikg3";
-//        getOnePageImg(cookies, "./img/", );
         int page = 2;
         String url="https://foter.com/abstract";//不能为https://foter.com/abstract/多个斜杠
-        while (getOnePageImg(cookies, "./img/", url, String.valueOf(page++))){
+
+        while (
+                getOnePageImg(getRandomCookie(url, 5),
+                "./img/",
+                url,
+                String.valueOf(page++))
+        ){
             System.out.println(url + page + "页面图片获取完成");
         }
 

@@ -1,66 +1,42 @@
-package com.example.li.springboot_crawler_demo.utils.img.fileMsg;
+package com.example.li.springboot_crawler_demo.utils.img.md5;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.nio.MappedByteBuffer;
+import java.io.*;
+import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.Arrays;
-
+ 
 /**
- * Md5校验工具类 -- 通过hash值文件去重
+ * Md5校验工具类 -- 32位
  */
 public class MD5Util2 {
  
     private static final char[] hexDigits = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9',
             'a', 'b', 'c', 'd', 'e', 'f'};
-
-    /**
-     * 描述: 比较两文件的hash值，文件内容相同，hash值相同
-     *
-     * @author LJH-1755497577 2019/11/8 18:57
-     */
-    public static void main(String[] args) {
-        System.out.println(a("./img/00.jpg").equals(a("./img/kl.jpg")));
-    }
-    public static String a(String filePath) {
-        String md5Hashcode2 = MD5Util2.getFileMD5(new File(filePath));
-
-        System.out.println("MD5Util2计算文件md5值为：" + md5Hashcode2);
-        System.out.println("MD5Util2计算文件md5值的长度为：" + md5Hashcode2.length());
-        return md5Hashcode2;
-	}
+//
+//    public static void main(String[] args) {
+//    	//此处我测试的是我本机jdk源码文件的MD5值
+//		String filePath = "C:\\Program Files\\Java\\jdk1.7.0_45\\src.zip";
+//		String md5Hashcode2 = MD5Util2.getFileMD5(new File(filePath));
+//
+//		System.out.println("MD5Util2计算文件md5值为：" + md5Hashcode2);
+//		System.out.println("MD5Util2计算文件md5值的长度为：" + md5Hashcode2.length());
+//	}
  
     /**
      * Get MD5 of a file (lower case)
      * @return empty string if I/O error when get MD5
      */
     public static String getFileMD5( File file) {
- 
-        FileInputStream in = null;
-        try {
-            in = new FileInputStream(file);
+        try(FileInputStream in = new FileInputStream(file);) {
             FileChannel ch = in.getChannel();
             return MD5(ch.map(FileChannel.MapMode.READ_ONLY, 0, file.length()));
-        } catch (FileNotFoundException e) {
-            return "";
         } catch (IOException e) {
             return "";
-        } finally {
-            if (in != null) {
-                try {
-                    in.close();
-                } catch (IOException e) {
-                    // 关闭流产生的错误一般都可以忽略
-                }
-            }
         }
- 
     }
- 
+
     /**
      * MD5校验字符串
      * @param s String to be MD5
@@ -123,7 +99,7 @@ public class MD5Util2 {
      * @return 空串，如果无法获得 MessageDigest实例
      */
     
-    private static String MD5(MappedByteBuffer buffer) {
+    private static String MD5(ByteBuffer buffer) {
         String s = "";
         try {
             MessageDigest md = MessageDigest.getInstance("MD5");

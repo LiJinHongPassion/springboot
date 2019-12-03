@@ -62,7 +62,10 @@ public class ReadLine {
         return null;
  
     }
- 
 
- 
+
+    public List<String> getList() {
+        return list;
+    }
+
 }

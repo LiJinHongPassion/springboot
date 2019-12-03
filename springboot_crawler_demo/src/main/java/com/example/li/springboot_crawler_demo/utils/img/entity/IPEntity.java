@@ -30,4 +30,9 @@ public class IPEntity {
     public void setPort(String port) {
         this.port = Integer.valueOf(port);
     }
+
+    @Override
+    public String toString(){
+        return ip + "|" + port + "\n";
+    }
 }

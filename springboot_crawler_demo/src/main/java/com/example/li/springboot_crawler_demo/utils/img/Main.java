@@ -16,22 +16,22 @@ import static com.example.li.springboot_crawler_demo.utils.img.CrawlerImageUtil.
  */
 public class Main {
     public static void main(String[] args) {
-        main3();
+        main1();
     }
 
     /**
      * 描述: 获取图片链接
      */
     public static void main1() {
-        String url = "https://weibo.com/u/5247587289?sudaref=www.baidu.com&display=0&retcode=6102";
+        String url = "https://weibo.com/u/6580966381";
         Map<String,String> headers = new HashMap<>();
         headers.put("Remote Address","180.149.134.141:443");
         //解决乱码
         headers.put("Accept-Language", "zh-CN,zh;q=0.9");
 //        headers.put("accept-encoding", "gzip, deflate, br");
-        headers.put("Cookie","SINAGLOBAL=3398784543562.345.1556971387883; ALF=1604025333; SCF=AiP6O1VKY9aVLCoBWlwebldq5oAlcPz_uybNwA9NOkGgbCkrKL_s_6KD7T_SjTL2zbFzwYp_yurYUDswC8JmUKs.; SUHB=06ZVi3QnsQbcSp; SUB=_2AkMqmaEyf8NxqwJRmP4UzGrjbIRwwwHEieKcxVDpJRMxHRl-yT83ql0stRB6ARmP3ABGeenWWMtKOPRGkdfC0E87Ww1L; SUBP=0033WrSXqPxfM72-Ws9jqgMF55529P9D9WWPRq577LDP.w-p-Jbjv-oZ; YF-Page-G0=e57fcdc279d2f9295059776dec6d0214|1573203461|1573203457; _s_tentry=passport.weibo.com; UOR=www.cnblogs.com,widget.weibo.com,www.baidu.com; Apache=2360325663850.9907.1573203463839; ULV=1573203464031:28:6:5:2360325663850.9907.1573203463839:1573021014006");
+        headers.put("Cookie","SINAGLOBAL=9917422063042.697.1574829402700; _s_tentry=www.mobiletrain.org; SUB=_2AkMquX1Df8NxqwJRmPAQxGLkaopxzwzEieKc5YyYJRMxHRl-yT83ql4rtRB6ATlTrG8oEMvFOKbi7y1QJGYbVHTKjif8; SUBP=0033WrSXqPxfM72-Ws9jqgMF55529P9D9W5i4TjASxNGAo9DZ69y7OQp; UOR=tophub.today,s.weibo.com,www.baidu.com; Apache=4274527537330.8877.1575350901043; ULV=1575350901074:3:1:1:4274527537330.8877.1575350901043:1574904407114; YF-Page-G0=afcf131cd4181c1cbdb744cd27663d8d|1575351666|1575351666; login_sid_t=6172ebd564ec94b9a77dd44a432aff74; cross_origin_proto=SSL; Ugrow-G0=589da022062e21d675f389ce54f2eae7; YF-V5-G0=27518b2dd3c605fe277ffc0b4f0575b3; WBStorage=42212210b087ca50|undefined; wb_view_log=1920*10801");
         headers.put("Host", "weibo.com");
-        headers.put("Referer", "https://weibo.com/u/5247587289?sudaref=www.baidu.com&display=0&retcode=6102");
+        headers.put("Referer", "https://s.weibo.com/weibo/%25E6%25A0%25A1%25E8%258A%25B1?topnav=1&wvr=6&topsug=1");
 
         Set<String> allImgUrl = getAllImgUrl(url,
                 "((http|https|HTTP|HTTPS):/)*/[a-zA-Z0-9\\_/\\.]+\\.(jpg|png|gif|jpeg)",
@@ -41,7 +41,6 @@ public class Main {
         for (int i = 0; i < allImgUrl.size() ; i++) {
             fileNames.add(String.valueOf(i));
         }
-        defaultGetIPs();
         downloadImg2localByMuitThread(allImgUrl, headers, "./img/", fileNames, 100);
 
 

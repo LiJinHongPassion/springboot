@@ -25,3 +25,40 @@ mail.fromMail.addr=yang13260906172@163.com
 
 ```
 4. 创建邮件服务类（MailService&MailServiceImpl）
+
+
+
+### 注意
+
+在centos上会无法发送邮件，需要更改为以下配置：
+
+```yaml
+spring:
+	mail:
+    # 邮箱
+    host: smtp.163.com
+    username: yang13260906172@163.com
+    password: yang13260906172
+    default-encoding: UTF-8
+    #    在centos上发送失败 -----------------------------------添加以下配置
+    port: 465
+    properties:
+      mail:
+        imap:
+          ssl:
+            socketFactory:
+              fallback: false
+        smtp:
+          auth: true
+          ssl:
+            enable: true
+            socketFactory:
+              class: javax.net.ssl.SSLSocketFactory
+          starttls:
+            enable: true
+            required: true
+      test-connection: false
+
+mail.fromMail.addr: yang13260906172@163.com
+```
+

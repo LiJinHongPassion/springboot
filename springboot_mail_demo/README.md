@@ -29,6 +29,7 @@ mail.fromMail.addr=yang13260906172@163.com
 
 
 ### 注意
+参考文档：https://www.lagou.com/lgeduarticle/16020.html
 
 在centos上会无法发送邮件，需要更改为以下配置：
 

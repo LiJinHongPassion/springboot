@@ -1,4 +1,7 @@
-## [springboot整合教程系列](https://github.com/LiJinHongPassion/springboot/) 
+## [springboot整合教程系列 ](https://github.com/LiJinHongPassion/springboot/)
+
+> 看在博主这么辛苦的份上，记得star和fork噢；有兴趣的可以联系我，一起编写教程
+
 - 个人博客：https://lijinhongpassion.github.io
 - QQ：1755497577（备注:github）
 - email：1755497577@qq.com

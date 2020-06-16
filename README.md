@@ -81,4 +81,6 @@
 
 [后台管理系统模板 - 前后端分离 - layui+springboot - 便捷开发](https://gitee.com/LiJinHongPassion/utils/tree/master/后台管理系统模板 - 前后端分离 - layui+springboot - 便捷开发) ：基于layui编辑的后台便捷开发模板
 
+[springboot-pay-demo](https://gitee.com/LiJinHongPassion/utils/tree/master/springboot-pay-demo发) ：支付宝沙箱支付
+
 sql：数据库文件

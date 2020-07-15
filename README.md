@@ -77,6 +77,8 @@
 
 [springboot_neo4j_demo](https://github.com/LiJinHongPassion/springboot/tree/master/springboot_neo4j_example-master)：springboot整合neo4j图数据库
 
+[springboot_neo4j_demo](https://github.com/LiJinHongPassion/springboot/tree/master/springboot-redis-demo)：springboot整合redis数据库实现CRUD
+
 [voice](https://github.com/LiJinHongPassion/springboot/tree/master/vioce)：Java文字转音频
 
 [后台管理系统模板 - 前后端分离 - layui+springboot - 便捷开发](https://gitee.com/LiJinHongPassion/utils/tree/master/后台管理系统模板 - 前后端分离 - layui+springboot - 便捷开发) ：基于layui编辑的后台便捷开发模板

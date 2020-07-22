@@ -4,9 +4,10 @@
 
 - 个人博客：https://lijinhongpassion.github.io
 - QQ：1755497577（备注:github）
+- VX：ljh8575136
 - email：1755497577@qq.com
 - github：https://github.com/LiJinHongPassion
-![](./wechat.png)
+<img src="./wechat.png" style="zoom: 50%;" />
 
 ---
 
@@ -86,3 +87,18 @@
 [springboot-pay-demo](https://gitee.com/LiJinHongPassion/utils/tree/master/springboot-pay-demo发) ：支付宝沙箱支付
 
 sql：数据库文件
+
+---
+
+## 捐献榜
+
+| 微信 / GitHub | 金    额  ( 元 ) |
+| :-----------: | :------: |
+|   beisongge   |   200    |
+|               |          |
+|               |          |
+
+> 感谢各位对我的支持和鼓励, 希望我的作品能对你们有所帮助. 请大家多多支持我.
+
+<img src="./vxzf.png" style="zoom: 33%;" />
+

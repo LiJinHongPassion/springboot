@@ -220,4 +220,4 @@ class AppConfig {
 ---
 
 
-参考文献: [csdn](https://blog.csdn.net/qq_36781505/article/details/86612988?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-10.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-10.nonecase)	[官方文档](https://docs.spring.io/spring-data/redis/docs/2.3.1.RELEASE/reference/html/#redis)  [redisTemplate API](https://www.cnblogs.com/shamo89/p/8622152.html)  [redis批量操作key和value](https://www.jianshu.com/p/d5399fca2f72)      
+参考文献: [csdn](https://blog.csdn.net/qq_36781505/article/details/86612988?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-10.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-10.nonecase)	[官方文档](https://docs.spring.io/spring-data/redis/docs/2.3.1.RELEASE/reference/html/#redis)  [redisTemplate API](https://www.cnblogs.com/shamo89/p/8622152.html)	[redis命令参考](http://redisdoc.com/)	[redis批量操作key和value](https://www.jianshu.com/p/d5399fca2f72)      

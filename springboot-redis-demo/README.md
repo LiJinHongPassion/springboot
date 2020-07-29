@@ -201,17 +201,24 @@ class AppConfig {
 
 #### CRUD( 利用redisTemplate )
 
+><font color="red">redis的数据结构有五种, 示例中展示的是字符串</font>
+
+**API简介**
+
+> 参考: https://www.cnblogs.com/shamo89/p/8622152.html
+
+>**RedisTemplate中定义了对5种数据结构操作**
+>
+>```java
+>redisTemplate.opsForValue();//操作字符串
+>redisTemplate.opsForHash();//操作hash
+>redisTemplate.opsForList();//操作list
+>redisTemplate.opsForSet();//操作set
+>redisTemplate.opsForZSet();//操作有序set
+>```
+>
+
 ---
 
 
-
-
-
-
-
-
-
-
-
-
-参考文献: [csdn](https://blog.csdn.net/qq_36781505/article/details/86612988?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-10.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-10.nonecase)	[官方文档](https://docs.spring.io/spring-data/redis/docs/2.3.1.RELEASE/reference/html/#redis)  [redisTemplate API](https://www.jianshu.com/p/19e851a3edba)
+参考文献: [csdn](https://blog.csdn.net/qq_36781505/article/details/86612988?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-10.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-10.nonecase)	[官方文档](https://docs.spring.io/spring-data/redis/docs/2.3.1.RELEASE/reference/html/#redis)  [redisTemplate API](https://www.cnblogs.com/shamo89/p/8622152.html)

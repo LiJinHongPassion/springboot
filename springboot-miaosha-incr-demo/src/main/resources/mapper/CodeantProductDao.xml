@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.miaoshademo.dao.CodeantProductDao">
+  <resultMap id="BaseResultMap" type="com.example.miaoshademo.entity.CodeantProduct">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="num" jdbcType="INTEGER" property="num" />
+    <result column="price" jdbcType="DECIMAL" property="price" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, `name`, num, price
+  </sql>
+
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from codeant_product
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+
+  <update id="update">
+    <!-- update codeant_product set num = num - #{num} where id = #{key} and num - #{num} >= 0-->
+    <!-- 商品数量不做任何限制, 查看是否会导致超买超卖 -->
+    update codeant_product set num = num - #{num} where id = #{key}
+  </update>
+</mapper>

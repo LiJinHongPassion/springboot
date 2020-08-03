@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.miaoshademo.dao.CodeantProductLogDao">
+  <resultMap id="BaseResultMap" type="com.example.miaoshademo.entity.CodeantProductLog">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="product_id" jdbcType="INTEGER" property="productId" />
+    <result column="num" jdbcType="INTEGER" property="num" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, create_time, product_id, num
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from codeant_product_log
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <insert id="insert" keyColumn="id" keyProperty="id" parameterType="com.example.miaoshademo.entity.CodeantProductLog" useGeneratedKeys="true">
+    insert into codeant_product_log (create_time, product_id, num
+      )
+    values (#{createTime,jdbcType=TIMESTAMP}, #{productId,jdbcType=INTEGER}, #{num,jdbcType=INTEGER}
+      )
+  </insert>
+
+</mapper>

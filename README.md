@@ -43,7 +43,6 @@
 
 [springboot_poi_demo_v3](https://github.com/LiJinHongPassion/springboot/tree/master/springboot_poi_demo_v3)：整合poi文档操作，模板操作
 
-
 [springboot_poi_demo_v3](https://github.com/LiJinHongPassion/springboot/tree/master/springboot_poi_excel-operate-demo)：excel纯文本的导入, 模板导出, 实际操作例子, 直接上手可用
             
 [springboot_rabbitmq_client_demo](https://github.com/LiJinHongPassion/springboot/tree/master/springboot_rabbitmq_client_demo)：rabbitmq消息队列
@@ -78,13 +77,15 @@
 
 [springboot_neo4j_demo](https://github.com/LiJinHongPassion/springboot/tree/master/springboot_neo4j_example-master)：springboot整合neo4j图数据库
 
-[springboot_neo4j_demo](https://github.com/LiJinHongPassion/springboot/tree/master/springboot-redis-demo)：springboot整合redis数据库实现CRUD
+[springboot_neo4j_demo](https://github.com/LiJinHongPassion/springboot/tree/master/springboot-redis-demo)：springboot整合redis数据库利用redistemplate实现CRUD
 
 [voice](https://github.com/LiJinHongPassion/springboot/tree/master/vioce)：Java文字转音频
 
 [后台管理系统模板 - 前后端分离 - layui+springboot - 便捷开发](https://gitee.com/LiJinHongPassion/utils/tree/master/后台管理系统模板 - 前后端分离 - layui+springboot - 便捷开发) ：基于layui编辑的后台便捷开发模板
 
-[springboot-pay-demo](https://gitee.com/LiJinHongPassion/utils/tree/master/springboot-pay-demo发) ：支付宝沙箱支付
+[springboot-pay-demo](https://gitee.com/LiJinHongPassion/utils/tree/master/springboot-pay-demo) ：支付宝沙箱支付
+
+[springboot-redis-incr-demo](https://gitee.com/LiJinHongPassion/utils/tree/master/springboot-redis-incr-demo) ：利用Redis的incr来实现秒杀, 防止超买超卖
 
 sql：数据库文件
 

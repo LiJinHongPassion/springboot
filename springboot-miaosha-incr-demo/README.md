@@ -2,7 +2,7 @@
 
 ## 前提
 
-> 如果你对redis的CRUD操作还不是很熟悉, 可以去阅读[springboot_neo4j_demo](https://github.com/LiJinHongPassion/springboot/tree/master/springboot-redis-demo)：springboot整合redis数据库利用redistemplate实现CRUD
+> 如果你对redis的CRUD操作还不是很熟悉, 可以去阅读[springboot_redis_demo](https://github.com/LiJinHongPassion/springboot/tree/master/springboot-redis-demo)：springboot整合redis数据库利用redistemplate实现CRUD
 
 > 该篇文章主要是对秒杀中redis的increment介绍, 关于其他秒杀相关可以查看参考文献, 他们已经描述得很全面了
 

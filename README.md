@@ -1,5 +1,15 @@
 ## [springboot整合教程系列 ](https://github.com/LiJinHongPassion/springboot/)
 
+<p align="center">
+<a href="https://github.com/LiJinHongPassion/springboot">![](https://img.shields.io/travis/onevcat/Kingfisher/master.svg)</a>
+<a href="http://onevcat.github.io/Kingfisher/">![](https://img.shields.io/cocoapods/v/Kingfisher.svg?style=flat)</a>
+<a href="https://github.com/LiJinHongPassion/springboot/master/LICENSE">![](https://img.shields.io/cocoapods/l/Kingfisher.svg?style=flat)</a>
+<a href="https://github.com/LiJinHongPassion/springboot">![](https://img.shields.io/badge/language-java-red.svg)</a>
+<a href='https://gitee.com/LiJinHongPassion/springboot/stargazers'><img src='https://gitee.com/LiJinHongPassion/springboot/badge/star.svg?theme=white' alt='star'></img></a> 
+<a href='https://gitee.com/LiJinHongPassion/springboot/members'><img src='https://gitee.com/LiJinHongPassion/springboot/badge/fork.svg?theme=white' alt='fork'></img></a>
+</p>
+
+
 > 看在博主这么辛苦的份上，记得star和fork噢；有兴趣的可以联系我，一起编写教程
 
 - 个人博客：https://lijinhongpassion.github.io

@@ -3,12 +3,14 @@
 ><a href="https://github.com/LiJinHongPassion/springboot">![](https://img.shields.io/travis/onevcat/Kingfisher/master.svg)</a>	<a href="https://github.com/LiJinHongPassion/springboot">![](https://badges.gitter.im/Join%20Chat.svg)</a>	<a href="https://github.com/LiJinHongPassion/springboot/">![](https://img.shields.io/cocoapods/l/Kingfisher.svg?style=flat)</a>	<a href="https://github.com/LiJinHongPassion/springboot">![](https://img.shields.io/badge/language-java-red.svg)</a>	<a href='https://gitee.com/LiJinHongPassion/springboot/stargazers'><img src='https://gitee.com/LiJinHongPassion/springboot/badge/star.svg?theme=white' alt='star'></img></a> 	<a href='https://gitee.com/LiJinHongPassion/springboot/members'><img src='https://gitee.com/LiJinHongPassion/springboot/badge/fork.svg?theme=white' alt='fork'></img></a>
 >
 >**看在博主这么辛苦的份上，记得star和fork噢；有兴趣的可以联系我，一起编写教程**
+>
+>如果下载较慢，请移步[Gitee](https://gitee.com/LiJinHongPassion/springboot)
 
-- **个人博客：**https://lijinhongpassion.github.io
-- **QQ：**1755497577（备注:github）
-- **VX：**ljh8575136
-- **email：**1755497577@qq.com
-- **github：**https://github.com/LiJinHongPassion
+- Blog：https://lijinhongpassion.github.io
+- QQ：1755497577（备注:github）
+- VX：ljh8575136
+- Email：1755497577@qq.com
+- GitHub：https://github.com/LiJinHongPassion
 <img src="./wechat.png" style="zoom: 50%;" />
 
 ---
@@ -59,7 +61,7 @@
 >
 >[springboot_cache_guava_demo](https://github.com/LiJinHongPassion/springboot/tree/master/springboot_cache_guava_demo)：整合guava作为本地缓存
 >
->[springboot_cache_caffeine_demo](https://github.com/LiJinHongPassion/springboot/tree/master/springboot_cache_caffeine_demo)：整合guava作为本地缓存
+>[springboot_cache_caffeine_demo](https://github.com/LiJinHongPassion/springboot/tree/master/springboot_cache_caffeine_demo)：整合caffeine作为本地缓存
 
 ### RabbitMQ相关
 

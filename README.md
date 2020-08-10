@@ -40,6 +40,8 @@
 >[springboot_mybatis_shiro_demo](https://github.com/LiJinHongPassion/springboot/tree/master/springboot_mybatis_shiro_demo)：整合mybatis + shiro，redis为二级缓存 + session存储
 >
 >[springboot-redis-incr-demo](https://gitee.com/LiJinHongPassion/utils/tree/master/springboot-redis-incr-demo) ：利用Redis的incr来实现秒杀, 防止超买超卖
+>
+>[springboot-jiezhang-setnx-demo](https://gitee.com/LiJinHongPassion/utils/tree/master/springboot-jiezhang-setnx-demo) ：利用Redis的setnx来实现结账, 防止订单重复结账等
 
 ### no4j相关
 

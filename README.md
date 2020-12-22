@@ -22,6 +22,8 @@
 >[springboot_modle_demo](https://github.com/LiJinHongPassion/springboot/tree/master/springboot_modle_demo)：Model、ModelMap、ModelAndView的简单用法
 >
 >[spring-boot-demo-task](https://github.com/LiJinHongPassion/springboot/tree/master/spring-boot-demo-task)：利用spring的@Scheduled注解实现定时任务
+>
+>[springboot-sync-demo](https://github.com/LiJinHongPassion/springboot/tree/master/springboot-sync-demo)：`springboot`异步任务（有返回值的）
 
 ### mybatis相关
 

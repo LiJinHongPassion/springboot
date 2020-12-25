@@ -24,6 +24,8 @@
 >[spring-boot-demo-task](https://github.com/LiJinHongPassion/springboot/tree/master/spring-boot-demo-task)：利用spring的@Scheduled注解实现定时任务
 >
 >[springboot-sync-demo](https://github.com/LiJinHongPassion/springboot/tree/master/springboot-sync-demo)：`springboot`异步任务（有返回值的）
+>
+>[springboot-multi-datasource-demo](https://github.com/LiJinHongPassion/springboot/tree/master/springboot-multi-datasource-demo)：多数据源
 
 ### mybatis相关
 

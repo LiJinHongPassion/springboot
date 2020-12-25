@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.codeant.ocean.mapper.iceberg.ItemOrderMapper">
+
+    <select id="selectCountSuccessOrder" resultType="java.lang.Integer">
+        select count(*) from iceberg.order
+        where expired = 0
+        and status >= 80
+        and create_time >= #{start}
+        and create_time <![CDATA[<]]> #{end}
+    </select>
+</mapper>

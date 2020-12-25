@@ -1,0 +1,22 @@
+# 配置的base属性
+server:
+  port: 15400
+
+spring:
+  application:
+    name: ocean
+
+druid:
+  # 数据源配置
+  user: root
+  password: codeAnt.+AA123
+  driverClass: com.mysql.cj.jdbc.Driver
+  # 初始化 最小 最大
+  initialSize: 5
+  minIdle: 5
+  maxActive: 20
+  testOnBorrow: false
+  urlIceberg: jdbc:mysql://123.56.129.198:33306/iceberg?serverTimezone=GMT%2B8&characterEncoding=UTF-8&useSSL=false  # 设置时区
+  urlOcean: jdbc:mysql://123.56.129.198:33306/ocean?serverTimezone=GMT%2B8&characterEncoding=UTF-8&useSSL=false  # 设置时区
+  urlAccount: jdbc:mysql://123.56.129.198:33306/account?serverTimezone=GMT%2B8&characterEncoding=UTF-8&useSSL=false  # 设置时区
+

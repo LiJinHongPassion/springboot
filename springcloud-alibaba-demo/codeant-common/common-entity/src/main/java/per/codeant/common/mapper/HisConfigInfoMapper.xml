@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="per.codeant.common.proxy.HisConfigInfoMapper">
+
+	<insert id="batchInsert" useGeneratedKeys="true" keyProperty="nid" parameterType="java.util.List">
+		INSERT INTO his_config_info
+			 (
+				id,
+				nid,
+				data_id,
+				group_id,
+				app_name,
+				content,
+				md5,
+				gmt_create,
+				gmt_modified,
+				src_user,
+				src_ip,
+				op_type,
+				tenant_id
+			) VALUES 
+		<foreach collection="list" item="record" separator="," index="index">
+			(
+				#{record.id},
+				#{record.nid},
+				#{record.dataId},
+				#{record.groupId},
+				#{record.appName},
+				#{record.content},
+				#{record.md5},
+				#{record.gmtCreate},
+				#{record.gmtModified},
+				#{record.srcUser},
+				#{record.srcIp},
+				#{record.opType},
+				#{record.tenantId}
+			)
+		</foreach>
+	</insert>
+</mapper>

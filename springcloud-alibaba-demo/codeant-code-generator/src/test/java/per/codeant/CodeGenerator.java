@@ -19,30 +19,30 @@ public class CodeGenerator {
     public static final String DRIVER = "com.mysql.jdbc.Driver";
     //URL指向要访问的数据库名
 //    public static final String URL = "jdbc:mysql://localhost:3306/golf_import?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai";
-    public static final String URL = "jdbc:mysql://119.84.82.134:33306/golf_import?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai";
+    public static final String URL = "jdbc:mysql://123.56.129.198:33306/nacos?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai";
     //MySQL配置时的用户名
 //    public static final String USER_NAME = "root";
-    public static final String USER_NAME = "golf_import";
+    public static final String USER_NAME = "root";
     //MySQL配置时的密码
 //    public static final String PASSWORD = "123456";
-    public static final String PASSWORD = "2L6ZvThR7PxN";
+    public static final String PASSWORD = "codeAnt.+AA123";
     //生成的文件字符集
     public static final String FILE_CHAR_SET = "utf-8";
     //匹配的表名（%代表全部）
-    public static final String TABLE_NAME = "wx_query_log";
+    public static final String TABLE_NAME = "%";
     //生成的实体类的文件路径（如果设置为null则不会生成entity文件）
 //    public static final String ENTITY_FILE_PATH = "golf-booking/src/main/java/com/golf/common/database/entity";
 //    public static final String ENTITY_FILE_PATH = "E:/workspace/golf/golf-core/src/main/java/com/golf/common/entity";
-    public static final String ENTITY_FILE_PATH = "golf-core/src/main/java/com/golf/common/entity";
+    public static final String ENTITY_FILE_PATH = "codeant-common/common-entity/src/main/java/per/codeant/common/entity";
     //生成proxy接口的文件路径（如果设置为null则不会生成proxy文件）
 //    public static final String PROXY_FILE_PATH = null;//    public static final String PROXY_FILE_PATH = "golf-booking/src/main/java/com/golf/common/database/proxy";
 //    public static final String PROXY_FILE_PATH = "E:/workspace/golf/golf-core/src/main/java/com/golf/common/proxy";
-    public static final String PROXY_FILE_PATH = "golf-core/src/main/java/com/golf/common/proxy";
+    public static final String PROXY_FILE_PATH = "codeant-common/common-entity/src/main/java/per/codeant/common/proxy";
     //生成Mapper.xml文件的路径（如果设置为null则不会生成mapper文件）
 //    public static final String MAPPER_FILE_PATH = null;
 //    public static final String MAPPER_FILE_PATH = "golf-booking/src/main/java/com/golf/common/database/mapper";
 //    public static final String MAPPER_FILE_PATH = "E:/workspace/golf/golf-core/src/main/java/com/golf/common/mapper";
-    public static final String MAPPER_FILE_PATH = "golf-core/src/main/java/com/golf/common/mapper";
+    public static final String MAPPER_FILE_PATH = "codeant-common/common-entity/src/main/java/per/codeant/common/mapper";
 
 
     //生成实体类的包名
@@ -562,7 +562,7 @@ public class CodeGenerator {
         builder.append(".");
         builder.append(firstUppercase(underlineToHump(tableName)));
         builder.append(";");
-        builder.append("\r\nimport com.baomidou.mybatisplus.mapper.BaseMapper;");
+        builder.append("\r\ncom.baomidou.mybatisplus.core.mapper.BaseMapper;");
         builder.append("\r\nimport org.springframework.stereotype.Repository;");
         builder.append("\r\nimport java.util.List;\r\n\r\n");
 
@@ -646,10 +646,10 @@ public class CodeGenerator {
         builder.append(ENTITY_PAGE_NAME);
         builder.append(";\r\n\r\n\r\n");
 
-        builder.append("import com.baomidou.mybatisplus.annotations.TableId;\r\n");
-        builder.append("import com.baomidou.mybatisplus.annotations.TableName;\r\n");
-        builder.append("import com.baomidou.mybatisplus.annotations.TableField;\r\n");
-        builder.append("import com.baomidou.mybatisplus.enums.IdType;\r\n");
+        builder.append("import com.baomidou.mybatisplus.annotation.TableId;\r\n");
+        builder.append("import com.baomidou.mybatisplus.annotation.TableName;\r\n");
+        builder.append("import com.baomidou.mybatisplus.annotation.TableField;\r\n");
+        builder.append("import com.baomidou.mybatisplus.annotation.IdType;\r\n");
         builder.append("\r\n\r\n");
 
 

@@ -15,6 +15,10 @@
 
 ---
 
+### springclou alibaba的demo
+
+> [springcloud-alibaba-demo（开发中...）](https://github.com/LiJinHongPassion/springboot/tree/master/springcloud-alibaba-demo)：`springcloud`的`demo`，运用的组件有`nacos-discovery`、`nacos-config`、`gateway`、`sentinel`
+
 ### springboot基础
 
 >[springboot_filter_interceptor_demo](https://github.com/LiJinHongPassion/springboot/tree/master/springboot_filter_interceptor_demo)：过滤器、拦截器的实现

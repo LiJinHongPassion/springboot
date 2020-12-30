@@ -8,8 +8,16 @@
         <outputRelativeToContentRoot value="true" />
         <module name="common-entity" />
         <module name="codeant-code-generator" />
+        <module name="codeant-system" />
         <module name="common-redis" />
       </profile>
     </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="codeant-code-generator" options="" />
+      <module name="common-entity" options="" />
+      <module name="common-redis" options="" />
+    </option>
   </component>
 </project>

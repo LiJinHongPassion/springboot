@@ -19,7 +19,7 @@ public class CodeGenerator {
     public static final String DRIVER = "com.mysql.jdbc.Driver";
     //URL指向要访问的数据库名
 //    public static final String URL = "jdbc:mysql://localhost:3306/golf_import?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai";
-    public static final String URL = "jdbc:mysql://123.56.129.198:33306/nacos?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai";
+    public static final String URL = "jdbc:mysql://123.56.129.198:33306/alibabademo?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai";
     //MySQL配置时的用户名
 //    public static final String USER_NAME = "root";
     public static final String USER_NAME = "root";
@@ -29,7 +29,7 @@ public class CodeGenerator {
     //生成的文件字符集
     public static final String FILE_CHAR_SET = "utf-8";
     //匹配的表名（%代表全部）
-    public static final String TABLE_NAME = "%";
+    public static final String TABLE_NAME = "tb_pms_user";
     //生成的实体类的文件路径（如果设置为null则不会生成entity文件）
 //    public static final String ENTITY_FILE_PATH = "golf-booking/src/main/java/com/golf/common/database/entity";
 //    public static final String ENTITY_FILE_PATH = "E:/workspace/golf/golf-core/src/main/java/com/golf/common/entity";
@@ -404,6 +404,14 @@ public class CodeGenerator {
      * @throws IOException
      * @throws SQLException
      */
+    /**
+     * 生成小xml文件
+     *
+     * @param metaData
+     * @param tableName
+     * @throws IOException
+     * @throws SQLException
+     */
     public static void generateXMLFile(Connection conn,DatabaseMetaData metaData, String tableName) throws IOException, SQLException {
         if (MAPPER_FILE_PATH == null) return;
         long s = System.currentTimeMillis();
@@ -562,7 +570,7 @@ public class CodeGenerator {
         builder.append(".");
         builder.append(firstUppercase(underlineToHump(tableName)));
         builder.append(";");
-        builder.append("\r\ncom.baomidou.mybatisplus.core.mapper.BaseMapper;");
+        builder.append("\r\nimport com.baomidou.mybatisplus.core.mapper.BaseMapper;");
         builder.append("\r\nimport org.springframework.stereotype.Repository;");
         builder.append("\r\nimport java.util.List;\r\n\r\n");
 

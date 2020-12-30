@@ -2,13 +2,88 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72421342-2385-4160-bdf9-b1800b987888" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/codeant-common/common-entity/src/main/java/per/codeant/common/entity/TbPmsArea.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeant-common/common-entity/src/main/java/per/codeant/common/entity/TbPmsGroup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeant-common/common-entity/src/main/java/per/codeant/common/entity/TbPmsGroupRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeant-common/common-entity/src/main/java/per/codeant/common/entity/TbPmsModule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeant-common/common-entity/src/main/java/per/codeant/common/entity/TbPmsRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeant-common/common-entity/src/main/java/per/codeant/common/entity/TbPmsRoleModule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeant-common/common-entity/src/main/java/per/codeant/common/entity/TbPmsUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeant-common/common-entity/src/main/java/per/codeant/common/entity/TbPmsUserGroup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeant-common/common-entity/src/main/java/per/codeant/common/mapper/TbPmsAreaMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeant-common/common-entity/src/main/java/per/codeant/common/mapper/TbPmsGroupMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeant-common/common-entity/src/main/java/per/codeant/common/mapper/TbPmsModuleMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeant-common/common-entity/src/main/java/per/codeant/common/mapper/TbPmsRoleMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeant-common/common-entity/src/main/java/per/codeant/common/mapper/TbPmsUserGroupMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeant-common/common-entity/src/main/java/per/codeant/common/mapper/TbPmsUserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeant-common/common-entity/src/main/java/per/codeant/common/proxy/TbPmsGroupMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeant-common/common-entity/src/main/java/per/codeant/common/proxy/TbPmsGroupRoleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeant-common/common-entity/src/main/java/per/codeant/common/proxy/TbPmsModuleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeant-common/common-entity/src/main/java/per/codeant/common/proxy/TbPmsRoleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeant-common/common-entity/src/main/java/per/codeant/common/proxy/TbPmsRoleModuleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeant-common/common-entity/src/main/java/per/codeant/common/proxy/TbPmsUserGroupMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeant-common/common-entity/src/main/java/per/codeant/common/proxy/TbPmsUserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeant-system/src/main/java/per/codeant/SystemApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeant-system/src/main/java/per/codeant/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeant-system/src/main/java/per/codeant/proxy/UserInfoProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeant-system/src/main/java/per/codeant/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeant-system/src/main/resources/META-INF/additional-spring-configuration-metadata.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeant-system/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeant-system/src/main/resources/mapper/UserInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeant-system/src/main/resources/mapper/a.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/codeant-code-generator/src/test/java/per/codeant/CodeGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/codeant-code-generator/src/test/java/per/codeant/CodeGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeant-common/common-entity/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/codeant-common/common-entity/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeant-common/common-entity/src/main/java/per/codeant/common/entity/ConfigInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeant-common/common-entity/src/main/java/per/codeant/common/entity/ConfigInfoAggr.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeant-common/common-entity/src/main/java/per/codeant/common/entity/ConfigInfoBeta.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeant-common/common-entity/src/main/java/per/codeant/common/entity/ConfigInfoTag.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeant-common/common-entity/src/main/java/per/codeant/common/entity/ConfigTagsRelation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeant-common/common-entity/src/main/java/per/codeant/common/entity/GroupCapacity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeant-common/common-entity/src/main/java/per/codeant/common/entity/HisConfigInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeant-common/common-entity/src/main/java/per/codeant/common/entity/Permissions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeant-common/common-entity/src/main/java/per/codeant/common/entity/Roles.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeant-common/common-entity/src/main/java/per/codeant/common/entity/TenantCapacity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeant-common/common-entity/src/main/java/per/codeant/common/entity/TenantInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeant-common/common-entity/src/main/java/per/codeant/common/entity/Users.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeant-common/common-entity/src/main/java/per/codeant/common/mapper/ConfigInfoAggrMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeant-common/common-entity/src/main/java/per/codeant/common/mapper/ConfigInfoBetaMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeant-common/common-entity/src/main/java/per/codeant/common/mapper/ConfigInfoMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeant-common/common-entity/src/main/java/per/codeant/common/mapper/ConfigInfoTagMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeant-common/common-entity/src/main/java/per/codeant/common/mapper/ConfigTagsRelationMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeant-common/common-entity/src/main/java/per/codeant/common/mapper/GroupCapacityMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeant-common/common-entity/src/main/java/per/codeant/common/mapper/HisConfigInfoMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeant-common/common-entity/src/main/java/per/codeant/common/mapper/PermissionsMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/codeant-common/common-entity/src/main/java/per/codeant/common/mapper/TbPmsGroupRoleMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeant-common/common-entity/src/main/java/per/codeant/common/mapper/RolesMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/codeant-common/common-entity/src/main/java/per/codeant/common/mapper/TbPmsRoleModuleMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeant-common/common-entity/src/main/java/per/codeant/common/mapper/TenantCapacityMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeant-common/common-entity/src/main/java/per/codeant/common/mapper/TenantInfoMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeant-common/common-entity/src/main/java/per/codeant/common/mapper/UsersMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeant-common/common-entity/src/main/java/per/codeant/common/proxy/ConfigInfoAggrMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/codeant-common/common-entity/src/main/java/per/codeant/common/proxy/TbPmsAreaMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeant-common/common-entity/src/main/java/per/codeant/common/proxy/ConfigInfoBetaMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeant-common/common-entity/src/main/java/per/codeant/common/proxy/ConfigInfoMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeant-common/common-entity/src/main/java/per/codeant/common/proxy/ConfigInfoTagMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeant-common/common-entity/src/main/java/per/codeant/common/proxy/ConfigTagsRelationMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeant-common/common-entity/src/main/java/per/codeant/common/proxy/GroupCapacityMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeant-common/common-entity/src/main/java/per/codeant/common/proxy/HisConfigInfoMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeant-common/common-entity/src/main/java/per/codeant/common/proxy/PermissionsMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeant-common/common-entity/src/main/java/per/codeant/common/proxy/RolesMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeant-common/common-entity/src/main/java/per/codeant/common/proxy/TenantCapacityMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeant-common/common-entity/src/main/java/per/codeant/common/proxy/TenantInfoMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeant-common/common-entity/src/main/java/per/codeant/common/proxy/UsersMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeant-system/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/codeant-system/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -28,29 +103,51 @@
     </option>
   </component>
   <component name="ProjectId" id="1mJxQwv8WdpXqayKefAmHmRdf4O" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/codeant-system/src/main/resources/mapper" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Desktop\codeant\git\springboot\springcloud-alibaba-demo\codeant-common\common-entity\src\main\java\per\codeant\common" />
+      <recent name="C:\Users\Administrator\Desktop\codeant\git\springboot\springcloud-alibaba-demo\codeant-system\target\lib" />
+      <recent name="C:\Users\Administrator\Desktop\codeant\git\springboot\springcloud-alibaba-demo\codeant-common\common-entity\src\main\resources\base" />
+      <recent name="C:\Users\Administrator\Desktop\codeant\git\springboot\springcloud-alibaba-demo\codeant-common\common-entity\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="per.codeant" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Desktop\codeant\git\springboot\springcloud-alibaba-demo\codeant-system\src\main\resources\mapper" />
+      <recent name="C:\Users\Administrator\Desktop\codeant\git\springboot\springcloud-alibaba-demo\codeant-system\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.SystemApplication">
     <configuration name="CodeGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="per.codeant.CodeGenerator" />
       <module name="codeant-code-generator" />
@@ -64,8 +161,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SystemApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="codeant-system" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="per.codeant.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="per.codeant.SystemApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.SystemApplication" />
+      <item itemvalue="Application.CodeGenerator" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.SystemApplication" />
         <item itemvalue="Application.CodeGenerator" />
       </list>
     </recent_temporary>
@@ -81,29 +196,101 @@
       <option name="presentableId" value="Default" />
       <updated>1609225482850</updated>
       <workItem from="1609225486913" duration="3568000" />
-      <workItem from="1609229453710" duration="976000" />
+      <workItem from="1609229453710" duration="1720000" />
+      <workItem from="1609310013997" duration="2336000" />
+      <workItem from="1609312399836" duration="8988000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="440" y="94" key="#Project_Structure" timestamp="1609229600440">
+    <state x="440" y="94" key="#Project_Structure" timestamp="1609314164211">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="440" y="94" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1609229600440" />
-    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1609230159541">
+    <state x="440" y="94" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1609314164211" />
+    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1609320176359">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609230159541" />
-    <state x="440" y="94" key="SettingsEditor" timestamp="1609230249177">
+    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609320176359" />
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1609310471233">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1609230249177" />
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609310471233" />
+    <state width="1877" height="373" key="GridCell.Tab.0.bottom" timestamp="1609321176163">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="373" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1609321176163" />
+    <state width="1877" height="373" key="GridCell.Tab.0.center" timestamp="1609321176163">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="373" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1609321176163" />
+    <state width="1877" height="373" key="GridCell.Tab.0.left" timestamp="1609321176163">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="373" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1609321176163" />
+    <state width="1877" height="373" key="GridCell.Tab.0.right" timestamp="1609321176163">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="373" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1609321176163" />
+    <state width="1877" height="373" key="GridCell.Tab.1.bottom" timestamp="1609321171738">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="373" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1609321171738" />
+    <state width="1877" height="373" key="GridCell.Tab.1.center" timestamp="1609321171735">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="373" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1609321171735" />
+    <state width="1877" height="373" key="GridCell.Tab.1.left" timestamp="1609321171731">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="373" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1609321171731" />
+    <state width="1877" height="373" key="GridCell.Tab.1.right" timestamp="1609321171737">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="373" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1609321171737" />
+    <state width="1877" height="502" key="GridCell.Tab.2.bottom" timestamp="1609321053092">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="502" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1609321053092" />
+    <state width="1877" height="502" key="GridCell.Tab.2.center" timestamp="1609321053092">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="502" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1609321053092" />
+    <state width="1877" height="502" key="GridCell.Tab.2.left" timestamp="1609321053092">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="502" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1609321053092" />
+    <state width="1877" height="502" key="GridCell.Tab.2.right" timestamp="1609321053092">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="502" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1609321053092" />
+    <state x="440" y="94" key="SettingsEditor" timestamp="1609314815011">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1609314815011" />
+    <state x="92" y="92" width="1736" height="856" key="VCS.FileHistoryDialog" timestamp="1609312217111">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="VCS.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609312217111" />
     <state x="529" y="197" key="new project wizard" timestamp="1609228830527">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="529" y="197" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1609228830527" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/codeant-system/src/main/java/per/codeant/controller/UserController.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

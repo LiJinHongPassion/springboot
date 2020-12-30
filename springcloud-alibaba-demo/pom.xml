@@ -20,7 +20,7 @@
         <spring-boot.version>2.3.4.RELEASE</spring-boot.version>
         <spring-cloud-alibaba.version>2.2.3.RELEASE</spring-cloud-alibaba.version>
         <pagehelper.boot.version>1.3.0</pagehelper.boot.version>
-        <spring-boot.mybatis>3.4.1</spring-boot.mybatis>
+        <spring-boot.mybatis>3.1.0</spring-boot.mybatis>
         <mysql.connector>5.1.38</mysql.connector>
         <druid.version>1.1.14</druid.version>
     </properties>
@@ -34,12 +34,6 @@
                     <version>${spring-boot.version}</version>
                     <type>pom</type>
                     <scope>import</scope>
-                </dependency>
-
-            <!--     web       -->
-                <dependency>
-                    <groupId>org.springframework.boot</groupId>
-                    <artifactId>spring-boot-starter-web</artifactId>
                 </dependency>
 
             <!--   分布式   start  -->
@@ -64,7 +58,7 @@
             <!--   mysql   start  -->
                 <dependency>
                     <groupId>com.baomidou</groupId>
-                    <artifactId>mybatis-plus</artifactId>
+                    <artifactId>mybatis-plus-boot-starter</artifactId>
                     <version>${spring-boot.mybatis}</version>
                 </dependency>
                 <dependency>

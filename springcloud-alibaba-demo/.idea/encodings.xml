@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/codeant-auth/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/codeant-auth/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/codeant-common/common-entity/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/codeant-common/common-redis/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/codeant-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/codeant-gateway/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/codeant-system/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/codeant-system/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

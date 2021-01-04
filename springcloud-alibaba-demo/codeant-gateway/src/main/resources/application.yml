@@ -1,0 +1,24 @@
+server:
+  port: 9000
+spring:
+  application:
+    name: gateway-server
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+    gateway:
+      routes:                       # 路由数组[路由 就是指定当请求满足什么条件的时候转到哪个微服务]
+        - id: provider-route          # 当前路由的标识, 要求唯一，可以随便写
+          uri: lb://provider-server  # lb指的是从nacos中按照名称获取微服务,并遵循负载均衡策略
+          predicates:                # 断言(就是路由转发要满足的条件)
+            - Path=/provider/**       # 当请求路径满足Path指定的规则时,才进行路由转发
+          filters:                   # 过滤器,请求在传递过程中可以通过过滤器对其进行一定的修改
+            - StripPrefix=1           # 转发之前去掉1层路径
+
+        - id: consumer-route
+          uri: lb://consumer-server
+          predicates:
+            - Path=/consumer/**
+          filters:
+            - StripPrefix=1

@@ -19,6 +19,7 @@
     <properties>
         <spring-boot.version>2.3.4.RELEASE</spring-boot.version>
         <spring-cloud-alibaba.version>2.2.3.RELEASE</spring-cloud-alibaba.version>
+        <spring-cloud-gateway.version>2.2.1.RELEASE</spring-cloud-gateway.version>
         <pagehelper.boot.version>1.3.0</pagehelper.boot.version>
         <spring-boot.mybatis>3.1.0</spring-boot.mybatis>
         <mysql.connector>5.1.38</mysql.connector>
@@ -45,6 +46,11 @@
                     <scope>import</scope>
                 </dependency>
                 <!--    网关    -->
+                    <dependency>
+                        <groupId>org.springframework.cloud</groupId>
+                        <artifactId>spring-cloud-starter-gateway</artifactId>
+                        <version>${spring-cloud-gateway.version}</version>
+                    </dependency>
                 <!--    注册中心    -->
                 <!--    配置中心    -->
                 <!--    消息总线    -->

@@ -2,8 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72421342-2385-4160-bdf9-b1800b987888" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/codeant-gateway/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codeant-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/codeant-gateway/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeant-auth/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeant-common/common-util/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeant-common/common-util/src/main/java/per/codeant/base/Base.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeant-common/common-util/src/main/java/per/codeant/base/BaseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeant-common/common-util/src/main/java/per/codeant/base/BaseResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeant-common/common-util/src/main/java/per/codeant/base/BaseService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeant-common/common-util/src/main/java/per/codeant/jqgrid/JQGridPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeant-common/common-util/src/main/java/per/codeant/jqgrid/JQGridPageParams.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeant-common/common-util/src/main/java/per/codeant/jqgrid/JQGridResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeant-common/common-util/src/main/java/per/codeant/jqgrid/JQGridResultEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeant-common/common-util/src/main/java/per/codeant/jqgrid/TreeNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/系统架构.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeant-auth/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/codeant-auth/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeant-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/codeant-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeant-system/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/codeant-system/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeant-system/src/main/java/per/codeant/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/codeant-system/src/main/java/per/codeant/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,7 +68,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/codeant-system/src/main/resources/mapper" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/codeant-common/common-util/src/main/java/per/codeant" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -68,15 +82,18 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Desktop\codeant\git\springboot\springcloud-alibaba-demo\codeant-auth\src\main\java\per\codeant" />
+      <recent name="C:\Users\Administrator\Desktop\codeant\git\springboot\springcloud-alibaba-demo" />
+      <recent name="C:\Users\Administrator\Desktop\codeant\git\springboot\springcloud-alibaba-demo\doc" />
       <recent name="C:\Users\Administrator\Desktop\codeant\git\springboot\springcloud-alibaba-demo\codeant-common\common-entity\src\main\java\per\codeant\common" />
       <recent name="C:\Users\Administrator\Desktop\codeant\git\springboot\springcloud-alibaba-demo\codeant-system\target\lib" />
-      <recent name="C:\Users\Administrator\Desktop\codeant\git\springboot\springcloud-alibaba-demo\codeant-common\common-entity\src\main\resources\base" />
-      <recent name="C:\Users\Administrator\Desktop\codeant\git\springboot\springcloud-alibaba-demo\codeant-common\common-entity\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="per.codeant" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Desktop\codeant\git\springboot\springcloud-alibaba-demo\codeant-common\common-util\src\main\java\per\codeant" />
+      <recent name="C:\Users\Administrator\Desktop\codeant\git\springboot\springcloud-alibaba-demo\codeant-auth\src\main\resources" />
       <recent name="C:\Users\Administrator\Desktop\codeant\git\springboot\springcloud-alibaba-demo\codeant-system\src\main\resources\mapper" />
       <recent name="C:\Users\Administrator\Desktop\codeant\git\springboot\springcloud-alibaba-demo\codeant-system\src\main\resources" />
     </key>
@@ -133,7 +150,8 @@
       <workItem from="1609229453710" duration="1720000" />
       <workItem from="1609310013997" duration="2336000" />
       <workItem from="1609312399836" duration="11870000" />
-      <workItem from="1609720993993" duration="838000" />
+      <workItem from="1609720993993" duration="7353000" />
+      <workItem from="1609900282026" duration="1969000" />
     </task>
     <servers />
   </component>
@@ -144,10 +162,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="440" y="94" key="#Project_Structure" timestamp="1609326776741">
+    <state x="440" y="94" key="#Project_Structure" timestamp="1609901153581">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="440" y="94" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1609326776741" />
+    <state x="440" y="94" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1609901153581" />
     <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1609320176359">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -212,10 +230,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="VCS.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609312217111" />
-    <state x="529" y="197" key="new project wizard" timestamp="1609228830527">
+    <state x="759" y="297" key="chooseDestDirectoryDialog" timestamp="1609900156569">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="529" y="197" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1609228830527" />
+    <state x="759" y="297" key="chooseDestDirectoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609900156569" />
+    <state x="529" y="197" key="new project wizard" timestamp="1609901600543">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="529" y="197" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1609901600543" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

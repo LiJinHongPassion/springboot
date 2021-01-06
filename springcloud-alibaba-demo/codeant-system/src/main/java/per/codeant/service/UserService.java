@@ -2,6 +2,7 @@ package per.codeant.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import per.codeant.base.BaseService;
 import per.codeant.common.entity.TbPmsUser;
 import per.codeant.common.proxy.TbPmsUserMapper;
 import per.codeant.proxy.UserInfoProxy;
@@ -13,7 +14,7 @@ import per.codeant.proxy.UserInfoProxy;
  * @date 20.12.30
  */
 @Service
-public class UserService {
+public class UserService extends BaseService {
     //生成的Mapper
     @Autowired
     private TbPmsUserMapper tbPmsUserMapper;

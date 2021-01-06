@@ -12,9 +12,9 @@
     <modules>
         <module>common-entity</module>
         <module>common-redis</module>
+        <module>common-util</module>
     </modules>
 
     <artifactId>codeant-common</artifactId>
-
 
 </project>

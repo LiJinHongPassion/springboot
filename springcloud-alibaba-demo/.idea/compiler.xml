@@ -9,6 +9,7 @@
         <module name="common-entity" />
         <module name="codeant-code-generator" />
         <module name="codeant-system" />
+        <module name="common-util" />
         <module name="common-redis" />
       </profile>
     </annotationProcessing>

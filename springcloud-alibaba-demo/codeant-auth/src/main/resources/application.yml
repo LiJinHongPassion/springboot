@@ -1,0 +1,22 @@
+server:
+  port: 8000
+  #指定访问项目路径的项目名
+  #SpringBoot版本	配置
+  #1.x	server.context-path=/demo
+  #2.x	server.servlet.context-path=/demo
+  servlet.context-path: /auth
+
+
+
+
+logging:
+  level:
+    per.codeant.**.proxy: DEBUG #包路径为mapper文件包路径
+
+
+#pagehelper分页插件
+pagehelper:
+    helperDialect: mysql
+    reasonable: true
+    supportMethodsArguments: true
+    params: count:countSql

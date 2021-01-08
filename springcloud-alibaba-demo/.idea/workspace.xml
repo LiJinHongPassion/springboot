@@ -2,23 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72421342-2385-4160-bdf9-b1800b987888" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/codeant-auth/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/codeant-common/common-util/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/codeant-common/common-util/src/main/java/per/codeant/base/Base.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/codeant-common/common-util/src/main/java/per/codeant/base/BaseController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/codeant-common/common-util/src/main/java/per/codeant/base/BaseResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/codeant-common/common-util/src/main/java/per/codeant/base/BaseService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/codeant-common/common-util/src/main/java/per/codeant/jqgrid/JQGridPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/codeant-common/common-util/src/main/java/per/codeant/jqgrid/JQGridPageParams.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/codeant-common/common-util/src/main/java/per/codeant/jqgrid/JQGridResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/codeant-common/common-util/src/main/java/per/codeant/jqgrid/JQGridResultEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/codeant-common/common-util/src/main/java/per/codeant/jqgrid/TreeNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/系统架构.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codeant-auth/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/codeant-auth/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codeant-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/codeant-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codeant-system/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/codeant-system/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codeant-system/src/main/java/per/codeant/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/codeant-system/src/main/java/per/codeant/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeant-auth/src/test/java/InfixExpression.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeant-auth/src/main/java/per/codeant/conf/BeanRegisterConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/codeant-auth/src/main/java/per/codeant/conf/BeanRegisterConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeant-common/common-util/src/main/java/per/codeant/base/BaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/codeant-common/common-util/src/main/java/per/codeant/base/BaseController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +55,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/codeant-common/common-util/src/main/java/per/codeant" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../nikebot-main" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -82,29 +69,50 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Desktop\codeant\git\springboot\springcloud-alibaba-demo\codeant-auth" />
+      <recent name="C:\Users\Administrator\Desktop\codeant\git\springboot\springcloud-alibaba-demo\codeant-auth\src\test" />
       <recent name="C:\Users\Administrator\Desktop\codeant\git\springboot\springcloud-alibaba-demo\codeant-auth\src\main\java\per\codeant" />
       <recent name="C:\Users\Administrator\Desktop\codeant\git\springboot\springcloud-alibaba-demo" />
       <recent name="C:\Users\Administrator\Desktop\codeant\git\springboot\springcloud-alibaba-demo\doc" />
-      <recent name="C:\Users\Administrator\Desktop\codeant\git\springboot\springcloud-alibaba-demo\codeant-common\common-entity\src\main\java\per\codeant\common" />
-      <recent name="C:\Users\Administrator\Desktop\codeant\git\springboot\springcloud-alibaba-demo\codeant-system\target\lib" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="per.codeant" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Desktop\codeant\git\springboot\springcloud-alibaba-demo\codeant-auth\src\test\java\test\obj" />
+      <recent name="C:\Users\Administrator\Desktop\codeant\git\springboot\springcloud-alibaba-demo\codeant-auth\src\test\java\test" />
       <recent name="C:\Users\Administrator\Desktop\codeant\git\springboot\springcloud-alibaba-demo\codeant-common\common-util\src\main\java\per\codeant" />
       <recent name="C:\Users\Administrator\Desktop\codeant\git\springboot\springcloud-alibaba-demo\codeant-auth\src\main\resources" />
       <recent name="C:\Users\Administrator\Desktop\codeant\git\springboot\springcloud-alibaba-demo\codeant-system\src\main\resources\mapper" />
-      <recent name="C:\Users\Administrator\Desktop\codeant\git\springboot\springcloud-alibaba-demo\codeant-system\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.SystemApplication">
+  <component name="RunManager" selected="Application.InfixExpression">
     <configuration name="CodeGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="per.codeant.CodeGenerator" />
       <module name="codeant-code-generator" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="per.codeant.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InfixExpression" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="InfixExpression" />
+      <module name="codeant-auth" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.Test" />
+      <module name="codeant-auth" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -128,9 +136,13 @@
     <list>
       <item itemvalue="Application.CodeGenerator" />
       <item itemvalue="Spring Boot.SystemApplication" />
+      <item itemvalue="Application.Test" />
+      <item itemvalue="Application.InfixExpression" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.InfixExpression" />
+        <item itemvalue="Application.Test" />
         <item itemvalue="Spring Boot.SystemApplication" />
         <item itemvalue="Application.CodeGenerator" />
       </list>
@@ -151,7 +163,7 @@
       <workItem from="1609310013997" duration="2336000" />
       <workItem from="1609312399836" duration="11870000" />
       <workItem from="1609720993993" duration="7353000" />
-      <workItem from="1609900282026" duration="1969000" />
+      <workItem from="1609900282026" duration="21372000" />
     </task>
     <servers />
   </component>
@@ -174,38 +186,46 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609310471233" />
-    <state width="1877" height="325" key="GridCell.Tab.0.bottom" timestamp="1609387291097">
+    <state width="400" height="466" key="DebuggerActiveHint" timestamp="1609918953260">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="325" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1609387291097" />
-    <state width="1877" height="325" key="GridCell.Tab.0.center" timestamp="1609387291097">
+    <state width="400" height="466" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1609918953260" />
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1609982921397">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="325" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1609387291097" />
-    <state width="1877" height="325" key="GridCell.Tab.0.left" timestamp="1609387291096">
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1609982921397" />
+    <state width="1172" height="263" key="GridCell.Tab.0.bottom" timestamp="1610098975392">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="325" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1609387291096" />
-    <state width="1877" height="325" key="GridCell.Tab.0.right" timestamp="1609387291097">
+    <state width="1172" height="263" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1610098975392" />
+    <state width="1172" height="263" key="GridCell.Tab.0.center" timestamp="1610098975392">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="325" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1609387291097" />
-    <state width="1877" height="325" key="GridCell.Tab.1.bottom" timestamp="1609387291097">
+    <state width="1172" height="263" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1610098975392" />
+    <state width="1172" height="263" key="GridCell.Tab.0.left" timestamp="1610098975392">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="325" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1609387291097" />
-    <state width="1877" height="325" key="GridCell.Tab.1.center" timestamp="1609387291097">
+    <state width="1172" height="263" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1610098975392" />
+    <state width="1172" height="263" key="GridCell.Tab.0.right" timestamp="1610098975392">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="325" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1609387291097" />
-    <state width="1877" height="325" key="GridCell.Tab.1.left" timestamp="1609387291097">
+    <state width="1172" height="263" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1610098975392" />
+    <state width="1877" height="211" key="GridCell.Tab.1.bottom" timestamp="1610098975387">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="325" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1609387291097" />
-    <state width="1877" height="325" key="GridCell.Tab.1.right" timestamp="1609387291097">
+    <state width="1877" height="211" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1610098975387" />
+    <state width="1877" height="211" key="GridCell.Tab.1.center" timestamp="1610098975387">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="325" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1609387291097" />
+    <state width="1877" height="211" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1610098975387" />
+    <state width="1877" height="211" key="GridCell.Tab.1.left" timestamp="1610098975387">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="211" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1610098975387" />
+    <state width="1877" height="211" key="GridCell.Tab.1.right" timestamp="1610098975387">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="211" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1610098975387" />
     <state width="1877" height="325" key="GridCell.Tab.2.bottom" timestamp="1609387291097">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -234,6 +254,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="759" y="297" key="chooseDestDirectoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609900156569" />
+    <state x="662" y="223" width="596" height="594" key="find.popup" timestamp="1609918263477">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="662" y="223" width="596" height="594" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1609918263477" />
     <state x="529" y="197" key="new project wizard" timestamp="1609901600543">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -246,6 +270,11 @@
           <url>file://$PROJECT_DIR$/codeant-system/src/main/java/per/codeant/controller/UserController.java</url>
           <line>25</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/codeant-auth/src/test/java/test/Test.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

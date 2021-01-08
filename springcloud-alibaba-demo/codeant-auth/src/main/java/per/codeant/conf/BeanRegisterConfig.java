@@ -3,7 +3,6 @@ package per.codeant.conf;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.stereotype.Component;
 import per.codeant.filter.MyFilter;
 
 /**

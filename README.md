@@ -31,6 +31,10 @@
 >
 >[springboot-multi-datasource-demo](https://github.com/LiJinHongPassion/springboot/tree/master/springboot-multi-datasource-demo)：多数据源（可用于读写分离）
 
+### 幂等性
+
+>[springboot_idempotence_demo](https://github.com/LiJinHongPassion/springboot/tree/master/springboot_idempotence_demo)：幂等性
+
 ### mybatis相关
 
 >[springboot_mybatis_demo](https://github.com/LiJinHongPassion/springboot/tree/master/springboot_mybatis_demo)：整合`mybatis`，`redis`为二级缓存

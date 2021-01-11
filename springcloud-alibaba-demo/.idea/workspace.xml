@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72421342-2385-4160-bdf9-b1800b987888" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/codeant-auth/src/test/java/InfixExpression.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codeant-auth/src/main/java/per/codeant/conf/BeanRegisterConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/codeant-auth/src/main/java/per/codeant/conf/BeanRegisterConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codeant-common/common-util/src/main/java/per/codeant/base/BaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/codeant-common/common-util/src/main/java/per/codeant/base/BaseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/项目经历.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,22 +65,22 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Administrator\Desktop\codeant\git\springboot\springcloud-alibaba-demo\codeant-auth" />
-      <recent name="C:\Users\Administrator\Desktop\codeant\git\springboot\springcloud-alibaba-demo\codeant-auth\src\test" />
-      <recent name="C:\Users\Administrator\Desktop\codeant\git\springboot\springcloud-alibaba-demo\codeant-auth\src\main\java\per\codeant" />
-      <recent name="C:\Users\Administrator\Desktop\codeant\git\springboot\springcloud-alibaba-demo" />
-      <recent name="C:\Users\Administrator\Desktop\codeant\git\springboot\springcloud-alibaba-demo\doc" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="per.codeant" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Administrator\Desktop\codeant\git\springboot\springcloud-alibaba-demo\codeant-auth\src\test\java\test\obj" />
       <recent name="C:\Users\Administrator\Desktop\codeant\git\springboot\springcloud-alibaba-demo\codeant-auth\src\test\java\test" />
       <recent name="C:\Users\Administrator\Desktop\codeant\git\springboot\springcloud-alibaba-demo\codeant-common\common-util\src\main\java\per\codeant" />
       <recent name="C:\Users\Administrator\Desktop\codeant\git\springboot\springcloud-alibaba-demo\codeant-auth\src\main\resources" />
       <recent name="C:\Users\Administrator\Desktop\codeant\git\springboot\springcloud-alibaba-demo\codeant-system\src\main\resources\mapper" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="per.codeant" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Desktop\codeant\git\springboot\springcloud-alibaba-demo" />
+      <recent name="C:\Users\Administrator\Desktop\codeant\git\springboot\springcloud-alibaba-demo\codeant-auth" />
+      <recent name="C:\Users\Administrator\Desktop\codeant\git\springboot\springcloud-alibaba-demo\codeant-auth\src\test" />
+      <recent name="C:\Users\Administrator\Desktop\codeant\git\springboot\springcloud-alibaba-demo\codeant-auth\src\main\java\per\codeant" />
+      <recent name="C:\Users\Administrator\Desktop\codeant\git\springboot\springcloud-alibaba-demo\doc" />
     </key>
   </component>
   <component name="RunManager" selected="Application.InfixExpression">
@@ -135,9 +132,9 @@
     </configuration>
     <list>
       <item itemvalue="Application.CodeGenerator" />
-      <item itemvalue="Spring Boot.SystemApplication" />
       <item itemvalue="Application.Test" />
       <item itemvalue="Application.InfixExpression" />
+      <item itemvalue="Spring Boot.SystemApplication" />
     </list>
     <recent_temporary>
       <list>
@@ -164,6 +161,7 @@
       <workItem from="1609312399836" duration="11870000" />
       <workItem from="1609720993993" duration="7353000" />
       <workItem from="1609900282026" duration="21372000" />
+      <workItem from="1610329990461" duration="5219000" />
     </task>
     <servers />
   </component>
@@ -242,10 +240,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="325" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1609387291097" />
-    <state x="440" y="94" key="SettingsEditor" timestamp="1609314815011">
+    <state x="440" y="94" key="SettingsEditor" timestamp="1610331486691">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1609314815011" />
+    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1610331486691" />
     <state x="92" y="92" width="1736" height="856" key="VCS.FileHistoryDialog" timestamp="1609312217111">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -258,10 +256,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="662" y="223" width="596" height="594" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1609918263477" />
-    <state x="529" y="197" key="new project wizard" timestamp="1609901600543">
+    <state x="529" y="197" key="new project wizard" timestamp="1610335756090">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="529" y="197" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1609901600543" />
+    <state x="529" y="197" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1610335756090" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

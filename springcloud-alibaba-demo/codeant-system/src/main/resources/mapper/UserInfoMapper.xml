@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="per.codeant.proxy.UserInfoProxy">
-	<select id="userInfo" resultType="per.codeant.common.entity.TbPmsUser">
-		select * from tb_pms_user where F_USERID = #{id}
-	</select>
-
-</mapper>

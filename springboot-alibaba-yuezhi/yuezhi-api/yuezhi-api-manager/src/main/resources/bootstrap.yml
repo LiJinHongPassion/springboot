@@ -1,0 +1,37 @@
+# 注意配置文件加载的优先级，所以这里选择bootstrap
+server:
+  port: 8081
+spring:
+  profiles:
+    active: dev
+  application:
+    name: yuezhi-api-manager
+  cloud:
+    nacos:
+      # 注册中心
+      discovery:
+        # 地址
+        server-addr: 127.0.0.1:8848
+      # 配置中心
+      config:
+        # 地址
+        server-addr: ${spring.cloud.nacos.discovery.server-addr}
+        # 配置文件格式
+        file-extension: yml
+        # 共享配置
+#        sharedConfigs: application-${spring.profiles.active}.${spring.cloud.nacos.config.file-extension}
+
+# 配置sentinel控制台的地址
+    sentinel:
+      transport:
+        # 指定的端口号spring.cloud.sentinel.transport.port将在应用程序的相应服务器上启动HTTP Server，并且该服务器将与Sentinel仪表板进行交互。
+        # 例如，如果在Sentinel仪表板中添加了速率限制规则，则规则数据将被推送到HTTP Server并由HTTP Server接收，然后HTTP Server将规则注册到Sentinel。
+        port: 8719
+        # sentinel控制台 IP:端口
+        dashboard: 127.0.0.1:9000
+
+# 开启sentinel对feign的支持
+feign:
+  sentinel:
+    enabled: true
+

@@ -1,0 +1,17 @@
+spring:
+  profiles:
+    active: dev
+  application:
+    name: yuezhi-basic-monitor
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+      # 配置中心
+      config:
+        # 地址
+        server-addr: ${spring.cloud.nacos.discovery.server-addr}
+        # 配置文件格式
+        file-extension: yml
+        sharedConfigs:
+          - application-monitor-${spring.profiles.active}.${spring.cloud.nacos.config.file-extension}

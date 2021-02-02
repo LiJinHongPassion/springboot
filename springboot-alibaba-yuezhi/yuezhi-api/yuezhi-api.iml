@@ -95,7 +95,6 @@
     <orderEntry type="library" name="Maven: com.alibaba.cloud:spring-cloud-starter-alibaba-sentinel:2.2.4.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: com.alibaba.csp:sentinel-transport-simple-http:1.8.0" level="project" />
     <orderEntry type="library" name="Maven: com.alibaba.csp:sentinel-transport-common:1.8.0" level="project" />
-    <orderEntry type="library" name="Maven: com.alibaba.csp:sentinel-datasource-extension:1.8.0" level="project" />
     <orderEntry type="library" name="Maven: com.alibaba:fastjson:1.2.71" level="project" />
     <orderEntry type="library" name="Maven: com.alibaba.csp:sentinel-annotation-aspectj:1.8.0" level="project" />
     <orderEntry type="library" name="Maven: com.alibaba.csp:sentinel-core:1.8.0" level="project" />
@@ -133,6 +132,10 @@
     <orderEntry type="library" name="Maven: io.github.openfeign:feign-hystrix:10.10.1" level="project" />
     <orderEntry type="library" name="Maven: com.netflix.archaius:archaius-core:0.7.6" level="project" />
     <orderEntry type="library" name="Maven: com.netflix.hystrix:hystrix-core:1.5.18" level="project" />
+    <orderEntry type="library" name="Maven: com.alibaba.csp:sentinel-datasource-nacos:1.8.0" level="project" />
+    <orderEntry type="library" name="Maven: com.alibaba.csp:sentinel-datasource-extension:1.8.0" level="project" />
+    <orderEntry type="library" name="Maven: de.codecentric:spring-boot-admin-starter-client:2.3.1" level="project" />
+    <orderEntry type="library" name="Maven: de.codecentric:spring-boot-admin-client:2.3.1" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.projectlombok:lombok:1.18.16" level="project" />
   </component>
 </module>

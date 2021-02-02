@@ -39,6 +39,7 @@
         <gson.version>2.2.4</gson.version>
         <servlet-api.version>2.5</servlet-api.version>
         <json-lib.version>2.4</json-lib.version>
+        <spring-boot-admin.version>2.3.1</spring-boot-admin.version>
     </properties>
 
     <!-- dependencyManagement子模块继承之后，提供作用：锁定版本+子modlue不用写groupId和version;
@@ -71,31 +72,46 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-
-
-
+            <!--springboot admin-->
             <dependency>
-                <groupId>mysql</groupId>
-                <artifactId>mysql-connector-java</artifactId>
-                <version>${mysql.version}</version>
+                <groupId>de.codecentric</groupId>
+                <artifactId>spring-boot-admin-server</artifactId>
+                <version>${spring-boot-admin.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>de.codecentric</groupId>
+                <artifactId>spring-boot-admin-starter-client</artifactId>
+                <version>${spring-boot-admin.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>de.codecentric</groupId>
+                <artifactId>spring-boot-admin-server-ui</artifactId>
+                <version>${spring-boot-admin.version}</version>
             </dependency>
 
-            <!-- 阿里系的Druid依赖包 -->
-            <dependency>
-                <groupId>com.alibaba</groupId>
-                <artifactId>druid-spring-boot-starter</artifactId>
-                <version>${druid.version}</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>com.alibaba</groupId>
-                        <artifactId>jconsole</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>com.alibaba</groupId>
-                        <artifactId>tools</artifactId>
-                    </exclusion>
-                </exclusions>
-            </dependency>
+
+<!--            <dependency>-->
+<!--                <groupId>mysql</groupId>-->
+<!--                <artifactId>mysql-connector-java</artifactId>-->
+<!--                <version>${mysql.version}</version>-->
+<!--            </dependency>-->
+
+<!--            &lt;!&ndash; 阿里系的Druid依赖包 &ndash;&gt;-->
+<!--            <dependency>-->
+<!--                <groupId>com.alibaba</groupId>-->
+<!--                <artifactId>druid-spring-boot-starter</artifactId>-->
+<!--                <version>${druid.version}</version>-->
+<!--                <exclusions>-->
+<!--                    <exclusion>-->
+<!--                        <groupId>com.alibaba</groupId>-->
+<!--                        <artifactId>jconsole</artifactId>-->
+<!--                    </exclusion>-->
+<!--                    <exclusion>-->
+<!--                        <groupId>com.alibaba</groupId>-->
+<!--                        <artifactId>tools</artifactId>-->
+<!--                    </exclusion>-->
+<!--                </exclusions>-->
+<!--            </dependency>-->
 
 <!--            <dependency>-->
 <!--                <groupId>com.baomidou</groupId>-->
@@ -126,17 +142,17 @@
 
 
 
-            <dependency>
-                <groupId>org.apache.commons</groupId>
-                <artifactId>commons-lang3</artifactId>
-                <version>${commons-lang3.version}</version>
-            </dependency>
+<!--            <dependency>-->
+<!--                <groupId>org.apache.commons</groupId>-->
+<!--                <artifactId>commons-lang3</artifactId>-->
+<!--                <version>${commons-lang3.version}</version>-->
+<!--            </dependency>-->
 
-            <dependency>
-                <groupId>com.google.code.gson</groupId>
-                <artifactId>gson</artifactId>
-                <version>${gson.version}</version>
-            </dependency>
+<!--            <dependency>-->
+<!--                <groupId>com.google.code.gson</groupId>-->
+<!--                <artifactId>gson</artifactId>-->
+<!--                <version>${gson.version}</version>-->
+<!--            </dependency>-->
             <dependency>
                 <groupId>javax.servlet</groupId>
                 <artifactId>servlet-api</artifactId>

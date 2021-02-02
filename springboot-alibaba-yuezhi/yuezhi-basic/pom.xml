@@ -11,6 +11,27 @@
 
     <artifactId>yuezhi-basic</artifactId>
     <packaging>pom</packaging>
+    <modules>
+        <module>yuezhi-basic-monitor</module>
+        <module>yuezhi-basic-gateway</module>
+    </modules>
 
+    <dependencies>
 
+        <!--注册中心-->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+        </dependency>
+        <!--配置中心-->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+        </dependency>
+        <!--springboot admin 客户端-->
+        <dependency>
+            <groupId>de.codecentric</groupId>
+            <artifactId>spring-boot-admin-starter-client</artifactId>
+        </dependency>
+    </dependencies>
 </project>

@@ -27,14 +27,5 @@ public class ApiManagerApplication {
         log.info("3. 访问 http://127.0.0.1:8081/echo/helloword");
 
         log.info("\n\n\n");
-        log.info("/******************测试配置更新*********************/");
-
-        log.info("1. nacos中创建 ${prefix}-${spring.profiles.active}.${file-extension}的配置，这里是yuezhi-api-manager-dev.yml ， 提交useLocalCache: false配置到nacos");
-        log.info("2. GET访问 http://127.0.0.1:8081/config/get  查看返回值");
-        log.info("3. nacos中更新yuezhi-api-manager-dev.yml中 useLocalCache: true 配置到nacos");
-        log.info("4. GET访问 http://127.0.0.1:8081/config/get  查看更新后的返回值");
-        log.info("\n\n\n");
-
     }
-
 }

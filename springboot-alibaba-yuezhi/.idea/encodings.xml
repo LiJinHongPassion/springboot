@@ -3,6 +3,10 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/yuezhi-api/yuezhi-api-manager/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/yuezhi-api/yuezhi-api-manager/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/yuezhi-basic/yuezhi-basic-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/yuezhi-basic/yuezhi-basic-gateway/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/yuezhi-basic/yuezhi-basic-monitor/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/yuezhi-basic/yuezhi-basic-monitor/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/yuezhi-core/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/yuezhi-service/yuezhi-service-business/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/yuezhi-service/yuezhi-service-business/src/main/resources" charset="UTF-8" />

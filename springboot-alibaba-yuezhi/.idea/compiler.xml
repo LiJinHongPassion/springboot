@@ -6,10 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="yuezhi-service-business" />
+        <module name="yuezhi-core" />
         <module name="yuezhi-api-manager" />
         <module name="yuezhi-view" />
-        <module name="yuezhi-core" />
+        <module name="yuezhi-service-business" />
+        <module name="yuezhi-basic-monitor" />
+        <module name="yuezhi-basic-gateway" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -17,6 +19,8 @@
       <module name="yuezhi-api" target="9" />
       <module name="yuezhi-api-manager" target="9" />
       <module name="yuezhi-basic" target="9" />
+      <module name="yuezhi-basic-gateway" target="9" />
+      <module name="yuezhi-basic-monitor" target="9" />
       <module name="yuezhi-core" target="9" />
       <module name="yuezhi-service" target="9" />
       <module name="yuezhi-service-business" target="9" />

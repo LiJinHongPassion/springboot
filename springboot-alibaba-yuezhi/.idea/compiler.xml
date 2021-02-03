@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="yuezhi-core" />
+        <module name="yuezhi-api-manager" />
+        <module name="yuezhi-view" />
+        <module name="yuezhi-service-business" />
+        <module name="yuezhi-basic-monitor" />
+        <module name="yuezhi-basic-gateway" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="8">
+      <module name="springboot-alibaba-yuezhi" target="8" />
+      <module name="yuezhi-api" target="8" />
+      <module name="yuezhi-api-manager" target="8" />
+      <module name="yuezhi-basic" target="8" />
+      <module name="yuezhi-basic-gateway" target="8" />
+      <module name="yuezhi-basic-monitor" target="8" />
+      <module name="yuezhi-core" target="8" />
+      <module name="yuezhi-service" target="8" />
+      <module name="yuezhi-service-business" target="8" />
+      <module name="yuezhi-view" target="8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="yuezhi-api-manager" options="" />
+    </option>
+  </component>
+</project>

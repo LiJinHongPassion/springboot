@@ -15,15 +15,25 @@ services:
 #    external_links:
 #      - "eurekaserver:peer1"
 #      - "service_a"
+
+  yuezhi-basic-monitor:
+    image: yuezhi-basic-monitor-1.0
+    ports:
+      - "8001:8001"
+    tty: true
+    network_mode: bridge
+    restart: always
   yuezhi-api-manager:
     image: yuezhi-api-manager-1.0
-    hostname: yuezhi-api-manager
     ports:
       - "8081:8081"
-    external_links:
-      - "rmmicroservice"
-    volumes:
-      - /usr/jdk1.8:/usr/jdk1.8
+    tty: true
+    network_mode: bridge
+    restart: always
+  yuezhi-service-business:
+    image: yuezhi-service-business-1.0
+    ports:
+      - "8084:8084"
     tty: true
     network_mode: bridge
     restart: always

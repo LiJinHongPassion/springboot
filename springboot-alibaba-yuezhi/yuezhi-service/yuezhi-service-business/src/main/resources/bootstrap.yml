@@ -3,14 +3,16 @@ spring:
     active: dev
   application:
     name: yuezhi-service-business
+
   cloud:
     nacos:
       # 注册中心
       discovery:
         # 地址
-        server-addr: 127.0.0.1:8848
+        server-addr: 123.56.129.198:8848
       # 配置中心
       config:
+        prefix: ${spring.application.name}
         # 地址
         server-addr: ${spring.cloud.nacos.discovery.server-addr}
         # 配置文件格式

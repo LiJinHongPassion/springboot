@@ -37,20 +37,20 @@ public class ReflectUtil {
 	 * @throws IllegalArgumentException
 	 * @throws IllegalAccessException
 	 */
-	public static Object getValueByFieldName(Object obj, String fieldName) throws SecurityException, NoSuchFieldException, IllegalArgumentException, IllegalAccessException {
-		Field field = getFieldByFieldName(obj, fieldName);
-		Object value = null;
-		if (field != null) {
-			if (field.canAccess(obj)) {
-				value = field.get(obj);
-			} else {
-				field.setAccessible(true);
-				value = field.get(obj);
-				field.setAccessible(false);
-			}
-		}
-		return value;
-	}
+//	public static Object getValueByFieldName(Object obj, String fieldName) throws SecurityException, NoSuchFieldException, IllegalArgumentException, IllegalAccessException {
+//		Field field = getFieldByFieldName(obj, fieldName);
+//		Object value = null;
+//		if (field != null) {
+//			if (field.canAccess(obj)) {
+//				value = field.get(obj);
+//			} else {
+//				field.setAccessible(true);
+//				value = field.get(obj);
+//				field.setAccessible(false);
+//			}
+//		}
+//		return value;
+//	}
 
 	/**
 	 * 设置obj对象fieldName的属性值
@@ -63,14 +63,14 @@ public class ReflectUtil {
 	 * @throws IllegalArgumentException
 	 * @throws IllegalAccessException
 	 */
-	public static void setValueByFieldName(Object obj, String fieldName, Object value) throws SecurityException, NoSuchFieldException, IllegalArgumentException, IllegalAccessException {
-		Field field = getFieldByFieldName(obj, fieldName);
-		if (field.trySetAccessible()) {
-			field.set(obj, value);
-		} else {
-			field.setAccessible(true);
-			field.set(obj, value);
-			field.setAccessible(false);
-		}
-	}
+//	public static void setValueByFieldName(Object obj, String fieldName, Object value) throws SecurityException, NoSuchFieldException, IllegalArgumentException, IllegalAccessException {
+//		Field field = getFieldByFieldName(obj, fieldName);
+//		if (field.trySetAccessible()) {
+//			field.set(obj, value);
+//		} else {
+//			field.setAccessible(true);
+//			field.set(obj, value);
+//			field.setAccessible(false);
+//		}
+//	}
 }

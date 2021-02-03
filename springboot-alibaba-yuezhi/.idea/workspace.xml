@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="26242aec-1107-491c-9659-939b76025bdf" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="G:\repository" />
+        <option name="mavenHome" value="F:/apache-maven-3.6.2" />
+        <option name="userSettingsFile" value="F:\apache-maven-3.6.2\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="vmOptionsForImporter" value="-Dmaven.wagon.http.ssl.insecure=true -Dmaven.wagon.http.ssl.allowall=true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1nuBfUPOPJEhameg6DvP5SDWs1A" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/yml config file" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2908046" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Desktop\ry-yuezhi\springboot-alibaba-yuezhi\src\main\yml config file" />
+      <recent name="C:\Users\Administrator\Desktop\ry-yuezhi\springboot-alibaba-yuezhi\src\main" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Desktop\ry-yuezhi\springboot-alibaba-yuezhi\src\main\yml config file" />
+      <recent name="C:\Users\Administrator\Desktop\ry-yuezhi\springboot-alibaba-yuezhi\yuezhi-basic\yuezhi-basic-monitor" />
+      <recent name="C:\Users\Administrator\Desktop\ry-yuezhi\springboot-alibaba-yuezhi\yuezhi-service\yuezhi-service-business" />
+      <recent name="C:\Users\Administrator\Desktop\ry-yuezhi\springboot-alibaba-yuezhi\yuezhi-api\yuezhi-api-manager" />
+      <recent name="C:\Users\Administrator\Desktop\ry-yuezhi\springboot-alibaba-yuezhi\src\main\file" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Docker.yuezhi-api-manager-1.0">
+    <configuration name="AdminServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="yuezhi-basic-monitor" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ruiyun.AdminServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApiManagerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="yuezhi-api-manager" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ruiyun.ApiManagerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GateWayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="yuezhi-basic-gateway" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ruiyun.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ruiyun.GateWayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServiceBusinessApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="yuezhi-service-business" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ruiyun.ServiceBusinessApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="yuezhi-api-manager-1.0" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="yuezhi-api-manager-1.0" />
+          <option name="buildCliOptions" value="" />
+          <option name="buildOnly" value="true" />
+          <option name="command" value="" />
+          <option name="containerName" value="yuezhi-api-manager-1.0-container" />
+          <option name="entrypoint" value="" />
+          <option name="commandLineOptions" value="" />
+          <option name="sourceFilePath" value="yuezhi-api/yuezhi-api-manager/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2">
+        <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/pom.xml" goal="clean package -U -DskipTests" />
+      </method>
+    </configuration>
+    <configuration name="yuezhi-basic-monitor/Dockerfile" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="yuezhi-basic-monitor-1.0" />
+          <option name="buildCliOptions" value="" />
+          <option name="buildOnly" value="true" />
+          <option name="command" value="" />
+          <option name="containerName" value="" />
+          <option name="entrypoint" value="" />
+          <option name="commandLineOptions" value="" />
+          <option name="sourceFilePath" value="yuezhi-basic/yuezhi-basic-monitor/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2">
+        <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/pom.xml" goal="clean package -U -DskipTests" />
+      </method>
+    </configuration>
+    <configuration name="yuezhi-service-business/Dockerfile" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="yuezhi-service-business-1.0" />
+          <option name="buildCliOptions" value="" />
+          <option name="buildOnly" value="true" />
+          <option name="command" value="" />
+          <option name="containerName" value="yuezhi-service-business-1.0-container" />
+          <option name="entrypoint" value="" />
+          <option name="commandLineOptions" value="" />
+          <option name="sourceFilePath" value="yuezhi-service/yuezhi-service-business/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2">
+        <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/pom.xml" goal="clean package -U -DskipTests" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Docker.yuezhi-api-manager-1.0" />
+      <item itemvalue="Docker.yuezhi-service-business/Dockerfile" />
+      <item itemvalue="Docker.yuezhi-basic-monitor/Dockerfile" />
+      <item itemvalue="Spring Boot.AdminServerApplication" />
+      <item itemvalue="Spring Boot.ApiManagerApplication" />
+      <item itemvalue="Spring Boot.ServiceBusinessApplication" />
+      <item itemvalue="Spring Boot.GateWayApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.GateWayApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="26242aec-1107-491c-9659-939b76025bdf" name="Default Changelist" comment="" />
+      <created>1612230198688</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1612230198688</updated>
+      <workItem from="1612230202753" duration="47000" />
+      <workItem from="1612237288963" duration="10448000" />
+      <workItem from="1612253127652" duration="5249000" />
+      <workItem from="1612258842425" duration="16864000" />
+      <workItem from="1612335640748" duration="7998000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="552" y="178" key="#Docker" timestamp="1612321935208">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" key="#Docker/0.0.1920.1040@0.0.1920.1040" timestamp="1612321935208" />
+    <state x="440" y="94" key="#Project_Structure" timestamp="1612340369444">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="440" y="94" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1612340369444" />
+    <state x="414" y="174" width="1174" height="691" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1612341845484">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="174" width="1174" height="691" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1612341845484" />
+    <state x="577" y="320" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1612319218946">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="577" y="320" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1612319218946" />
+    <state x="628" y="227" key="#docker-compose-service.yml.yuezhi-api-manager:_Compose_Deployment" timestamp="1612322799887">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="628" y="227" key="#docker-compose-service.yml.yuezhi-api-manager:_Compose_Deployment/0.0.1920.1040@0.0.1920.1040" timestamp="1612322799887" />
+    <state x="656" y="227" key="#docker-compose-service.yml:_Compose_Deployment" timestamp="1612321548487">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="656" y="227" key="#docker-compose-service.yml:_Compose_Deployment/0.0.1920.1040@0.0.1920.1040" timestamp="1612321548487" />
+    <state x="656" y="55" key="#yuezhi-api-manager-1.0" timestamp="1612337339960">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="656" y="55" key="#yuezhi-api-manager-1.0/0.0.1920.1040@0.0.1920.1040" timestamp="1612337339960" />
+    <state x="656" y="55" key="#yuezhi-basic-monitor/Dockerfile" timestamp="1612340710121">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="656" y="55" key="#yuezhi-basic-monitor/Dockerfile/0.0.1920.1040@0.0.1920.1040" timestamp="1612340710121" />
+    <state x="656" y="55" key="#yuezhi-service-business/Dockerfile" timestamp="1612340699446">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="656" y="55" key="#yuezhi-service-business/Dockerfile/0.0.1920.1040@0.0.1920.1040" timestamp="1612340699446" />
+    <state x="739" y="274" key="FileChooserDialogImpl" timestamp="1612322118493">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="739" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1612322118493" />
+    <state width="1877" height="425" key="GridCell.Tab.0.bottom" timestamp="1612341899258">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="425" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1612341899258" />
+    <state width="1877" height="425" key="GridCell.Tab.0.center" timestamp="1612341899258">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="425" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1612341899258" />
+    <state width="1877" height="425" key="GridCell.Tab.0.left" timestamp="1612341899258">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="425" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1612341899258" />
+    <state width="1877" height="425" key="GridCell.Tab.0.right" timestamp="1612341899258">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="425" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1612341899258" />
+    <state width="1877" height="408" key="GridCell.Tab.1.bottom" timestamp="1612338912412">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="408" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1612338912412" />
+    <state width="1877" height="408" key="GridCell.Tab.1.center" timestamp="1612338912412">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="408" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1612338912412" />
+    <state width="1877" height="408" key="GridCell.Tab.1.left" timestamp="1612338912412">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="408" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1612338912412" />
+    <state width="1877" height="408" key="GridCell.Tab.1.right" timestamp="1612338912412">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="408" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1612338912412" />
+    <state width="1877" height="408" key="GridCell.Tab.2.bottom" timestamp="1612338912413">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="408" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1612338912413" />
+    <state width="1877" height="408" key="GridCell.Tab.2.center" timestamp="1612338912413">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="408" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1612338912413" />
+    <state width="1877" height="408" key="GridCell.Tab.2.left" timestamp="1612338912413">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="408" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1612338912413" />
+    <state width="1877" height="408" key="GridCell.Tab.2.right" timestamp="1612338912413">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="408" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1612338912413" />
+    <state x="667" y="188" key="SettingsEditor" timestamp="1612339348273">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="667" y="188" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1612339348273" />
+    <state x="858" y="416" width="754" height="208" key="com.intellij.docker.deployment.ui.DockerPortBindingsField.v173.dialogSize" timestamp="1612259220192">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="858" y="416" width="754" height="208" key="com.intellij.docker.deployment.ui.DockerPortBindingsField.v173.dialogSize/0.0.1920.1040@0.0.1920.1040" timestamp="1612259220192" />
+    <state x="662" y="252" width="656" height="618" key="find.popup" timestamp="1612337874826">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="662" y="252" width="656" height="618" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1612337874826" />
+    <state x="334" y="180" key="new project wizard" timestamp="1612254834662">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="334" y="180" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1612254834662" />
+    <state x="616" y="173" width="672" height="676" key="search.everywhere.popup" timestamp="1612237583613">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="173" width="672" height="676" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1612237583613" />
+  </component>
+</project>

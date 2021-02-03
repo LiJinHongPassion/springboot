@@ -1,19 +1,19 @@
 # 环境
 version: "3"
 services:
-#  mysql:
-#    image: mysql:5.7
-#    container_name: mysql
-#    environment:
-#      - MYSQL_ROOT_PASSWORD=123456
-#      - TZ=Asia/Shanghai
-#    volumes:
-#      - /app/cloud/mysql/data:/var/lib/mysql
-#      - /etc/localtime:/etc/localtime
-#    network_mode: host
-#    ports:
-#      - 3306:3306
-#    restart: always
+  mysql:
+    image: mysql:5.7
+    container_name: mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=123456
+      - TZ=Asia/Shanghai
+    volumes:
+      - /app/cloud/mysql/data:/var/lib/mysql
+      - /etc/localtime:/etc/localtime
+    network_mode: host
+    ports:
+      - 3306:3306
+    restart: always
 
   nacos:
     image: nacos/nacos-server:1.4.1
@@ -23,11 +23,11 @@ services:
       - MODE=standalone
       - MYSQL_DATABASE_NUM=1
       - SPRING_DATASOURCE_PLATFORM=mysql
-      - MYSQL_SERVICE_HOST=myserver
+      - MYSQL_SERVICE_HOST=123.56.129.198
       - MYSQL_SERVICE_DB_NAME=nacos
       - MYSQL_SERVICE_PORT=33306
       - MYSQL_SERVICE_USER=root
-      - MYSQL_SERVICE_PASSWORD=codeAnt.+AA123
+      - MYSQL_SERVICE_PASSWORD=123456
     volumes:
       - /app/cloud/nacos/logs:/home/nacos/logs
     network_mode: host

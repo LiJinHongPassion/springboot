@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/springboot-alibaba-yuezhi.iml" filepath="$PROJECT_DIR$/springboot-alibaba-yuezhi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yuezhi-api/yuezhi-api.iml" filepath="$PROJECT_DIR$/yuezhi-api/yuezhi-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yuezhi-api/yuezhi-api-manager/yuezhi-api-manager.iml" filepath="$PROJECT_DIR$/yuezhi-api/yuezhi-api-manager/yuezhi-api-manager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yuezhi-basic/yuezhi-basic.iml" filepath="$PROJECT_DIR$/yuezhi-basic/yuezhi-basic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yuezhi-basic/yuezhi-basic-gateway/yuezhi-basic-gateway.iml" filepath="$PROJECT_DIR$/yuezhi-basic/yuezhi-basic-gateway/yuezhi-basic-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yuezhi-basic/yuezhi-basic-monitor/yuezhi-basic-monitor.iml" filepath="$PROJECT_DIR$/yuezhi-basic/yuezhi-basic-monitor/yuezhi-basic-monitor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yuezhi-core/yuezhi-core.iml" filepath="$PROJECT_DIR$/yuezhi-core/yuezhi-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yuezhi-service/yuezhi-service.iml" filepath="$PROJECT_DIR$/yuezhi-service/yuezhi-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yuezhi-service/yuezhi-service-business/yuezhi-service-business.iml" filepath="$PROJECT_DIR$/yuezhi-service/yuezhi-service-business/yuezhi-service-business.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yuezhi-view/yuezhi-view.iml" filepath="$PROJECT_DIR$/yuezhi-view/yuezhi-view.iml" />
+    </modules>
+  </component>
+</project>

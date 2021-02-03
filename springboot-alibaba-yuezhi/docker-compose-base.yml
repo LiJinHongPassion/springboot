@@ -1,0 +1,66 @@
+# 环境
+version: "3"
+services:
+#  mysql:
+#    image: mysql:5.7
+#    container_name: mysql
+#    environment:
+#      - MYSQL_ROOT_PASSWORD=123456
+#      - TZ=Asia/Shanghai
+#    volumes:
+#      - /app/cloud/mysql/data:/var/lib/mysql
+#      - /etc/localtime:/etc/localtime
+#    network_mode: host
+#    ports:
+#      - 3306:3306
+#    restart: always
+
+  nacos:
+    image: nacos/nacos-server:1.4.1
+    container_name: nacos
+    environment:
+      - PREFER_HOST_MODE=hostname
+      - MODE=standalone
+      - MYSQL_DATABASE_NUM=1
+      - SPRING_DATASOURCE_PLATFORM=mysql
+      - MYSQL_SERVICE_HOST=myserver
+      - MYSQL_SERVICE_DB_NAME=nacos
+      - MYSQL_SERVICE_PORT=33306
+      - MYSQL_SERVICE_USER=root
+      - MYSQL_SERVICE_PASSWORD=codeAnt.+AA123
+    volumes:
+      - /app/cloud/nacos/logs:/home/nacos/logs
+    network_mode: host
+    ports:
+      - 8848:8848
+    depends_on:
+      - mysql
+    restart: always
+
+  sentinel:
+    image: bladex/sentinel-dashboard:1.8
+    container_name: sentinel
+    environment:
+      - TZ=Asia/Shanghai
+    network_mode: host
+    ports:
+      - 8858:8858
+    restart: always
+
+#  seata:
+#    image: seataio/seata-server:1.2.0
+#    container_name: seata
+#    environment:
+#      - SEATA_CONFIG_NAME=file:/root/seata-config/registry
+#      - SEATA_IP=192.168.80.188
+#      - TZ=Asia/Shanghai
+#    volumes:
+#      - /app/cloud/seata/conf:/root/seata-config
+#      - /app/cloud/seata/logs:/root/logs
+#      - /etc/localtime:/etc/localtime
+#    network_mode: host
+#    ports:
+#      - 8091:8091
+#    depends_on:
+#      - nacos
+#    restart: always

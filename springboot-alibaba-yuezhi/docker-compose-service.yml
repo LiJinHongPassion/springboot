@@ -1,0 +1,29 @@
+# 服务打包
+version: "2"
+services:
+#  yuezhi-api-manager:
+#    image: yuezhi/yuezhi-api-manager
+#    ports:
+#      - "1113:1113"
+#    external_links:
+#      - "config"
+#      - "eurekaserver:peer1"
+#  service_b:
+#    image: cloud_test/service_b
+#    ports:
+#      - "1114:1114"
+#    external_links:
+#      - "eurekaserver:peer1"
+#      - "service_a"
+  yuezhi-api-manager:
+    image: yuezhi-api-manager-1.0
+    hostname: yuezhi-api-manager
+    ports:
+      - "8081:8081"
+    external_links:
+      - "rmmicroservice"
+    volumes:
+      - /usr/jdk1.8:/usr/jdk1.8
+    tty: true
+    network_mode: bridge
+    restart: always

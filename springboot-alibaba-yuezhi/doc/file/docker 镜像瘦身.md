@@ -40,9 +40,9 @@ ADD alpine-minirootfs-3.12.0-x86_64.tar.gz /
 CMD ["/bin/sh"]
 ```
 
-![图片](img/640)对比 Dockerfile 和镜像历史层数发现 `ADD` 命令层占据了 5.57M 大小，而 `CMD` 命令层并不占空间。
+![图片](Desktop/codeant/git/springboot/springboot-alibaba-yuezhi/doc/file/img/640)对比 Dockerfile 和镜像历史层数发现 `ADD` 命令层占据了 5.57M 大小，而 `CMD` 命令层并不占空间。
 
-镜像的层就像 `Git` 的每一次提交 `Commit`, 用于保存镜像的上一个版本和当前版本之间的差异。所以当我们使用 `docker pull` 命令从公有或私有的 Hub 上拉取镜像时，它只会下载我们尚未拥有的层。这是一种非常高效的共享镜像的方式，但是有时会被错误使用，比如反复提交。![图片](img/640)从上图看出，基础镜像 alpine:3.12 占据了 5.57M 大小，idps_sm.tar.gz 文件占据了 4.52M。但是命令 `RUN rm -f ./idps_sm.tar.gz` 并没有降低镜像大小， 镜像大小由一个基础镜像和两次 `ADD` 文件构成。
+镜像的层就像 `Git` 的每一次提交 `Commit`, 用于保存镜像的上一个版本和当前版本之间的差异。所以当我们使用 `docker pull` 命令从公有或私有的 Hub 上拉取镜像时，它只会下载我们尚未拥有的层。这是一种非常高效的共享镜像的方式，但是有时会被错误使用，比如反复提交。![图片](Desktop/codeant/git/springboot/springboot-alibaba-yuezhi/doc/file/img/640)从上图看出，基础镜像 alpine:3.12 占据了 5.57M 大小，idps_sm.tar.gz 文件占据了 4.52M。但是命令 `RUN rm -f ./idps_sm.tar.gz` 并没有降低镜像大小， 镜像大小由一个基础镜像和两次 `ADD` 文件构成。
 
 ### 瘦身方法
 
@@ -114,7 +114,7 @@ RUN sed -i "s/archive.ubuntu.com/mirrors.aliyun.com/g; s/security.ubuntu.com/mir
 CMD ["redis-server"]
 ```
 
-使用 `docker history `分析 optimize/redis:multiline 和 optimize/redis:singleline 镜像，得到如下情况：![图片](img/640)分析上图发现，镜像 optimize/redis:multiline 中清理数据的几层并没有降低镜像的大小，这就是上面说的共享镜像层带来的问题。所以指令合并的方法是通过在同一层中将缓存和不用的工具软件清理掉，以达到减小镜像体积的目的。
+使用 `docker history `分析 optimize/redis:multiline 和 optimize/redis:singleline 镜像，得到如下情况：![图片](Desktop/codeant/git/springboot/springboot-alibaba-yuezhi/doc/file/img/640)分析上图发现，镜像 optimize/redis:multiline 中清理数据的几层并没有降低镜像的大小，这就是上面说的共享镜像层带来的问题。所以指令合并的方法是通过在同一层中将缓存和不用的工具软件清理掉，以达到减小镜像体积的目的。
 
 ### 多阶段构建
 
@@ -151,7 +151,7 @@ CMD ["redis-server"]
 
 1.第一行多了As build, 为后面的COPY做准备2.第一阶段中没有了清理操作，因为第一阶段构建的镜像只有编译的目标文件（二进制文件或jar包）有用，其它的都无用3.第二阶段直接从第一阶段拷贝目标文件
 
-同样的，使用 `docker history` 查看镜像体积情况：![图片](img/640)
+同样的，使用 `docker history` 查看镜像体积情况：![图片](Desktop/codeant/git/springboot/springboot-alibaba-yuezhi/doc/file/img/640)
 
 比较我们使用多阶段构建的镜像和官方提供 redis:6（无法和 redis:6-alpine 相比，因为 redis:6 和 ubuntu:focal 都是基于 debain 的镜像），发现二者有 30M 的空间。研究 redis:6 的 Dockerfile[6] 发现如下"骚操作":
 

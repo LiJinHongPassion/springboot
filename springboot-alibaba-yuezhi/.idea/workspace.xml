@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="26242aec-1107-491c-9659-939b76025bdf" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/file/docker 镜像瘦身.md" beforeDir="false" afterPath="$PROJECT_DIR$/doc/file/docker 镜像瘦身.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/file/img/640" beforeDir="false" afterPath="$PROJECT_DIR$/doc/file/img/640" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/file/编程规约.md" beforeDir="false" afterPath="$PROJECT_DIR$/doc/file/编程规约.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/file/说明.md" beforeDir="false" afterPath="$PROJECT_DIR$/doc/file/说明.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/yml config file/local_yml.zip" beforeDir="false" afterPath="$PROJECT_DIR$/doc/yml config file/local_yml.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yuezhi-basic/yuezhi-basic-gateway/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/file/说明.md" beforeDir="false" afterPath="$PROJECT_DIR$/doc/file/说明.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +42,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../yuezhi" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -63,17 +59,17 @@
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Administrator\Desktop\ry-yuezhi\springboot-alibaba-yuezhi\src\main\yml config file" />
-      <recent name="C:\Users\Administrator\Desktop\ry-yuezhi\springboot-alibaba-yuezhi\yuezhi-basic\yuezhi-basic-monitor" />
-      <recent name="C:\Users\Administrator\Desktop\ry-yuezhi\springboot-alibaba-yuezhi\yuezhi-service\yuezhi-service-business" />
-      <recent name="C:\Users\Administrator\Desktop\ry-yuezhi\springboot-alibaba-yuezhi\yuezhi-api\yuezhi-api-manager" />
-      <recent name="C:\Users\Administrator\Desktop\ry-yuezhi\springboot-alibaba-yuezhi\src\main\file" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Administrator\Desktop\codeant\git\springboot\springboot-alibaba-yuezhi\doc" />
       <recent name="C:\Users\Administrator\Desktop\ry-yuezhi\springboot-alibaba-yuezhi\src\main\yml config file" />
       <recent name="C:\Users\Administrator\Desktop\ry-yuezhi\springboot-alibaba-yuezhi\src\main" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Desktop\codeant\git\springboot\springboot-alibaba-yuezhi\yuezhi-basic\yuezhi-basic-gateway" />
+      <recent name="C:\Users\Administrator\Desktop\ry-yuezhi\springboot-alibaba-yuezhi\src\main\yml config file" />
+      <recent name="C:\Users\Administrator\Desktop\ry-yuezhi\springboot-alibaba-yuezhi\yuezhi-basic\yuezhi-basic-monitor" />
+      <recent name="C:\Users\Administrator\Desktop\ry-yuezhi\springboot-alibaba-yuezhi\yuezhi-service\yuezhi-service-business" />
+      <recent name="C:\Users\Administrator\Desktop\ry-yuezhi\springboot-alibaba-yuezhi\yuezhi-api\yuezhi-api-manager" />
     </key>
   </component>
   <component name="RunManager" selected="Docker.yuezhi-api-manager-1.0">
@@ -192,7 +188,8 @@
       <workItem from="1612253127652" duration="5249000" />
       <workItem from="1612258842425" duration="16864000" />
       <workItem from="1612335640748" duration="7998000" />
-      <workItem from="1612431912467" duration="423000" />
+      <workItem from="1612431912467" duration="557000" />
+      <workItem from="1612690218440" duration="4424000" />
     </task>
     <servers />
   </component>
@@ -236,10 +233,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="656" y="55" key="#yuezhi-service-business/Dockerfile/0.0.1920.1040@0.0.1920.1040" timestamp="1612340699446" />
-    <state x="739" y="274" key="FileChooserDialogImpl" timestamp="1612322118493">
+    <state x="739" y="274" key="FileChooserDialogImpl" timestamp="1612766739428">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="739" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1612322118493" />
+    <state x="739" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1612766739428" />
     <state width="1877" height="425" key="GridCell.Tab.0.bottom" timestamp="1612341899258">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

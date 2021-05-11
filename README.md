@@ -21,6 +21,8 @@
 
 ### springboot基础
 
+>[springboot_bean_life_demo](https://github.com/LiJinHongPassion/springboot/tree/master/springboot-bean-life_demo)：bean的生命周期（创建 + 销毁）
+>
 >[springboot_filter_interceptor_demo](https://github.com/LiJinHongPassion/springboot/tree/master/springboot_filter_interceptor_demo)：过滤器、拦截器的实现
 >
 >[springboot_modle_demo](https://github.com/LiJinHongPassion/springboot/tree/master/springboot_modle_demo)：`Model`、`ModelMap`、`ModelAndView`的简单用法

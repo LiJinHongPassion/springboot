@@ -1,0 +1,5 @@
+my:
+  bean:
+    name: codea_bean
+    packageStr: com.example.mystarterdemo.bean
+

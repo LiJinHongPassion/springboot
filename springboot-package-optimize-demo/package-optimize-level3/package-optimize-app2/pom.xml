@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.entdiy.example</groupId>
+        <artifactId>package-optimize-level1</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+    <groupId>com.entdiy.example</groupId>
+	<artifactId>package-optimize-app2</artifactId>
+	<description>Demo project for Spring Boot</description>
+
+    <properties>
+        <!-- 按各模块实际目录层次定义相对数据，使所有服务模块输出资源汇聚到相同目录 -->
+        <boot-jar-output>../devops</boot-jar-output>
+        <!--
+        有些供应商的sdk jar在pom中是以systemPath方式引入的，maven-jar-plugin组件没有直接参数声明包含指定scope的组件
+        通过使用额外定义 Class-Path 值来追加指定依赖组件列表，按实际情况指定 jar-manifestEntries-classpath 值即可
+        例如(注意前面个点字符及各空格分隔符，lib后面部分是 artifactId-version.jar 格式而不是实际文件名)：. lib/xxx-1.0.0.jar lib/yyy-2.0.0.jar
+        -->
+        <jar-manifestEntries-classpath>. lib/dahua-sdk-1.0.0.jar</jar-manifestEntries-classpath>
+    </properties>
+
+	<dependencies>
+        <dependency>
+            <groupId>com.dahua</groupId>
+            <artifactId>dahua-sdk</artifactId>
+            <version>1.0.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/dahua-sdk-1.0.0.jar</systemPath>
+        </dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+	</dependencies>
+
+</project>

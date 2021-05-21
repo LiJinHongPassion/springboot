@@ -121,6 +121,10 @@
 
 >[springboot_docker_demo](https://github.com/LiJinHongPassion/springboot/tree/master/springboot_docker_demo)：整合`docker`并远程部署
 
+### Maven打包相关
+
+> [springboot-package-optimize-demo(转载)](https://github.com/LiJinHongPassion/springboot/tree/master/springboot-package-optimize-demo)：`maven`部署关于`jar`存放位置的打包技巧
+
 ### 日志相关
 
 >[springboot_logging_demo](https://github.com/LiJinHongPassion/springboot/tree/master/springboot_logging_demo)：整合日志

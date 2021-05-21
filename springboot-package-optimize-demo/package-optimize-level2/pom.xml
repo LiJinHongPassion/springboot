@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.4.3</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+    <groupId>com.entdiy.example</groupId>
+    <artifactId>package-optimize-level2</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <description>Demo project for Spring Boot</description>
+
+    <properties>
+        <java.version>8</java.version>
+        <!-- 各子模块按实际目录层次定义相对数据，使所有服务模块输出资源汇聚到相同目录，详见子目录定义示例 -->
+        <boot-jar-output>${project.build.directory}</boot-jar-output>
+    </properties>
+
+    <modules>
+        <module>package-optimize-app1</module>
+        <module>package-optimize-app2</module>
+        <module>package-optimize-app3</module>
+    </modules>
+
+    <build>
+        <finalName>${project.artifactId}</finalName>
+        <!--
+        特别注意：
+        项目仅仅是为了演示配置方便，直接在parent的build部分做了插件配置和运行定义。
+        但是实际项目中需要把这些定义只放到spring boot模块项目（可优化使用pluginManagement形式），避免干扰其他util、common等模块项目
+        -->
+        <plugins>
+            <!-- 基于maven-jar-plugin插件实现把依赖jar定义写入输出jar的META-INFO/MANIFEST文件 -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <addClasspath>true</addClasspath>
+                            <classpathPrefix>lib/</classpathPrefix>
+                            <useUniqueVersions>false</useUniqueVersions>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+            <!-- 拷贝项目所有依赖jar文件到构建lib目录下 -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>copy-dependencies</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>copy-dependencies</goal>
+                        </goals>
+                        <configuration>
+                            <!--
+                            各子模块按照实际层级定义各模块对应的属性值，检查所有微服务模块依赖jar文件合并复制到同一个目录
+                            详见各子模块中 boot-jar-output 属性定义
+                            -->
+                            <outputDirectory>${boot-jar-output}/lib</outputDirectory>
+                            <excludeTransitive>false</excludeTransitive>
+                            <stripVersion>false</stripVersion>
+                            <silent>false</silent>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <!-- Spring Boot模块jar构建 -->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <includes>
+                        <!-- 不存在的include引用，相当于排除所有maven依赖jar，没有任何三方jar文件打入输出jar -->
+                        <include>
+                            <groupId>null</groupId>
+                            <artifactId>null</artifactId>
+                        </include>
+                    </includes>
+                    <layout>ZIP</layout>
+                    <!--
+                    基于maven-jar-plugin输出微服务jar文件进行二次spring boot重新打包文件的输出目录
+                    所有微服务构建输出jar文件统一输出到与lib同一个目录，便于共同引用同一个lib目录
+                    详见各子模块中boot-jar-output属性定义
+                    -->
+                    <outputDirectory>${boot-jar-output}</outputDirectory>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>

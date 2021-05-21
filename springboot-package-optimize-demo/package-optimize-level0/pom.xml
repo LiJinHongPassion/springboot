@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.4.3</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+    <groupId>com.entdiy.example</groupId>
+    <artifactId>package-optimize-level0</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <description>Demo project for Spring Boot</description>
+
+    <modules>
+        <module>package-optimize-app1</module>
+        <module>package-optimize-app2</module>
+        <module>package-optimize-app3</module>
+    </modules>
+
+    <build>
+        <finalName>${project.artifactId}</finalName>
+        <!--
+        特别注意：
+        项目仅仅是为了演示配置方便，直接在parent的build部分做了插件配置和运行定义。
+        但是实际项目中需要把这些定义只放到spring boot模块项目（可优化使用pluginManagement形式），避免干扰其他util、common等模块项目
+        -->
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+</project>

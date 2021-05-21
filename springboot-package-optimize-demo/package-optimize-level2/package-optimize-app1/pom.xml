@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.entdiy.example</groupId>
+        <artifactId>package-optimize-level2</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+    <groupId>com.entdiy.example</groupId>
+    <artifactId>package-optimize-app1</artifactId>
+    <description>Demo project for Spring Boot</description>
+    <properties>
+        <!-- 按各模块实际目录层次定义相对数据，使所有服务模块输出资源汇聚到相同目录 -->
+        <boot-jar-output>../devops</boot-jar-output>
+    </properties>
+    <dependencies>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+    </dependencies>
+
+</project>

@@ -151,6 +151,10 @@
 
 >[springboot-pay-demo](https://gitee.com/LiJinHongPassion/utils/tree/master/springboot-pay-demo) ：支付宝沙箱支付
 
+### SSL
+
+> [SSL证书](https://gitee.com/LiJinHongPassion/utils/tree/master/springboot-example-https)按照教程可以实现单向认证和双向认证
+
 ### 杂项
 
 >[voice](https://github.com/LiJinHongPassion/springboot/tree/master/vioce)：Java文字转音频

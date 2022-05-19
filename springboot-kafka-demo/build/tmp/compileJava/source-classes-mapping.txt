@@ -1,3 +1,0 @@
-simpleDemo/product.java
- simpleDemo.product
- simpleDemo.product$1

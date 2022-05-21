@@ -121,9 +121,10 @@
 
 >[springboot_docker_demo](https://github.com/LiJinHongPassion/springboot/tree/master/springboot_docker_demo)：整合`docker`并远程部署
 
-### Maven打包相关
+### Maven相关
 
 > [springboot-package-optimize-demo(转载)](https://github.com/LiJinHongPassion/springboot/tree/master/springboot-package-optimize-demo)：`maven`部署关于`jar`存放位置的打包技巧
+> [springboot-git-commit-id-demo(转载)](https://github.com/LiJinHongPassion/springboot/tree/master/springboot-git-commit-id-demo)：`maven`插件：构建时，输出git的相关信息，可用于测试环境及时查看当前项目运行分支、版本
 
 ### 日志相关
 

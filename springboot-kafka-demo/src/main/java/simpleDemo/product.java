@@ -48,7 +48,8 @@ public class product {
         properties.put(ProducerConfig.BATCH_SIZE_CONFIG,16384);
 //        用来控制batch最大的空闲时间，超过该时间的batch也会被发送到broker端。这实际上是一种权衡，即吞吐量与延时之间的权衡。默认值为0，表示消息需要被立即发送，无需关系batch是否被填满。
 //        通常为了减少请求次数、提升整体吞吐量，建议设置一个大于0的值，比如设置为100，此时会在负载低的情况下带来100ms的延时。
-        properties.put(ProducerConfig.LINGER_MS_CONFIG,1);
+        // 设置长一点很容易发现问题
+        properties.put(ProducerConfig.LINGER_MS_CONFIG,100000);
 //        默认最长响应时间 30s
         properties.put(ProducerConfig.REQUEST_TIMEOUT_MS_CONFIG,30000);
 

@@ -10,7 +10,10 @@ repositories {
     mavenCentral()
 }
 dependencies {
-    implementation 'org.apache.kafka:kafka-clients:2.0.0'
+  //  implementation 'org.apache.kafka:kafka-clients:2.0.0'
+    implementation 'org.springframework.boot:spring-boot-starter-web:2.2.9.RELEASE'
+    implementation 'org.springframework.kafka:spring-kafka:2.4.1.RELEASE'
+
 }
 
 test {

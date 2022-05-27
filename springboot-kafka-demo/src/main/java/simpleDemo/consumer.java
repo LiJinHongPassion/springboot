@@ -32,11 +32,13 @@ public class consumer {
     private static Properties initConfig(){
         Properties properties = new Properties();
         properties.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG,BROKER_LIST);
-        properties.put(ConsumerConfig.GROUP_ID_CONFIG,"test1");
+        properties.put(ConsumerConfig.GROUP_ID_CONFIG,"test3");
         properties.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());
         properties.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG,StringDeserializer.class.getName());
         // 设置手动提交
         properties.put(ConsumerConfig.ENABLE_AUTO_COMMIT_CONFIG,false);
+
+        properties.put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG,"earliest");
         // 设置自动提交
        //properties.put(ConsumerConfig.ENABLE_AUTO_COMMIT_CONFIG,true);
         //设置自动提交时间 一秒
@@ -52,6 +54,8 @@ public class consumer {
                 for(ConsumerRecord record:records){
                     try{
                         System.out.println(record.value());
+                        System.out.println(record.offset());
+                        System.out.println();
                     }catch(Exception e){
                         e.printStackTrace();
                     }
@@ -63,6 +67,7 @@ public class consumer {
                      kafkaConsumer.commitAsync((offsets,  exception)->{
                         if (exception!=null){
                             // 提交成功
+                            System.out.println("提交成功");
                         }
                         else {
                             // 提交失败

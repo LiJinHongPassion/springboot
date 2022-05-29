@@ -1,0 +1,11 @@
+spring:
+  kafka:
+    bootstrap-servers: 124.223.45.196:9092
+    consumer:
+      auto-offset-reset: earliest
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+        #      value-serializer: com.itheima.demo.config.MySerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+
+

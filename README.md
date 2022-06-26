@@ -152,6 +152,11 @@
 
 >[springboot-pay-demo](https://gitee.com/LiJinHongPassion/utils/tree/master/springboot-pay-demo) ：支付宝沙箱支付
 
+### 参数验证相关
+
+>[springboot-hibernate-validation-demo 开发中...](https://gitee.com/LiJinHongPassion/utils/tree/master/springboot-hibernate-validation-demo) ：接口的参数校验，当参数不满足条件，直接返回错误信息
+
+
 ### SSL
 
 > [SSL证书](https://gitee.com/LiJinHongPassion/utils/tree/master/springboot-example-https)按照教程可以实现单向认证和双向认证

@@ -39,6 +39,10 @@
 
 >[springboot_idempotence_demo](https://github.com/LiJinHongPassion/springboot/tree/master/springboot_idempotence_demo)：幂等性
 
+### MQ一体化解决方案
+
+>[springboot-cloud-stream-demo 待开发](https://github.com/LiJinHongPassion/springboot/tree/master/springboot-cloud-stream-demo)：MQ一体化解决方案，一个框架可适配常用的MQ
+
 ### mybatis相关
 
 >[springboot_mybatis_demo](https://github.com/LiJinHongPassion/springboot/tree/master/springboot_mybatis_demo)：整合`mybatis`，`redis`为二级缓存

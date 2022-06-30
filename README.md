@@ -134,6 +134,10 @@
 
 >[springboot_mail_demo](https://github.com/LiJinHongPassion/springboot/tree/master/springboot_mail_demo)：整合`spring mail`，能够实现邮件的发送
 
+### es搜索引擎入门
+
+>[springboot-es-demo 开发中...](https://github.com/LiJinHongPassion/springboot/tree/master/springboot-es-demo)：整合`es`，能够实现简单搜索
+
 ### 爬虫相关
 
 >[springboot_crawler_demo](https://github.com/LiJinHongPassion/springboot/tree/master/springboot_crawler_demo)：利用`http-client`和`jsoup`实现java的小爬虫

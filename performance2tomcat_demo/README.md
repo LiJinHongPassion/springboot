@@ -1,6 +1,6 @@
 # tomcat的性能调优实战
 **流程**
-1. 编写一个`springboot`项目，开放接口访问；每次接口访问，生成固定大小的对象，模拟生产环境中线程栈中的对象；（使用jol来预估对象大小）
+1. 编写一个`springboot`项目，开放接口访问；每次接口访问，生成固定大小的对象，模拟生产环境中线程栈中引用的对象，对象是放在堆里面的；（使用jol来预估对象大小）
    ![img.png](img/img.png)
 2. 编写`dockerFile`，打包好镜像，启动容器的时候，设置CPU核数和容器内存大小
 3. 修改`springboot`内置的`tomcat`jar包的配置(`org.springframework.boot.autoconfigure.web.Tomcat`)，使用jmeter工具进行压测

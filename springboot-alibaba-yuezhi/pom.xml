@@ -34,7 +34,7 @@
         <springloaded.version>1.2.8.RELEASE</springloaded.version><!-- 热部署插件版本号 -->
         <servlet-api.version>2.5</servlet-api.version>
         <json-lib.version>2.4</json-lib.version>
-        <spring-boot-admin.version>2.3.1</spring-boot-admin.version>
+        <spring-boot-admin.version>3.1.2</spring-boot-admin.version>
     </properties>
 
     <!-- dependencyManagement子模块继承之后，提供作用：锁定版本+子modlue不用写groupId和version;

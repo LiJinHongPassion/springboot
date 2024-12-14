@@ -25,8 +25,6 @@ ServletContextAware.setServletContext(): 运行时设置ServletContext，在普�
 
 **InitializingBean.afterPropertiesSet(): 被BeanFactory在设置所有bean属性之后调用(并且满足BeanFactory 和 ApplicationContextAware)。**
 
-
-
-
 ## 原图
+
 https://www.processon.com/diagraming/60740a831e085335c2baf484
